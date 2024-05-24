@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/bean/Projects/WebAppProject/WebAppProject/WebAppProject.csproj",
+      "projectUniqueName": "/Users/bean/Documents/GitHub/WebAppProject/WebAppProject/WebAppProject.csproj",
       "projectName": "WebAppProject",
-      "projectPath": "/Users/bean/Projects/WebAppProject/WebAppProject/WebAppProject.csproj",
+      "projectPath": "/Users/bean/Documents/GitHub/WebAppProject/WebAppProject/WebAppProject.csproj",
       "packagesPath": "/Users/bean/.nuget/packages/",
-      "outputPath": "/Users/bean/Projects/WebAppProject/WebAppProject/obj/",
+      "outputPath": "/Users/bean/Documents/GitHub/WebAppProject/WebAppProject/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/bean/.nuget/NuGet/NuGet.Config"
