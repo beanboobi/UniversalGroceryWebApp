@@ -1,28 +1,45 @@
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+<<<<<<< Updated upstream
 a.navbar-brand[b-7jtbncldxi] {
+=======
+a.navbar-brand[b-8oaowa1aje] {
+>>>>>>> Stashed changes
   white-space: normal;
   text-align: center;
   word-break: break-all;
 }
 
+<<<<<<< Updated upstream
 a[b-7jtbncldxi] {
   color: #0077cc;
 }
 
 .btn-primary[b-7jtbncldxi] {
+=======
+a[b-8oaowa1aje] {
+  color: #0077cc;
+}
+
+.btn-primary[b-8oaowa1aje] {
+>>>>>>> Stashed changes
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
 
+<<<<<<< Updated upstream
 .nav-pills .nav-link.active[b-7jtbncldxi], .nav-pills .show > .nav-link[b-7jtbncldxi] {
+=======
+.nav-pills .nav-link.active[b-8oaowa1aje], .nav-pills .show > .nav-link[b-8oaowa1aje] {
+>>>>>>> Stashed changes
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
 
+<<<<<<< Updated upstream
 .border-top[b-7jtbncldxi] {
   border-top: 1px solid #e5e5e5;
 }
@@ -35,11 +52,29 @@ a[b-7jtbncldxi] {
 }
 
 button.accept-policy[b-7jtbncldxi] {
+=======
+.border-top[b-8oaowa1aje] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-8oaowa1aje] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-8oaowa1aje] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-8oaowa1aje] {
+>>>>>>> Stashed changes
   font-size: 1rem;
   line-height: inherit;
 }
 
+<<<<<<< Updated upstream
 .footer[b-7jtbncldxi] {
+=======
+.footer[b-8oaowa1aje] {
+>>>>>>> Stashed changes
   position: absolute;
   bottom: 0;
   width: 100%;

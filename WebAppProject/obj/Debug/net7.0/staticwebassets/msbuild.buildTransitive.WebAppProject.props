@@ -1,3 +1,7 @@
 ﻿<Project>
+<<<<<<< Updated upstream
   <Import Project="../buildMultiTargeting/WebAppProject.props" />
+=======
+  <Import Project="..\buildMultiTargeting\WebAppProject.props" />
+>>>>>>> Stashed changes
 </Project>

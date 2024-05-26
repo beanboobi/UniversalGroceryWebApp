@@ -2,8 +2,98 @@
     ViewData["Title"] = "Home Page";
 }
 
+<<<<<<< Updated upstream
 <div class="text-center">
     <h1 class="display-4">Welcome To Our Universal Grocery </h1>
     <p>Universal Grovery Design <a href="https://www.figma.com/design/WVyTxOafqAnMnEar8Ke5TA/Untitled?m=dev&node-id=0-1&t=lzrBQFEZ44jy67JV-1">Figma Design Link</a>.</p>
     <p> An test push code to GitHub</p>
 </div>
+=======
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">
+        <!-- Logo Image -->
+        <img src="Logo.jpg" alt="Universal Grocery" style="height: 40px;" />
+        Universal Grocery
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Food">Food</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Beverages">Beverages</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Household">Household Items</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li class="nav-item">
+                    <a class="nav-link" href="/Account/Logout">Logout</a>
+                </li>
+            }
+            else
+            {
+                <li class="nav-item">
+                    <a class="nav-link" href="/Account/Login">Login</a>
+                </li>
+            }
+        </ul>
+    </div>
+</nav>
+
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to Universal Grocery</h1>
+    <p class="lead">Your one-stop shop for all your daily needs.</p>
+    <hr class="my-4">
+    <p>Explore our categories below.</p>
+</div>
+
+
+<div class="row">
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <img src="https://via.placeholder.com/250x150" class="card-img-top" alt="Food">
+            <div class="card-body">
+                <h5 class="card-title">Food</h5>
+                <p class="card-text">Fresh fruits, vegetables, dairy, and more.</p>
+                <a href="/Food" class="btn btn-primary">Shop Food</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <img src="https://via.placeholder.com/250x150" class="card-img-top" alt="Beverages">
+            <div class="card-body">
+                <h5 class="card-title">Beverages</h5>
+                <p class="card-text">Juices, sodas, and other refreshing drinks.</p>
+                <a href="/Beverages" class="btn btn-primary">Shop Beverages</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <img src="https://via.placeholder.com/250x150" class="card-img-top" alt="Household Items">
+            <div class="card-body">
+                <h5 class="card-title">Household Items</h5>
+                <p class="card-text">Cleaning supplies, paper products, and more.</p>
+                <a href="/Household" class="btn btn-primary">Shop Household Items</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+>>>>>>> Stashed changes
