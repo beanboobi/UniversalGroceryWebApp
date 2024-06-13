@@ -1,9 +1,45 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<WebAppProject.Models.Item>
+
+@{
+    ViewBag.Title = "Manage Items";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome To Our Universal Grocery </h1>
-    <p>Universal Grovery Design <a href="https://www.figma.com/design/WVyTxOafqAnMnEar8Ke5TA/Untitled?m=dev&node-id=0-1&t=lzrBQFEZ44jy67JV-1">Figma Design Link</a>.</p>
-    <p> An test push code to GitHub</p>
-</div>
+<h2>Manage Items</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Picture</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Discount</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.Name</td>
+                    <td><img src="@Url.Content("~/images/" + item.Picture)" alt="@item.Name" style="width:50px;height:50px;" /></td>
+                    <td>@item.Description</td>
+                    <td>@item.Price</td>
+                    <td>@item.Discount %</td>
+                    @* <td>
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                    </td> *@
+                </tr>
+            }
+        }
+        else
+        {
+            <tr><td colspan="7">No items found</td></tr>
+        }
+
+    </tbody>
+</table>
