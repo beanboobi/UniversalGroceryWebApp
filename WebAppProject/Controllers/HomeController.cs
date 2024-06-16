@@ -28,7 +28,11 @@ public class HomeController : Controller
         return View();
     }
 
+<<<<<<< Updated upstream:WebAppProject/Controllers/HomeController.cs
     public IActionResult testview()
+=======
+    public IActionResult Login()
+>>>>>>> Stashed changes:WebAppProject/WebAppProject/Controllers/HomeController.cs
     {
         return View();
     }
