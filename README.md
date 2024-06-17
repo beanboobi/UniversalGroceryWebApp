@@ -2,7 +2,7 @@
 
 Eugene Gitcommit 17/6/2024
 *Pulled from Kai boon's latest gitcommit(login added)
-*For some reason, I can't upload my entire project folder to github so I am just going to upload the solution file
+*For some reason, I can't upload unzipped project folder to github so ive uploaded the zipped version apologies for the weird file structure
 1) Added model, controller and database context for GroceryItem(database and logic of storing grocery items) and Employee(includes both admin and normal employee)
 2) Added model, controller for employeelogin(to authenticate if employee is admin or normal employee)
 
