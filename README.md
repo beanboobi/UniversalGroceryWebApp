@@ -1,6 +1,9 @@
-"Eugene GitCommit 26-5-24" - My gitcommit for 26 may 2024, adding models for database structure for admin, category, employee, order, orderdetail, payment, product, shoppingcart, shoppingcartitem and user for our ecommerce site. All Codes are not fully wokring and work in progress! 
+**Eugene GitCommit 26-5-24**:
 
-Eugene Gitcommit 17/6/2024
+ My gitcommit for 26 may 2024, adding models for database structure for admin, category, employee, order, orderdetail, payment, product, shoppingcart, shoppingcartitem and user for our ecommerce site. All Codes are not fully wokring and work in progress! 
+
+**Eugene Gitcommit 17/6/2024**:
+
 *Pulled from Kai boon's latest gitcommit(login added)
 *For some reason, I can't upload unzipped project folder to github so ive uploaded the zipped version apologies for the weird file structure
 1) Added model, controller and database context for GroceryItem(database and logic of storing grocery items) and Employee(includes both admin and normal employee)
