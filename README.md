@@ -1,3 +1,5 @@
+*All codes are work in Progress!*
+
 **Eugene GitCommit 26-5-24**:
 
  My gitcommit for 26 may 2024, adding models for database structure for admin, category, employee, order, orderdetail, payment, product, shoppingcart, shoppingcartitem and user for our ecommerce site. All Codes are not fully wokring and work in progress! 
