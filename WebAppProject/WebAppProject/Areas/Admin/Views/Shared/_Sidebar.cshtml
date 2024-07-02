@@ -1,0 +1,35 @@
+﻿<div class="sidebar">
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link" asp-area="Admin" asp-controller="ManageItem" asp-action="Index">Manage Items</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="Admin" asp-controller="ManageCustomerAccount" asp-action="Index">Manage Customer Account</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="Admin" asp-controller="ManageEmployeeAccount" asp-action="Index">Manage Employee Account</a>
+        </li>
+    </ul>
+</div>
+
+<style>
+    .sidebar {
+        width: 250px;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: #f8f9fa;
+        padding-top: 20px;
+    }
+
+        .sidebar .nav-link {
+            color: #000;
+            padding: 10px 15px;
+        }
+
+            .sidebar .nav-link:hover {
+                background-color: #e9ecef;
+                color: #000;
+            }
+</style>
