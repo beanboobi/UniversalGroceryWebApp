@@ -1,18 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\",
+  "WorkspaceRootPath": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\mac\\home\\documents\\github\\universalgrocerywebapp\\webappproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\kelvin mai\\onedrive\\ta\u0300i li\u00EA\u0323u\\github\\universalgrocerywebapp\\webappproject\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\kelvin mai\\onedrive\\ta\u0300i li\u00EA\u0323u\\github\\universalgrocerywebapp\\webappproject\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\kelvin mai\\onedrive\\ta\u0300i li\u00EA\u0323u\\github\\universalgrocerywebapp\\webappproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\kelvin mai\\onedrive\\ta\u0300i li\u00EA\u0323u\\github\\universalgrocerywebapp\\webappproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\kelvin mai\\onedrive\\ta\u0300i li\u00EA\u0323u\\github\\universalgrocerywebapp\\webappproject\\views\\home\\feedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\views\\home\\feedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\kelvin mai\\onedrive\\ta\u0300i li\u00EA\u0323u\\github\\universalgrocerywebapp\\webappproject\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\kelvin mai\\onedrive\\ta\u0300i li\u00EA\u0323u\\github\\universalgrocerywebapp\\webappproject\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\kelvin mai\\onedrive\\ta\u0300i li\u00EA\u0323u\\github\\universalgrocerywebapp\\webappproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\mac\\home\\documents\\github\\universalgrocerywebapp\\webappproject\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\kelvin mai\\onedrive\\ta\u0300i li\u00EA\u0323u\\github\\universalgrocerywebapp\\webappproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\mac\\home\\documents\\github\\universalgrocerywebapp\\webappproject\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\kelvin mai\\onedrive\\ta\u0300i li\u00EA\u0323u\\github\\universalgrocerywebapp\\webappproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\kelvin mai\\onedrive\\ta\u0300i li\u00EA\u0323u\\github\\universalgrocerywebapp\\webappproject\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,44 +54,153 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebAppProject\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebAppProject\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAA0AAAAAAAAAAADwvyIAAAAZAAAA",
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Register.cshtml",
+              "RelativeDocumentMoniker": "WebAppProject\\Views\\Home\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Register.cshtml",
+              "RelativeToolTip": "WebAppProject\\Views\\Home\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-13T07:33:31.487Z",
+              "WhenOpened": "2024-06-28T07:41:00.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FeedBack.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\FeedBack.cshtml",
+              "RelativeDocumentMoniker": "WebAppProject\\Views\\Home\\FeedBack.cshtml",
+              "ToolTip": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\FeedBack.cshtml",
+              "RelativeToolTip": "WebAppProject\\Views\\Home\\FeedBack.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAEgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-28T07:30:56.053Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ItemController.cs",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Controllers\\ItemController.cs",
-              "RelativeDocumentMoniker": "WebAppProject\\Controllers\\ItemController.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Controllers\\ItemController.cs",
-              "RelativeToolTip": "WebAppProject\\Controllers\\ItemController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T07:28:59.628Z"
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "WebAppProject\\Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "WebAppProject\\Views\\Home\\Login.cshtml",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAEoAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-28T07:12:22.066Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\Item.cs",
-              "RelativeDocumentMoniker": "WebAppProject\\Models\\Item.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\Item.cs",
-              "RelativeToolTip": "WebAppProject\\Models\\Item.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAeAAAA",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebAppProject\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebAppProject\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAkwCgAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T07:19:57.021Z"
+              "WhenOpened": "2024-06-28T07:11:25.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "WebAppProject\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "WebAppProject\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T15:32:50.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebAppProject\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebAppProject\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T15:32:41.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "WebAppProject\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "WebAppProject\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T02:06:31.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Program.cs",
+              "RelativeDocumentMoniker": "WebAppProject\\Program.cs",
+              "ToolTip": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Program.cs",
+              "RelativeToolTip": "WebAppProject\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T04:58:56.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\appsettings.json",
+              "RelativeDocumentMoniker": "WebAppProject\\appsettings.json",
+              "ToolTip": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\appsettings.json",
+              "RelativeToolTip": "WebAppProject\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-28T06:49:47.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebAppProject\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebAppProject\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-28T06:53:57.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "WebAppProject\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\appsettings.Development.json",
+              "RelativeToolTip": "WebAppProject\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-31T05:34:44.04Z"
             }
           ]
         }
