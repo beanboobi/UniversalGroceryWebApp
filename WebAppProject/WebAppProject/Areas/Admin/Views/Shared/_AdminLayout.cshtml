@@ -6,37 +6,54 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebAppProject.styles.css" asp-append-version="true" />
+    <style>
+        .admin-profile {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .greeting {
+            margin-right: 10px;
+            text-align: right;
+        }
+
+        .admin-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        
+    </style>
 </head>
 <body>
-    <header>
-        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-            <img src="~/images/logo.png" alt="WebAppProject Logo" />
-        </a>
-    </header>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3">
-                
-                @Html.Partial("~/Areas/Admin/Views/Shared/_Sidebar.cshtml")
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Your Application</a>
             </div>
-            <div class="col-md-9">
-                <main role="main" class="pb-3">
-                    @RenderBody()
-                </main>
+            <div class="navbar-right">
+                <div class="admin-profile">
+                    <span class="greeting">Hello, Admin1<br><small>Have a nice day</small></span>
+                    <img src="~/images/admin1.png" alt="Admin" class="admin-image" />
+                </div>
             </div>
         </div>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - WebAppProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <div class="container body-content">
+        <div class="row">
+            <div class="col-md-3">
+                @Html.Partial("_Sidebar")
+            </div>
+            <div class="col-md-9">
+                @RenderBody()
+            </div>
         </div>
+    </div>
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Your Application</p>
     </footer>
-
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -9,5 +9,10 @@ namespace WebAppProject.Areas.Admin.Controllers
         {
             return View();
         }
+
+        public IActionResult ManageItem()
+        {
+            return View();
+        }
     }
 }
