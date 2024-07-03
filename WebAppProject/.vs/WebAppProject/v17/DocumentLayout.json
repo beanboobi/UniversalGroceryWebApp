@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "WebAppProject\\Areas\\Admin\\Views\\Shared\\_Sidebar.cshtml",
               "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\Areas\\Admin\\Views\\Shared\\_Sidebar.cshtml",
               "RelativeToolTip": "WebAppProject\\Areas\\Admin\\Views\\Shared\\_Sidebar.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-01T15:43:40.635Z",
               "EditorCaption": ""
@@ -57,7 +57,7 @@
               "RelativeDocumentMoniker": "WebAppProject\\Areas\\Admin\\Views\\Home\\ManageItem.cshtml",
               "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\Areas\\Admin\\Views\\Home\\ManageItem.cshtml",
               "RelativeToolTip": "WebAppProject\\Areas\\Admin\\Views\\Home\\ManageItem.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAABIAAAA",
+              "ViewState": "AQIAACEAAAAAm5mZmZkewCAAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-01T15:24:12.478Z",
               "EditorCaption": ""
@@ -72,8 +72,7 @@
               "RelativeToolTip": "WebAppProject\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
               "ViewState": "AQIAAAgAAACAMjMzMzMbwAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-01T15:17:52.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-01T15:17:52.935Z"
             },
             {
               "$type": "Document",
@@ -85,8 +84,7 @@
               "RelativeToolTip": "WebAppProject\\Areas\\Admin\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-01T15:17:11.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-01T15:17:11.22Z"
             },
             {
               "$type": "Document",
@@ -98,8 +96,7 @@
               "RelativeToolTip": "WebAppProject\\Areas\\Admin\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T05:32:26.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T05:32:26.047Z"
             }
           ]
         }

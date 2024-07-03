@@ -13,8 +13,80 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\logo.png",
-      "PackagePath": "staticwebassets\\images\\logo.png"
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\NewLogo.png",
+      "PackagePath": "staticwebassets\\images\\NewLogo.png"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\admin.png",
+      "PackagePath": "staticwebassets\\images\\admin.png"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\admin1.png",
+      "PackagePath": "staticwebassets\\images\\admin1.png"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\adminprofile.png",
+      "PackagePath": "staticwebassets\\images\\adminprofile.png"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\apple.png",
+      "PackagePath": "staticwebassets\\images\\apple.png"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\beef.png",
+      "PackagePath": "staticwebassets\\images\\beef.png"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\brocoli.png",
+      "PackagePath": "staticwebassets\\images\\brocoli.png"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\chips.png",
+      "PackagePath": "staticwebassets\\images\\chips.png"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\chocochip.png.png",
+      "PackagePath": "staticwebassets\\images\\chocochip.png.png"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\coffee.png",
+      "PackagePath": "staticwebassets\\images\\coffee.png"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\coffee1get1.png",
+      "PackagePath": "staticwebassets\\images\\coffee1get1.png"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\dogfood.png",
+      "PackagePath": "staticwebassets\\images\\dogfood.png"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\edit.png",
+      "PackagePath": "staticwebassets\\images\\edit.png"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\milk.png",
+      "PackagePath": "staticwebassets\\images\\milk.png"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\milk1l.png",
+      "PackagePath": "staticwebassets\\images\\milk1l.png"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\neufarm.png",
+      "PackagePath": "staticwebassets\\images\\neufarm.png"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\peanut.png",
+      "PackagePath": "staticwebassets\\images\\peanut.png"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\remove.png",
+      "PackagePath": "staticwebassets\\images\\remove.png"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\snackarmor.png",
+      "PackagePath": "staticwebassets\\images\\snackarmor.png"
     },
     {
       "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\js\\site.js",
