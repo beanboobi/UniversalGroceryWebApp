@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
