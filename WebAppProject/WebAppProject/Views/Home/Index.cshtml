@@ -1,6 +1,283 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Home Page";
 }
-<h1>Customer Hompage</h1>
+
+<div class="homepage">
+    <aside class="sidebar">
+        <h2>Category</h2>
+        <ul>
+            <li><a href="#">Vegetables & Fruit</a></li>
+            <li><a href="#">Beverages</a></li>
+            <li><a href="#">Meats & Seafood</a></li>
+            <li><a href="#">Milk & Dairies</a></li>
+            <li><a href="#">Frozen Foods</a></li>
+            <li><a href="#">Biscuits & Snacks</a></li>
+            <li><a href="#">Household</a></li>
+            <li><a href="#">Drinks</a></li>
+            <li><a href="#">Pet Foods</a></li>
+        </ul>
+        <ul class="additional-categories">
+            <li><a href="#">Value of the Day</a></li>
+            <li><a href="#">Top 50 Offers</a></li>
+            <li><a href="#">New Arrivals</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <section class="deal-of-the-day">
+            <div class="section-header">
+                <h2>Deal of the day</h2>
+                <a href="#" class="see-all">See All</a>
+            </div>
+            <div class="products-grid">
+
+                <div class="product-card">
+                    <img src="/images/chocochip.png.png" alt="Fantasy Crunchy Choco Chip Cookies">
+                    <div class="product-info">
+                        <h3>Fantasy Crunchy Choco Chip Cookies</h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add">Add</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="/images/peanut.png" alt="Peanut Butter Bite Premium Butter Cookies">
+                    <div class="product-info">
+                        <h3>Peanut Butter Bite Premium Butter Cookies</h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add">Add</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="/images/chips.png" alt="Yumitos Chilli Sprinkled Potato Chips">
+                    <div class="product-info">
+                        <h3>Yumitos Chilli Sprinkled Potato Chips</h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add">Add</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="/images/milk1l.png" alt="healthy Long Life Toned Milk">
+                    <div class="product-info">
+                        <h3>healthy Long Life Toned Milk</h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add">Add</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="/images/beef.png" alt="Raw Mutton Leg, Packaging 5 Kg">
+                    <div class="product-info">
+                        <h3>Raw Mutton Leg, Packaging 5 Kg</h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add">Add</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="/images/coffee.png" alt="Cold Brew Coffee Instant Coffee">
+                    <div class="product-info">
+                        <h3>Cold Brew Coffee Instant Coffee</h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add">Add</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="/images/snackarmor.png" alt="SnackAmor Combo Pack of Jowar Stick and Jowar Chips">
+                    <div class="product-info">
+                        <h3>SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add">Add</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="/images/neufarm.png" alt="Neu Farm Unpolished Desi Toor Dal">
+                    <div class="product-info">
+                        <h3>Neu Farm Unpolished Desi Toor Dal</h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add">Add</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="/images/dogfood.png" alt="Dog Treats Natural Yak Milk Bars For Small Dogs">
+                    <div class="product-info">
+                        <h3>Dog Treats Natural Yak Milk Bars For Small Dogs</h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add">Add</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="/images/coffee1get1.png" alt="Blended Instant Coffee 50 g Buy 1 Get 1 Free">
+                    <div class="product-info">
+                        <h3>Blended Instant Coffee 50 g Buy 1 Get 1 Free</h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add">Add</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="additional-section">
+            <h2>Breakfast & Dairy</h2>
+            @* Add similar product grid here *@
+        </section>
+    </main>
+</div>
+
+<style>
+    .homepage {
+        display: flex;
+    }
+
+    .sidebar {
+        width: 20%;
+        padding: 20px;
+        background-color: #f8f8f8;
+    }
+
+        .sidebar h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .sidebar ul li {
+                margin-bottom: 10px;
+            }
+
+                .sidebar ul li a {
+                    text-decoration: none;
+                    color: #333;
+                    font-size: 1em;
+                }
+
+    .main-content {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .deal-of-the-day h2 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    .see-all {
+        font-size: 1em;
+        color: green;
+        text-decoration: none;
+    }
+
+    .products-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .product-card {
+        width: 22%;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+    .product-info {
+        padding: 10px;
+    }
+
+        .product-info h3 {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+
+    .price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .current-price {
+        font-size: 1.2em;
+        color: #28a745;
+    }
+
+    .original-price {
+        font-size: 1em;
+        color: #777;
+        text-decoration: line-through;
+    }
+
+    .btn-add {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 1em;
+        color: #fff;
+        background-color: #28a745;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        transition: background-color 0.3s;
+    }
+
+        .btn-add:hover {
+            background-color: #218838;
+        }
+
+        .btn-add::after {
+            content: '+';
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 1.2em;
+        }
+</style>
