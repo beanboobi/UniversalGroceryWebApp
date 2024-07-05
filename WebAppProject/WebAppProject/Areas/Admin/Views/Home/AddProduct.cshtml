@@ -1,0 +1,107 @@
+﻿@{
+    ViewData["Title"] = "Add Product";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Add Product</h2>
+<div class="container-fluid">
+    <form method="post" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="productId">Product ID</label>
+                    <input type="text" class="form-control" id="productId" name="ProductId" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="productName">Product Name</label>
+                    <input type="text" class="form-control" id="productName" name="ProductName"  />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="productDescription">Product Description</label>
+                    <input type="text" class="form-control" id="productDescription" name="ProductDescription"  />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select class="form-control" id="category" name="Category">
+                        
+                        
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="text" class="form-control" id="price" name="Price"  />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="discount">Discount</label>
+                    <input type="text" class="form-control" id="discount" name="Discount"  />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="text" class="form-control" id="quantity" name="Quantity" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="createdDate">Created Date</label>
+                    <input type="text" class="form-control" id="createdDate" name="CreatedDate" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="productPicture">Product Picture</label>
+            <input type="file" class="form-control-file" id="productPicture" name="ProductPicture" />
+        </div>
+        <div class="form-group text-center">
+            <button type="button" class="btn btn-danger">Delete</button>
+            <button type="button" class="btn btn-secondary">Cancel</button>
+            <button type="submit" class="btn btn-success">Save</button>
+        </div>
+    </form>
+</div>
+
+<style>
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-group img {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .form-group button {
+            margin: 5px;
+            width: 100px;
+        }
+</style>

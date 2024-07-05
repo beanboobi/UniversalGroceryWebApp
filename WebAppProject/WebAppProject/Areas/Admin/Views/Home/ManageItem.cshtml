@@ -9,6 +9,21 @@
     </div>
     <div class="col-md-9">
         <h2>Manage Items</h2>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search items...">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">
+                            <img src="~/images/search.png" alt="Search" style="width:20px;">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 text-right">
+                <a href="@Url.Action("AddProduct", "Home", new { area = "Admin" })" class="btn btn-primary">Add Item</a>
+            </div>
+        </div>
         <div class="table-responsive">
             <table class="table table-bordered">
                 <thead>
@@ -16,10 +31,10 @@
                         <th>ID</th>
                         <th>Name</th>
                         <th>Picture</th>
-                        <th >Description</th>
+                        <th>Description</th>
                         <th>Price</th>
                         <th>Qty</th>
-                        <th >Discount</th>
+                        <th>Discount</th>
                         <th>Category</th>
                         <th>Created Date</th>
                         <th>Action</th>
@@ -83,9 +98,18 @@
                             </a>
                         </td>
                     </tr>
-                   
                 </tbody>
             </table>
         </div>
     </div>
 </div>
+
+<style>
+    .form-control {
+        margin-bottom: 10px;
+    }
+
+    .btn-primary {
+        margin-bottom: 10px;
+    }
+</style>

@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets\\images\\remove.png"
     },
     {
+      "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\search.png",
+      "PackagePath": "staticwebassets\\images\\search.png"
+    },
+    {
       "Id": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\snackarmor.png",
       "PackagePath": "staticwebassets\\images\\snackarmor.png"
     },

@@ -14,5 +14,12 @@ namespace WebAppProject.Areas.Admin.Controllers
         {
             return View();
         }
+
+        public IActionResult AddProduct()
+        {
+            return View();
+        }
+
+
     }
 }

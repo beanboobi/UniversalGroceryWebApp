@@ -18,16 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Mac\Home\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\WebAppProject
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Mac/Home/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Areas/Admin/Views/Home/AddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxBZGRQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Mac/Home/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Mac/Home/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Areas/Admin/Views/Home/ManageItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxNYW5hZ2VJdGVtLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Mac/Home/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Areas/Admin/Views/ManageItem/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFuYWdlSXRlbVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Mac/Home/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Areas/Admin/Views/Shared/Error.cshtml]
