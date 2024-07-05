@@ -20,6 +20,10 @@ namespace WebAppProject.Areas.Admin.Controllers
             return View();
         }
 
+        public IActionResult AddEmployee()
+        {
+            return View();
+        }
         public IActionResult ManageEmployee()
         {
             return View();

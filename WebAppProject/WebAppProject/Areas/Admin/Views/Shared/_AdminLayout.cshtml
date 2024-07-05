@@ -23,11 +23,24 @@
             height: 40px;
             border-radius: 50%;
         }
+
+        .navbar-custom {
+            background-color:white;
+            color: black;
+        }
+
+            .navbar-custom .navbar-brand,
+            .navbar-custom .navbar-nav > li > a {
+                color: black;
+            }
     </style>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-custom navbar-fixed-top">
         <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Your Application</a>
+            </div>
             <div class="navbar-right">
                 <div class="admin-profile">
                     <span class="greeting">Hello, Admin1<br /><small>Have a nice day</small></span>
@@ -35,20 +48,18 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
+    </nav>
+    <div class="container body-content" style="padding-top: 70px;">
         <div class="row">
-            <div class="col-md-3">
-                
+            <div class="col-md-2">
                 @Html.Partial("_Sidebar")
             </div>
-            <div class="col-md-9">
-             
+            <div class="col-md-10">
                 @RenderBody()
             </div>
         </div>
     </div>
-    
+
     @RenderSection("scripts", required: false)
 </body>
 </html>

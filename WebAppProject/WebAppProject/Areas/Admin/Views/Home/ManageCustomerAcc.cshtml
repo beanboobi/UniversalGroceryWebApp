@@ -3,27 +3,23 @@
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
-<div class="row">
-    <div class="col-md-3">
-        @Html.Partial("_Sidebar")
-    </div>
-    <div class="col-md-9">
-        <h2>Manage Customer Account</h2>
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search customer acc...">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button">
-                            <img src="~/images/search.png" alt="Search" style="width:20px;">
-                        </button>
-                    </div>
+<div class="container-fluid">
+    <h2>Manage Customer Account</h2>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search customer...">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <img src="~/images/search.png" alt="Search" style="width:20px;">
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="table-responsive">
-            <table class="table table-bordered">
-                <thead>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
                     <tr>
                         <th style="width: 20%">Name </th>
                         <th style="width: 20%">Phone number </th>

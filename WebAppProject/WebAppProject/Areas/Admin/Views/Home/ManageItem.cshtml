@@ -3,104 +3,99 @@
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
-<div class="row">
-    <div class="col-md-3">
-        @Html.Partial("_Sidebar")
-    </div>
-    <div class="col-md-9">
-        <h2>Manage Items</h2>
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search items...">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button">
-                            <img src="~/images/search.png" alt="Search" style="width:20px;">
-                        </button>
-                    </div>
+<div class="container-fluid">
+    <h2>Manage Items</h2>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search items...">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <img src="~/images/search.png" alt="Search" style="width:20px;">
+                    </button>
                 </div>
             </div>
-            <div class="col-md-6 text-right">
-                <a href="@Url.Action("AddProduct", "Home", new { area = "Admin" })" class="btn btn-primary">Add Item</a>
-            </div>
         </div>
-        <div class="table-responsive">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th style="width: 5%">ID</th>
-                        <th style="width: 10%">Name</th>
-                        <th style="width: 10%">Picture</th>
-                        <th style ="width: 20%">Description</th>
-                        <th style ="width: 10%">Price</th>
-                        <th style="width: 7%">Qty</th>
-                        <th style="width: 7%">Discount</th>
-                        <th style="width: 16%">Category</th>
-                        <th style="width: 16%">Created Date</th>
-                        <th style ="width: 10%">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Apple</td>
-                        <td><img src="~/images/apple.png" alt="Apple" style="width:50px;" /></td>
-                        <td>Orgo Fresh South African Premium Granny</td>
-                        <td>3.50</td>
-                        <td>5000</td>
-                        <td>3%</td>
-                        <td>Vegetable and Fruit</td>
-                        <td>03-04-2024</td>
-                        <td>
-                            <a href="@Url.Action("Edit", "ManageItem", new { id = 3, area = "Admin" })">
-                                <img src="~/images/edit.png" alt="Edit" style="width:20px;" />
-                            </a>
-                            <a href="@Url.Action("Delete", "ManageItem", new { id = 3, area = "Admin" })">
-                                <img src="~/images/remove.png" alt="Remove" style="width:20px;" />
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Broccoli</td>
-                        <td><img src="~/images/brocoli.png" alt="Broccoli" style="width:50px;" /></td>
-                        <td>Orgo Fresh Royal Broccoli</td>
-                        <td>2.50</td>
-                        <td>4000</td>
-                        <td>2%</td>
-                        <td>Vegetable and Fruit</td>
-                        <td>13-11-2020</td>
-                        <td>
-                            <a href="@Url.Action("Edit", "ManageItem", new { id = 3, area = "Admin" })">
-                                <img src="~/images/edit.png" alt="Edit" style="width:20px;" />
-                            </a>
-                            <a href="@Url.Action("Delete", "ManageItem", new { id = 3, area = "Admin" })">
-                                <img src="~/images/remove.png" alt="Remove" style="width:20px;" />
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Milk</td>
-                        <td><img src="~/images/milk.png" alt="Milk" style="width:50px;" /></td>
-                        <td>Meiji Fresh Milk - Regular</td>
-                        <td>5.95</td>
-                        <td>499</td>
-                        <td>3%</td>
-                        <td>Milk & Dairies</td>
-                        <td>13-11-2020</td>
-                        <td>
-                            <a href="@Url.Action("Edit", "ManageItem", new { id = 3, area = "Admin" })">
-                                <img src="~/images/edit.png" alt="Edit" style="width:20px;" />
-                            </a>
-                            <a href="@Url.Action("Delete", "ManageItem", new { id = 3, area = "Admin" })">
-                                <img src="~/images/remove.png" alt="Remove" style="width:20px;" />
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="col-md-6 text-right">
+            <a href="@Url.Action("AddProduct", "Home", new { area = "Admin" })" class="btn btn-primary">Add Item</a>
         </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Picture</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Discount</th>
+                    <th>Category</th>
+                    <th>Created Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Apple</td>
+                    <td><img src="~/images/apple.png" alt="Apple" style="width:50px;" /></td>
+                    <td>Orgo Fresh South African Premium Granny</td>
+                    <td>3.50</td>
+                    <td>5000</td>
+                    <td>3%</td>
+                    <td>Vegetable and Fruit</td>
+                    <td>03-04-2024</td>
+                    <td>
+                        <a href="@Url.Action("Edit", "ManageItem", new { id = 1, area = "Admin" })">
+                            <img src="~/images/edit.png" alt="Edit" style="width:20px;" />
+                        </a>
+                        <a href="@Url.Action("Delete", "ManageItem", new { id = 1, area = "Admin" })">
+                            <img src="~/images/remove.png" alt="Remove" style="width:20px;" />
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Broccoli</td>
+                    <td><img src="~/images/brocoli.png" alt="Broccoli" style="width:50px;" /></td>
+                    <td>Orgo Fresh Royal Broccoli</td>
+                    <td>2.50</td>
+                    <td>4000</td>
+                    <td>2%</td>
+                    <td>Vegetable and Fruit</td>
+                    <td>13-11-2020</td>
+                    <td>
+                        <a href="@Url.Action("Edit", "ManageItem", new { id = 2, area = "Admin" })">
+                            <img src="~/images/edit.png" alt="Edit" style="width:20px;" />
+                        </a>
+                        <a href="@Url.Action("Delete", "ManageItem", new { id = 2, area = "Admin" })">
+                            <img src="~/images/remove.png" alt="Remove" style="width:20px;" />
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Milk</td>
+                    <td><img src="~/images/milk.png" alt="Milk" style="width:50px;" /></td>
+                    <td>Meiji Fresh Milk - Regular</td>
+                    <td>5.95</td>
+                    <td>499</td>
+                    <td>3%</td>
+                    <td>Milk & Dairies</td>
+                    <td>13-11-2020</td>
+                    <td>
+                        <a href="@Url.Action("Edit", "ManageItem", new { id = 3, area = "Admin" })">
+                            <img src="~/images/edit.png" alt="Edit" style="width:20px;" />
+                        </a>
+                        <a href="@Url.Action("Delete", "ManageItem", new { id = 3, area = "Admin" })">
+                            <img src="~/images/remove.png" alt="Remove" style="width:20px;" />
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 
