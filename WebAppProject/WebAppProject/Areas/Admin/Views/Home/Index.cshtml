@@ -1,16 +1,86 @@
-﻿
-
-
-@{
-    ViewData["Title"] = "Manage Items";
+﻿@{
+    ViewData["Title"] = "Dasboard";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
+<style>
+    .card {
+        height: 250px; 
+    }
 
-<div class="row">
-    <div class="col-md-3">
-        @Html.Partial("_Sidebar")
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 150px; 
+        object-fit: cover;
+    }
+
+    .card-text {
+        font-size: 14px; 
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <a href="ManageItem.cshtml" class="text-decoration-none">
+                <div class="card">
+                    <img src="~/images/pic1.png" class="card-img-top" alt="Manage Item" style=" margin-left:auto; margin-right:auto;width:40%">
+                    <div class="card-body">
+                        <h5 class="card-title">Manage Item</h5>
+                        <p class="card-text">
+                            The Manage Item page is an administrative interface for managing inventory. Key features include: Item List View, Search and Filter, Add/Edit/Delete Items.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 mb-4">
+            <a href="ManageCustomerAcc.cshtml" class="text-decoration-none">
+                <div class="card">
+                    <img src="~/images/pic2.png" class="card-img-top" alt="Manage Customer Account">
+                    <div class="card-body">
+                        <h5 class="card-title">Manage Customer Account</h5>
+                        <p class="card-text">
+                            The Manage Customer Account page is designed for administrators to oversee and manage customer accounts efficiently. Key features include Customer List View, Search, Edit, and Delete Customer.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
-    <div class="col-md-9">
-
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <a href="ManageEmployee.cshtml" class="text-decoration-none">
+                <div class="card">
+                    <img src="~/images/pic3.png" class="card-img-top" alt="Manage Employee Account">
+                    <div class="card-body">
+                        <h5 class="card-title">Manage Employee Account</h5>
+                        <p class="card-text">
+                            The Manage Employee Account page is designed for administrators to efficiently manage employee accounts. Key features include Employee List View, Search and Add/Edit/Delete Employees.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 mb-4">
+            <a href="ManageWebsite.cshtml" class="text-decoration-none">
+                <div class="card">
+                    <img src="~/images/pic4.png" class="card-img-top" alt="Manage Website">
+                    <div class="card-body">
+                        <h5 class="card-title">Manage Website</h5>
+                        <p class="card-text">
+                            The Manage Page is an administrative interface for managing various content elements on the website, including adding banners and advertisement pictures.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 </div>
