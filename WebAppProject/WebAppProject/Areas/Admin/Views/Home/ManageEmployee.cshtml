@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Manage Employee Account";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        @Html.Partial("_Sidebar")
+    </div>
+    <div class="col-md-9">
+        <h2>Manage Customer Account</h2>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search employee...">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">
+                            <img src="~/images/search.png" alt="Search" style="width:20px;">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th style="width: 20%">Name </th>
+                        <th style="width: 20%">Role </th>
+                        <th style="width: 20%">Create Date </th>
+                        <th style="width: 20%">Salary</th>
+                        <th style="width: 20%">Action </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>David Wagner</td>
+                        <td>Super Admin</td>
+                        <td>24 Otc, 2015</td>
+                        <td>4000</td>
+                        <td>
+                            <a href="@Url.Action("Edit", "ManageCustomerAcc", new { id = 3, area = "Admin" })">
+                                <img src="~/images/edit.png" alt="Edit" style="width:20px;" />
+                            </a>
+                            <a href="@Url.Action("Delete", "ManageCustomerAcc", new { id = 3, area = "Admin" })">
+                                <img src="~/images/remove.png" alt="Remove" style="width:20px;" />
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Eugene</td>
+                        <td>Admin</td>
+                        <td>24 Otc, 2015</td>
+                        <td>3000</td>
+                        <td>
+                            <a href="@Url.Action("Edit", "ManageCustomerAcc", new { id = 3, area = "Admin" })">
+                                <img src="~/images/edit.png" alt="Edit" style="width:20px;" />
+                            </a>
+                            <a href="@Url.Action("Delete", "ManageCustomerAcc", new { id = 3, area = "Admin" })">
+                                <img src="~/images/remove.png" alt="Remove" style="width:20px;" />
+                            </a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<style>
+    .form-control {
+        margin-bottom: 10px;
+    }
+
+    .btn-primary {
+        margin-bottom: 10px;
+    }
+</style>

@@ -22,12 +22,32 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxBZGRQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Mac/Home/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Areas/Admin/Views/Home/CustomerEditForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxDdXN0b21lckVkaXRGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Mac/Home/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Areas/Admin/Views/Home/EmployeeEditForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxFbXBsb3llZUVkaXRGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Mac/Home/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Mac/Home/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Areas/Admin/Views/Home/ManageCustomerAcc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxNYW5hZ2VDdXN0b21lckFjYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Mac/Home/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Areas/Admin/Views/Home/ManageEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxNYW5hZ2VFbXBsb3llZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Mac/Home/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Areas/Admin/Views/Home/ManageItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxNYW5hZ2VJdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Mac/Home/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Areas/Admin/Views/Home/ManageWebsite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxNYW5hZ2VXZWJzaXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Mac/Home/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Areas/Admin/Views/Shared/Error.cshtml]

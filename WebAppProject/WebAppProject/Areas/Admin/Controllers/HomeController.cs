@@ -20,6 +20,25 @@ namespace WebAppProject.Areas.Admin.Controllers
             return View();
         }
 
+        public IActionResult ManageEmployee()
+        {
+            return View();
+        }
+
+        public IActionResult ManageCustomerAcc()
+        {
+            return View();
+        }
+
+        public IActionResult ManageWebsite()
+        {
+            return View();
+        }
+
+        public IActionResult Edit ()
+        {
+            return View("CustomerEditForm");
+        }
 
     }
 }
