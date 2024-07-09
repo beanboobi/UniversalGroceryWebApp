@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\WebAppProject.csproj": {}
+    "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\WebAppProject.csproj": {}
   },
   "projects": {
-    "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\WebAppProject.csproj": {
+    "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\WebAppProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\WebAppProject.csproj",
+        "projectUniqueName": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\WebAppProject.csproj",
         "projectName": "WebAppProject",
-        "projectPath": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\WebAppProject.csproj",
-        "packagesPath": "C:\\Users\\bean\\.nuget\\packages\\",
-        "outputPath": "C:\\Mac\\Home\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\obj\\",
+        "projectPath": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\WebAppProject.csproj",
+        "packagesPath": "C:\\Users\\eugen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\bean\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eugen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
