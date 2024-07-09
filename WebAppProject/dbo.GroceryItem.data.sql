@@ -1,0 +1,8 @@
+﻿WITH cte AS (
+    SELECT Id
+    FROM GroceryItem
+    ORDER BY Id
+    OFFSET 0 ROWS FETCH NEXT 3 ROWS ONLY
+)
+DELETE FROM GroceryItem
+WHERE Id IN (SELECT Id FROM cte);
