@@ -179,17 +179,6 @@
         var productId = element.closest('.product-card').getAttribute('data-id');
         window.location.href = '/Home/ProductDetails/' + productId;
     }
-    function addToCart(element) {
-        var productId = element.closest('.product-card').getAttribute('data-id');
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "/cart/add", true);
-        xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-                alert("Product added to cart successfully!");
-            }
-        };
-        xhr.send(JSON.stringify({ id: productId }));
 </script>
 
 <style>
@@ -327,13 +316,14 @@
     }
 
     .product-card {
-        width: 22%;
+        width: calc(22% - 20px);
         border: 1px solid #ddd;
         border-radius: 5px;
         overflow: hidden;
         background-color: #fff;
         text-align: center;
         padding: 10px;
+        margin-bottom: 20px;
     }
 
         .product-card img {
@@ -343,6 +333,9 @@
 
     .product-info {
         padding: 10px;
+        flex: 1; 
+        display: flex; 
+        flex-direction: column; 
     }
 
         .product-info h3 {
@@ -374,10 +367,10 @@
     }
 
     .btn-add {
+        margin-top: auto;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        margin-top: 10px;
         padding: 10px 20px;
         font-size: 1em;
         color: #fff;
@@ -387,6 +380,7 @@
         cursor: pointer;
         text-align: center;
         transition: background-color 0.3s;
+        width: 100%;
     }
 
         .btn-add:hover {
