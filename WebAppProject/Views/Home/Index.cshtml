@@ -44,6 +44,9 @@
             <li><a href="#">Top 50 Offers</a></li>
             <li><a href="#">New Arrivals</a></li>
         </ul>
+        <div class="sidebar-banner">
+            <img src="https://thumbs.dreamstime.com/z/big-discount-farm-food-banner-vector-illustration-natural-vegetable-sale-organic-farming-retail-vegan-product-store-poster-88094076.jpg" alt="Sidebar Banner">
+        </div>
     </aside>
 
     <main class="main-content">
@@ -55,7 +58,7 @@
             <div class="products-grid">
                 <!-- Product Cards -->
                 <div class="product-card" data-id="1">
-                    <img src="/images/chocochip.png.png" alt="Fantasy Crunchy Choco Chip Cookies" onclick="goToProductDetails(this)">
+                    <img src="/images/chocochip.png.png" alt="Fantasy Crunchy Choco Chip Cookies      " onclick="goToProductDetails(this)">
                     <div class="product-info">
                         <h3 onclick="goToProductDetails(this)">Fantasy Crunchy Choco Chip Cookies</h3>
                         <div class="price">
@@ -88,7 +91,7 @@
                     </div>
                 </div>
                 <div class="product-card" data-id="4">
-                    <img src="/images/milk1l.png" alt="Healthy Long Life Toned Milk" onclick="goToProductDetails(this)">
+                    <img src="/images/milk1l.png" alt="Healthy Long Life Toned Milk      " onclick="goToProductDetails(this)">
                     <div class="product-info">
                         <h3 onclick="goToProductDetails(this)">Healthy Long Life Toned Milk</h3>
                         <div class="price">
@@ -99,7 +102,7 @@
                     </div>
                 </div>
                 <div class="product-card" data-id="5">
-                    <img src="/images/beef.png" alt="Raw Mutton Leg, Packaging 5 Kg" onclick="goToProductDetails(this)">
+                    <img src="/images/beef.png" alt="Raw Mutton Leg, Packaging 5 Kg      " onclick="goToProductDetails(this)">
                     <div class="product-info">
                         <h3 onclick="goToProductDetails(this)">Raw Mutton Leg, Packaging 5 Kg</h3>
                         <div class="price">
@@ -110,7 +113,7 @@
                     </div>
                 </div>
                 <div class="product-card" data-id="6">
-                    <img src="/images/coffee.png" alt="Cold Brew Coffee Instant Coffee" onclick="goToProductDetails(this)">
+                    <img src="/images/coffee.png" alt="Cold Brew Coffee Instant Coffee     " onclick="goToProductDetails(this)">
                     <div class="product-info">
                         <h3 onclick="goToProductDetails(this)">Cold Brew Coffee Instant Coffee</h3>
                         <div class="price">
@@ -132,7 +135,7 @@
                     </div>
                 </div>
                 <div class="product-card" data-id="8">
-                    <img src="/images/neufarm.png" alt="Neu Farm Unpolished Desi Toor Dal" onclick="goToProductDetails(this)">
+                    <img src="/images/neufarm.png" alt="Neu Farm Unpolished Desi Toor Dal       " onclick="goToProductDetails(this)">
                     <div class="product-info">
                         <h3 onclick="goToProductDetails(this)">Neu Farm Unpolished Desi Toor Dal</h3>
                         <div class="price">
@@ -289,6 +292,14 @@
     .main-content {
         width: 80%;
         padding: 20px;
+    }
+    
+    .sidebar-banner img {
+        width: 100%;
+        height: 750px; 
+        object-fit: cover; 
+        object-position: center; 
+        border-radius: 20px;
     }
 
     .section-header {

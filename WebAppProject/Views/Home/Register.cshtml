@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - WebAppProject</title>
+    <title>Sign Up - WebAppProject</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <style>
         body {
@@ -84,8 +84,7 @@
         .btn {
             width: 100%;
             padding: 10px;
-            background-color: #1877f2;
-            border: none;
+            background-color: #28a745;
             color: #fff;
             font-size: 1em;
             cursor: pointer;
@@ -93,8 +92,7 @@
         }
 
             .btn:hover {
-                background-color: #165cdb;
-            }
+                background-color: #218838; 
 
         .signup-link {
             display: block;
@@ -113,15 +111,15 @@
     <div class="container-fluid">
         <div class="row no-gutters">
             <div class="left-side col-md-6">
-                <img src="/images/Logo.png" alt="WebAppProject Logo" style=" width:500px ">
+                <img src="/images/Logo.png" alt="WebAppProject Logo" style="width: 500px;">
             </div>
             <div class="right-side col-md-6">
                 <div class="login-container">
-                    <h2>Create a account</h2>
+                    <h2>Create an account</h2>
                     <form action="/Home/Login" method="post">
                         <div class="form-group mb-3">
                             <label for="Name">Your Name</label>
-                            <input type="Name" class="form-control" id="Name" name="Name" required>
+                            <input type="text" class="form-control" id="Name" name="Name" required>
                         </div>
                         <div class="form-group mb-3">
                             <label for="email">Email address</label>
@@ -132,13 +130,13 @@
                             <input type="password" class="form-control" id="password" name="password" required>
                         </div>
                         <div class="form-group mb-3">
-                            <label for="password"> Confirm Password</label>
-                            <input type="password" class="form-control" id="password" name="password" required>
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
                         </div>
                         <button type="submit" class="btn">Sign Up</button>
                     </form>
                     <div class="text-center mt-3">
-                        Already have a account? <a href="/Home/Login" class="signup-link">Log In </a>
+                        Already have an account? <a href="/Home/Login" class="signup-link">Log In</a>
                     </div>
                 </div>
             </div>

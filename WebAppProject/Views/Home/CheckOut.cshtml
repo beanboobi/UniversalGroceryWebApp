@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
+    <title>Check Out</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -78,6 +78,26 @@
             margin-top: 20px;
         }
 
+        .payment-options {
+            margin-top: 20px;
+        }
+
+            .payment-options label {
+                font-weight: normal;
+            }
+
+            .payment-options input {
+                margin-right: 10px;
+            }
+
+        .terms {
+            margin: 20px 0;
+        }
+
+            .terms input {
+                margin-right: 10px;
+            }
+
         .btn-checkout {
             width: 100%;
             padding: 15px;
@@ -97,7 +117,7 @@
 </head>
 <body>
     <div class="checkout-container">
-        <h1>Checkout</h1>
+        <h1>Check Out</h1>
         <div class="checkout-form">
             <div class="billing-details">
                 <h2>Billing Details</h2>
@@ -139,6 +159,26 @@
                     <span>Total</span>
                     <span>$53.38</span>
                 </div>
+
+                <div class="payment-options">
+                    <h2>Payment Options</h2>
+                    <label>
+                        <input type="radio" name="payment" value="cod" checked> <strong>Cash On Delivery</strong><br>
+                       - Pay with cash upon delivery.
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="payment" value="card"> <strong>Credit/Debit Card</strong><br>
+                       - Pay with your Visa, Mastercard.
+                    </label>
+                </div>
+
+                <div class="terms">
+                    <label>
+                        <input type="checkbox" name="terms" required> I agree to the <a href="#">Terms & conditions</a>, <a href="#">Privacy policy</a> & <a href="#">Return policy</a>
+                    </label>
+                </div>
+
                 <button class="btn-checkout">Place Order</button>
             </div>
         </div>
