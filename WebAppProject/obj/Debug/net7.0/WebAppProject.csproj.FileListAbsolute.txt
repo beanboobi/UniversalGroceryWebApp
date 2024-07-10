@@ -91,3 +91,14 @@ C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppP
 C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.genruntimeconfig.cache
 C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net7.0\WebAppProject.pdb
 C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\ref\WebAppProject.dll
+C:\Users\kaibo\OneDrive\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kaibo\OneDrive\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.AssemblyInfoInputs.cache
+C:\Users\kaibo\OneDrive\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.AssemblyInfo.cs
+C:\Users\kaibo\OneDrive\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.csproj.CoreCompileInputs.cache
+C:\Users\kaibo\OneDrive\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kaibo\OneDrive\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.RazorAssemblyInfo.cache
+C:\Users\kaibo\OneDrive\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.RazorAssemblyInfo.cs
+C:\Users\kaibo\OneDrive\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.sourcelink.json
+C:\Users\kaibo\OneDrive\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.dll
+C:\Users\kaibo\OneDrive\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\refint\WebAppProject.dll
+C:\Users\kaibo\OneDrive\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.pdb

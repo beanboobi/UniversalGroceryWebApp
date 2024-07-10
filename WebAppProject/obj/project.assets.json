@@ -8,23 +8,23 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Kelvin Mai\\.nuget\\packages\\": {},
+    "C:\\Users\\kaibo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject.csproj",
+      "projectUniqueName": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject.csproj",
       "projectName": "WebAppProject",
-      "projectPath": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject.csproj",
-      "packagesPath": "C:\\Users\\Kelvin Mai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\obj\\",
+      "projectPath": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject.csproj",
+      "packagesPath": "C:\\Users\\kaibo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Kelvin Mai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kaibo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -46,11 +46,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -75,7 +70,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

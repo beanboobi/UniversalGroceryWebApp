@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "exQSXGQkMuw9OtBMbQ62rl0QLlHKXVc7abagKAZatZA=",
+  "Hash": "YAvtjY+CkyBx7x52FRebWhONFPttkETZMD4HF7+BRnU=",
   "Source": "WebAppProject",
   "BasePath": "_content/WebAppProject",
   "Mode": "Default",
@@ -319,6 +319,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\edit.png"
+    },
+    {
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\logo.png",
+      "SourceId": "WebAppProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\",
+      "BasePath": "_content/WebAppProject",
+      "RelativePath": "images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
       "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\milk.png",

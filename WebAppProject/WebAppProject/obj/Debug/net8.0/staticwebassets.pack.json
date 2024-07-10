@@ -65,6 +65,10 @@
       "PackagePath": "staticwebassets\\images\\edit.png"
     },
     {
+      "Id": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
       "Id": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject\\wwwroot\\images\\milk.png",
       "PackagePath": "staticwebassets\\images\\milk.png"
     },
