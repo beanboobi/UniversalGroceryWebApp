@@ -54,7 +54,7 @@
                         <td>@item.Category</td>
                         <td>@item.CreatedDate</td>
                         <td>
-                            <a href="@Url.Action("Edit", "ManageItem", new { id = item.Id, area = "Admin" })" class="btn btn-sm btn-warning">
+                            <a href="@Url.Action("EditItem", "Home", new { id = item.Id, area = "Admin" })" class="btn btn-sm btn-warning">
                                 Edit
                             </a>
                             <form asp-action="DeleteItem" asp-route-id="@item.Id" method="post" style="display:inline;">
