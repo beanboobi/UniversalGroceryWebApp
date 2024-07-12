@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ceAuUBWjEt1j2WXyA2XyJcJhwdxZr0pJDirYn+0zev4=",
+  "Hash": "OOiDt3vGRRosVT8alqUz9YKCbr/oV3lYckp1BZMP+KQ=",
   "Source": "WebAppProject",
   "BasePath": "_content/WebAppProject",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\ads.png"
+    },
+    {
+      "Identity": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\americanexpress.png",
+      "SourceId": "WebAppProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "BasePath": "_content/WebAppProject",
+      "RelativePath": "images/americanexpress.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\americanexpress.png"
     },
     {
       "Identity": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\banner.png",
@@ -302,6 +321,25 @@
       "OriginalItemSpec": "wwwroot\\images\\Logo.png"
     },
     {
+      "Identity": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\mastercard.png",
+      "SourceId": "WebAppProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "BasePath": "_content/WebAppProject",
+      "RelativePath": "images/mastercard.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\mastercard.png"
+    },
+    {
       "Identity": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\milk1l.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
@@ -395,6 +433,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\snackarmor.png"
+    },
+    {
+      "Identity": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\visacard.png",
+      "SourceId": "WebAppProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "BasePath": "_content/WebAppProject",
+      "RelativePath": "images/visacard.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\visacard.png"
     },
     {
       "Identity": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\js\\site.js",

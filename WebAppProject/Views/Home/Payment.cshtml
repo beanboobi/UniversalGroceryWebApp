@@ -1,5 +1,143 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Payment";
 }
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - My Web Application</title>
+    <style>
+        .payment-form {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #f7f7f7;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+
+            .payment-form h2 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .payment-form .form-group {
+                margin-bottom: 15px;
+            }
+
+            .payment-form label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .payment-form .form-control {
+                width: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            .payment-form .expiration-date {
+                display: flex;
+                justify-content: space-between;
+            }
+
+                .payment-form .expiration-date select {
+                    width: 48%;
+                }
+
+            .payment-form img {
+                width: 50px;
+                margin-right: 10px;
+            }
+
+            .payment-form .button-group {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+            }
+
+                .payment-form .button-group button {
+                    width: 48%;
+                    padding: 10px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    border: none;
+                }
+
+                .payment-form .button-group .pay-button {
+                    background-color: #2ecc71;
+                    color: white;
+                }
+
+                    .payment-form .button-group .pay-button:hover {
+                        background-color: #27ae60;
+                    }
+
+                .payment-form .button-group .cancel-button {
+                    background-color: #e74c3c;
+                    color: white;
+                }
+
+                    .payment-form .button-group .cancel-button:hover {
+                        background-color: #c0392b;
+                    }
+    </style>
+</head>
+<body>
+    <div class="payment-form">
+        <h2>Let's Make Payment</h2>
+        <form>
+            <div class="form-group">
+                <label for="owner">Name of Owner</label>
+                <input type="text" class="form-control" id="owner" placeholder="Kelvin Mai">
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" class="form-control" id="cvv" placeholder="125">
+            </div>
+            <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" class="form-control" id="cardNumber" placeholder="1231231231234">
+            </div>
+            <div class="form-group">
+                <label for="expMonth">Expiration Date</label>
+                <div class="expiration-date">
+                    <select id="expMonth" class="form-control">
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                    </select>
+                    <select id="expYear" class="form-control">
+                        @for (int year = DateTime.Now.Year; year <= DateTime.Now.Year + 20; year++)
+                        {
+                            <option>@year</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <img src="~/images/visacard.png" alt="Visa">
+                <img src="~/images/mastercard.png" alt="MasterCard">
+                <img src="~/images/americanexpress.png" alt="American Express">
+            </div>
+            <div class="button-group">
+                <button type="submit" class="pay-button">Pay</button>
+                <button type="button" class="cancel-button" onclick="window.location.href='@Url.Action("Index", "Home")'">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

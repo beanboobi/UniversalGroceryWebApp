@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\images\\ads.png"
     },
     {
+      "Id": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\americanexpress.png",
+      "PackagePath": "staticwebassets\\images\\americanexpress.png"
+    },
+    {
       "Id": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\banner-right.jpg",
       "PackagePath": "staticwebassets\\images\\banner-right.jpg"
     },
@@ -61,6 +65,10 @@
       "PackagePath": "staticwebassets\\images\\dogfood.png"
     },
     {
+      "Id": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\mastercard.png",
+      "PackagePath": "staticwebassets\\images\\mastercard.png"
+    },
+    {
       "Id": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\milk1l.png",
       "PackagePath": "staticwebassets\\images\\milk1l.png"
     },
@@ -75,6 +83,10 @@
     {
       "Id": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\snackarmor.png",
       "PackagePath": "staticwebassets\\images\\snackarmor.png"
+    },
+    {
+      "Id": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\visacard.png",
+      "PackagePath": "staticwebassets\\images\\visacard.png"
     },
     {
       "Id": "C:\\Users\\Kelvin Mai\\OneDrive\\Tài liệu\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\js\\site.js",
