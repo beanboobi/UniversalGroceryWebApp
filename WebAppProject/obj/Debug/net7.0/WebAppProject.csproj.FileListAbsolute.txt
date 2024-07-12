@@ -67,6 +67,7 @@ C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppP
 C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net7.0\WebAppProject.deps.json
 C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net7.0\WebAppProject.runtimeconfig.json
 C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net7.0\WebAppProject.dll
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net7.0\WebAppProject.pdb
 C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.AssemblyInfoInputs.cache
 C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.AssemblyInfo.cs
@@ -89,5 +90,4 @@ C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppP
 C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\refint\WebAppProject.dll
 C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.pdb
 C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.genruntimeconfig.cache
-C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net7.0\WebAppProject.pdb
 C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\ref\WebAppProject.dll

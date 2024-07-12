@@ -45,7 +45,7 @@
             <li><a href="#">New Arrivals</a></li>
         </ul>
         <div class="sidebar-banner">
-            <img src="https://thumbs.dreamstime.com/z/big-discount-farm-food-banner-vector-illustration-natural-vegetable-sale-organic-farming-retail-vegan-product-store-poster-88094076.jpg" alt="Sidebar Banner">
+            <img src="~/images/banner.png" alt="Sidebar Banner">
         </div>
     </aside>
 
@@ -91,9 +91,9 @@
                     </div>
                 </div>
                 <div class="product-card" data-id="4">
-                    <img src="/images/milk1l.png" alt="Healthy Long Life Toned Milk      " onclick="goToProductDetails(this)">
+                    <img src="/images/milk1l.png" alt="Healthy Long Life Toned Milk " onclick="goToProductDetails(this)">
                     <div class="product-info">
-                        <h3 onclick="goToProductDetails(this)">Healthy Long Life Toned Milk</h3>
+                        <h3 onclick="goToProductDetails(this)">Healthy Long Life Toned Milk 1.5L</h3>
                         <div class="price">
                             <span class="current-price">$26.69</span>
                             <span class="original-price">$28.66</span>
@@ -104,7 +104,7 @@
                 <div class="product-card" data-id="5">
                     <img src="/images/beef.png" alt="Raw Mutton Leg, Packaging 5 Kg      " onclick="goToProductDetails(this)">
                     <div class="product-info">
-                        <h3 onclick="goToProductDetails(this)">Raw Mutton Leg, Packaging 5 Kg</h3>
+                        <h3 onclick="goToProductDetails(this)">Raw Mutton Leg, Packaging with 5kg </h3>
                         <div class="price">
                             <span class="current-price">$26.69</span>
                             <span class="original-price">$28.66</span>
@@ -113,9 +113,9 @@
                     </div>
                 </div>
                 <div class="product-card" data-id="6">
-                    <img src="/images/coffee.png" alt="Cold Brew Coffee Instant Coffee     " onclick="goToProductDetails(this)">
+                    <img src="/images/coffee.png" alt="Cold Brew Coffee Instant Coffee" onclick="goToProductDetails(this)">
                     <div class="product-info">
-                        <h3 onclick="goToProductDetails(this)">Cold Brew Coffee Instant Coffee</h3>
+                        <h3 onclick="goToProductDetails(this)">Cold Brew Coffee Instant Coffee  Original Taste </h3>
                         <div class="price">
                             <span class="current-price">$26.69</span>
                             <span class="original-price">$28.66</span>
@@ -126,7 +126,7 @@
                 <div class="product-card" data-id="7">
                     <img src="/images/snackarmor.png" alt="SnackAmor Combo Pack of Jowar Stick and Jowar Chips" onclick="goToProductDetails(this)">
                     <div class="product-info">
-                        <h3 onclick="goToProductDetails(this)">SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h3>
+                        <h3 onclick="goToProductDetails(this)">SnackAmor Combo Pack of Jowar Stick </h3>
                         <div class="price">
                             <span class="current-price">$26.69</span>
                             <span class="original-price">$28.66</span>
@@ -148,7 +148,7 @@
                 <div class="product-card" data-id="9">
                     <img src="/images/dogfood.png" alt="Dog Treats Natural Yak Milk Bars For Small Dogs" onclick="goToProductDetails(this)">
                     <div class="product-info">
-                        <h3 onclick="goToProductDetails(this)">Dog Treats Natural Yak Milk Bars For Small Dogs</h3>
+                        <h3 onclick="goToProductDetails(this)">Dog Treats Natural Yak Milk Bars For Dogs</h3>
                         <div class="price">
                             <span class="current-price">$26.69</span>
                             <span class="original-price">$28.66</span>
@@ -197,9 +197,9 @@
     .banner-left {
         width: 60%;
         padding: 20px;
-        background: url('https://farms2b.com/wp-content/uploads/2022/09/AdobeStock_281904988-22.png') no-repeat center center;
+        background-image: url('../images/ads.png');
         background-size: cover;
-        color: #1D1C1B;
+        color: black;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -215,27 +215,31 @@
             }
 
         .banner-left p {
-            font-size: 0.75em;
+            font-size: 0.65em;
             margin-bottom: 10px;
         }
 
     .shop-now {
-        padding: 10px 20px;
-        background-color: green;
-        color: #fff;
+        padding: 5px 10px; 
+        
+        color: green; 
         text-decoration: none;
         font-size: 1em;
+        font-weight: bold; 
         margin-top: 10px;
         display: inline-block;
+        border: none; 
+        border-radius: 3px; 
     }
+
+
 
     .banner-right {
         width: 35%;
-        display: flex;
-        flex-direction: column;
         gap: 20px;
-        background: url('https://static.vecteezy.com/system/resources/previews/035/944/316/non_2x/ai-generated-healthy-food-in-paper-bag-vegetables-and-fruits-on-white-background-ai-generated-free-photo.jpg') no-repeat center center; /* Add your background image URL here */
+        background: url('../images/banner-right.jpg');
         background-size: cover;
+        background-position: center;
         padding: 20px;
     }
 
@@ -250,13 +254,13 @@
         .banner-ad h2 {
             font-size: 1.5em;
             margin-bottom: 10px;
-            color: green;
+            color:Black;
         }
 
         .banner-ad p {
             font-size: 1em;
             margin-bottom: 10px;
-            color: #666;
+            color: black;
         }
 
     .homepage {
@@ -335,24 +339,31 @@
         text-align: center;
         padding: 10px;
         margin-bottom: 20px;
+        flex:none;
+        
+
+        
     }
 
         .product-card img {
             max-width: 100%;
             height: auto;
+            
         }
 
     .product-info {
         padding: 10px;
-        flex: 1; 
+        flex: none; 
         display: flex; 
         flex-direction: column; 
+        flex-grow: 1;
     }
 
         .product-info h3 {
             font-size: 1em;
             margin: 10px 0;
             cursor: pointer;
+            
         }
 
             .product-info h3:hover {
