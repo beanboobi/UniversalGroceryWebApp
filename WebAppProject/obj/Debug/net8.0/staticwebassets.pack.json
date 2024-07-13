@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Logo.png",
+      "PackagePath": "staticwebassets\\images\\Logo.png"
+    },
+    {
       "Id": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\NewLogo.png",
       "PackagePath": "staticwebassets\\images\\NewLogo.png"
     },
@@ -29,8 +33,28 @@
       "PackagePath": "staticwebassets\\images\\adminprofile.png"
     },
     {
+      "Id": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\ads.png",
+      "PackagePath": "staticwebassets\\images\\ads.png"
+    },
+    {
+      "Id": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\americanexpress.png",
+      "PackagePath": "staticwebassets\\images\\americanexpress.png"
+    },
+    {
       "Id": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\apple.png",
       "PackagePath": "staticwebassets\\images\\apple.png"
+    },
+    {
+      "Id": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\banner-right.jpg",
+      "PackagePath": "staticwebassets\\images\\banner-right.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\banner.png",
+      "PackagePath": "staticwebassets\\images\\banner.png"
+    },
+    {
+      "Id": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\banner3.png",
+      "PackagePath": "staticwebassets\\images\\banner3.png"
     },
     {
       "Id": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\beef.png",
@@ -65,8 +89,8 @@
       "PackagePath": "staticwebassets\\images\\edit.png"
     },
     {
-      "Id": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\logo.png",
-      "PackagePath": "staticwebassets\\images\\logo.png"
+      "Id": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\mastercard.png",
+      "PackagePath": "staticwebassets\\images\\mastercard.png"
     },
     {
       "Id": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\milk.png",
@@ -95,6 +119,10 @@
     {
       "Id": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\snackarmor.png",
       "PackagePath": "staticwebassets\\images\\snackarmor.png"
+    },
+    {
+      "Id": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\visacard.png",
+      "PackagePath": "staticwebassets\\images\\visacard.png"
     },
     {
       "Id": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\js\\site.js",

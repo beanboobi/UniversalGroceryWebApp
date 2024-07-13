@@ -1,4 +1,4 @@
-﻿@model WebAppProject.Models.Product
+﻿@model WebAppProject.ViewModels.GroceryItemViewModel
 
 @{
     ViewData["Title"] = "Product Details";
@@ -10,10 +10,10 @@
     <img src="@Model.ImageUrl" alt="@Model.Name" class="main-image">
     <p>@Model.Description</p>
     <div class="price">
-        <span class="current-price">$@Model.CurrentPrice.ToString("F2")</span>
-        @if (Model.OriginalPrice.HasValue)
+        <span class="current-price">$@Model.Price.ToString("F2")</span>
+        @if (Model.OriginalPrice != Model.Price)
         {
-            <span class="original-price">$@Model.OriginalPrice.Value.ToString("F2")</span>
+            <span class="original-price">$@Model.OriginalPrice.ToString("F2")</span>
         }
     </div>
     <div class="quantity-selection">

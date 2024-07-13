@@ -5,83 +5,66 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebAppProject.Data;
 using WebAppProject.Models;
-<<<<<<< HEAD
 using WebAppProject.ViewModels;
-using System.Net.Mail;
-
-=======
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Linq;
->>>>>>> Branch-Kelvin-New
 
 namespace WebAppProject.Controllers
 {
-<<<<<<< HEAD
-    private readonly ILogger<HomeController> _logger;
-    private readonly ApplicationDbContext _context;
-
-    public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
+    
+    public class HomeController : Controller
     {
-        _logger = logger;
-        _context = context;
-    }
-        
-    public IActionResult Index()
-    {
-        var items = _context.GroceryItem
 
-            .OrderByDescending(item => item.Discount)
-            .Take(8)
-            .Select(item => new GroceryItemViewModel
+        private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationDbContext _context;
+
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
+        {
+            _logger = logger;
+            _context = context;
+        }
+
+        public IActionResult Index()
+        {
+            var items = _context.GroceryItem
+
+                .OrderByDescending(item => item.Discount)
+                .Take(8)
+                .Select(item => new GroceryItemViewModel
                 {
+                    Id = item.Id,
                     Name = item.Name,
                     Price = item.Price - (item.Price * ((decimal)item.Discount / 100)),
                     ImageUrl = item.ImageUrl,
                     OriginalPrice = item.Price, // Assuming original price is the same for now
+                    Description = item.Description,
                 })
-           .ToList();
+               .ToList();
 
-        return View(items);
-    }
-=======
-    public class HomeController : Controller
-    {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
+            return View(items);
         }
->>>>>>> Branch-Kelvin-New
 
-        // Simulate a product list
-        private List<Product> Products = new List<Product>
-        {
-            new Product { Id = 1, Name = "Fantasy Crunchy Choco Chip Cookies", Description = "Delicious choco chip cookies", ImageUrl = "/images/chocochip.png.png", CurrentPrice = 26.69m, OriginalPrice = 28.66m },
-            new Product { Id = 2, Name = "Peanut Butter Bite Premium Butter Cookies", Description = "Tasty peanut butter cookies", ImageUrl = "/images/peanut.png", CurrentPrice = 26.69m, OriginalPrice = 28.66m },
-            new Product { Id = 3, Name = "Yumitos Chilli Sprinkled Potato Chips", Description = "Spicy and crunchy potato chips", ImageUrl = "/images/chips.png", CurrentPrice = 26.69m, OriginalPrice = 28.66m },
-            new Product { Id = 4, Name = "Healthy Long Life Toned Milk", Description = "Nutritious and long-lasting milk", ImageUrl = "/images/milk1l.png", CurrentPrice = 26.69m, OriginalPrice = 28.66m },
-            new Product { Id = 5, Name = "Raw Mutton Leg, Packaging 5 Kg", Description = "Fresh and tender mutton leg", ImageUrl = "/images/beef.png", CurrentPrice = 26.69m, OriginalPrice = 28.66m },
-            new Product { Id = 6, Name = "Cold Brew Coffee Instant Coffee", Description = "Rich and smooth cold brew coffee", ImageUrl = "/images/coffee.png", CurrentPrice = 26.69m, OriginalPrice = 28.66m },
-            new Product { Id = 7, Name = "SnackAmor Combo Pack of Jowar Stick and Jowar Chips", Description = "Healthy and tasty snack combo", ImageUrl = "/images/snackarmor.png", CurrentPrice = 26.69m, OriginalPrice = 28.66m },
-            new Product { Id = 8, Name = "Neu Farm Unpolished Desi Toor Dal", Description = "Organic and nutritious toor dal", ImageUrl = "/images/neufarm.png", CurrentPrice = 26.69m, OriginalPrice = 28.66m },
-            new Product { Id = 9, Name = "Dog Treats Natural Yak Milk Bars For Small Dogs", Description = "Healthy treats for small dogs", ImageUrl = "/images/dogfood.png", CurrentPrice = 26.69m, OriginalPrice = 28.66m },
-            new Product { Id = 10, Name = "Blended Instant Coffee 50 g Buy 1 Get 1 Free", Description = "Delicious instant coffee, buy 1 get 1 free", ImageUrl = "/images/coffee1get1.png", CurrentPrice = 26.69m, OriginalPrice = 28.66m },
-        };
-
-        public IActionResult Index()
-        {
-            return View(Products);
-        }
 
         public IActionResult ProductDetails(int id)
         {
-            var product = Products.FirstOrDefault(p => p.Id == id);
+            var product = _context.GroceryItem
+                .Where(p => p.Id == id)
+                .Select(item => new GroceryItemViewModel
+                {
+                    Id = item.Id,
+                    Name = item.Name,
+                    Price = item.Price - (item.Price * ((decimal)item.Discount / 100)),
+                    ImageUrl = item.ImageUrl,
+                    OriginalPrice = item.Price, // Assuming original price is the same for now
+                    Description = item.Description,
+                })
+                .FirstOrDefault(); ;
             if (product == null)
             {
                 return NotFound();
             }
+
             return View(product);
         }
 

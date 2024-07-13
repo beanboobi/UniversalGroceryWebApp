@@ -57,13 +57,12 @@
                 <a href="#" class="see-all">See All</a>
             </div>
             <div class="products-grid">
-<<<<<<< HEAD
                 @foreach (var item in Model)
                 {
-                    <div class="product-card">
-                        <img src="@item.ImageUrl" alt="@item.Name">
+                    <div class="product-card" data-id="@item.Id">
+                        <img src="@item.ImageUrl" alt="@item.Name" onclick="goToProductDetails(this)">
                         <div class="product-info">
-                            <h3>@item.Name</h3>
+                            <h3 onclick="goToProductDetails(this)">@item.Name</h3>
                             <div class="price">
                                 <span class="current-price">
                                     $
@@ -74,123 +73,11 @@
                                     @item.OriginalPrice.ToString("F2")
                                 </span>
                             </div>
-                            <button class="btn-add">Add</button>
+                            <button class="btn-add" onclick="addToCart(this)">Add</button>
                         </div>
                     </div>
                 }
-=======
-                <!-- Product Cards -->
-                <div class="product-card" data-id="1">
-                    <img src="/images/chocochip.png.png" alt="Fantasy Crunchy Choco Chip Cookies      " onclick="goToProductDetails(this)">
-                    <div class="product-info">
-                        <h3 onclick="goToProductDetails(this)">Fantasy Crunchy Choco Chip Cookies</h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add" onclick="addToCart(this)">Add</button>
-                    </div>
-                </div>
-                <div class="product-card" data-id="2">
-                    <img src="/images/peanut.png" alt="Peanut Butter Bite Premium Butter Cookies" onclick="goToProductDetails(this)">
-                    <div class="product-info">
-                        <h3 onclick="goToProductDetails(this)">Peanut Butter Bite Premium Butter Cookies</h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add" onclick="addToCart(this)">Add</button>
-                    </div>
-                </div>
-                <div class="product-card" data-id="3">
-                    <img src="/images/chips.png" alt="Yumitos Chilli Sprinkled Potato Chips" onclick="goToProductDetails(this)">
-                    <div class="product-info">
-                        <h3 onclick="goToProductDetails(this)">Yumitos Chilli Sprinkled Potato Chips</h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add" onclick="addToCart(this)">Add</button>
-                    </div>
-                </div>
-                <div class="product-card" data-id="4">
-                    <img src="/images/milk1l.png" alt="Healthy Long Life Toned Milk " onclick="goToProductDetails(this)">
-                    <div class="product-info">
-                        <h3 onclick="goToProductDetails(this)">Healthy Long Life Toned Milk 1.5L</h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add" onclick="addToCart(this)">Add</button>
-                    </div>
-                </div>
-                <div class="product-card" data-id="5">
-                    <img src="/images/beef.png" alt="Raw Mutton Leg, Packaging 5 Kg      " onclick="goToProductDetails(this)">
-                    <div class="product-info">
-                        <h3 onclick="goToProductDetails(this)">Raw Mutton Leg, Packaging with 5kg </h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add" onclick="addToCart(this)">Add</button>
-                    </div>
-                </div>
-                <div class="product-card" data-id="6">
-                    <img src="/images/coffee.png" alt="Cold Brew Coffee Instant Coffee" onclick="goToProductDetails(this)">
-                    <div class="product-info">
-                        <h3 onclick="goToProductDetails(this)">Cold Brew Coffee Instant Coffee  Original Taste </h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add" onclick="addToCart(this)">Add</button>
-                    </div>
-                </div>
-                <div class="product-card" data-id="7">
-                    <img src="/images/snackarmor.png" alt="SnackAmor Combo Pack of Jowar Stick and Jowar Chips" onclick="goToProductDetails(this)">
-                    <div class="product-info">
-                        <h3 onclick="goToProductDetails(this)">SnackAmor Combo Pack of Jowar Stick </h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add" onclick="addToCart(this)">Add</button>
-                    </div>
-                </div>
-                <div class="product-card" data-id="8">
-                    <img src="/images/neufarm.png" alt="Neu Farm Unpolished Desi Toor Dal       " onclick="goToProductDetails(this)">
-                    <div class="product-info">
-                        <h3 onclick="goToProductDetails(this)">Neu Farm Unpolished Desi Toor Dal</h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add" onclick="addToCart(this)">Add</button>
-                    </div>
-                </div>
-                <div class="product-card" data-id="9">
-                    <img src="/images/dogfood.png" alt="Dog Treats Natural Yak Milk Bars For Small Dogs" onclick="goToProductDetails(this)">
-                    <div class="product-info">
-                        <h3 onclick="goToProductDetails(this)">Dog Treats Natural Yak Milk Bars For Dogs</h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add" onclick="addToCart(this)">Add</button>
-                    </div>
-                </div>
-                <div class="product-card" data-id="10">
-                    <img src="/images/coffee1get1.png" alt="Blended Instant Coffee 50 g Buy 1 Get 1 Free" onclick="goToProductDetails(this)">
-                    <div class="product-info">
-                        <h3 onclick="goToProductDetails(this)">Blended Instant Coffee 50 g Buy 1 Get 1 Free</h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add" onclick="addToCart(this)">Add</button>
-                    </div>
-                </div>
->>>>>>> Branch-Kelvin-New
+                
             </div>
         </section>
 
