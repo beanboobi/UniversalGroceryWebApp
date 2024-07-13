@@ -49,5 +49,25 @@ namespace WebAppProject.ViewModels
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
     }
+
+    public class ShoppingCartItemViewModel
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string ImageUrl { get; set; }
+        public decimal Price { get; set; }
+        public int Quantity { get; set; }
+
+        public decimal TotalPrice => Price * Quantity;
+    }
+
+    public class CartItem
+    {
+        public int Id { get; set; }
+        public GroceryItemViewModel Item { get; set; }
+        public int Quantity { get; set; }
+
+        public decimal TotalPrice => Item.Price * Quantity;
+    }
 }
 

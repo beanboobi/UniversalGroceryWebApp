@@ -22,6 +22,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 });
 
 builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddSession(options =>
 {
     options.Cookie.Name = ".WebAppProject.Session";

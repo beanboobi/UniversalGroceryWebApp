@@ -73,7 +73,10 @@
                                     @item.OriginalPrice.ToString("F2")
                                 </span>
                             </div>
-                            <button class="btn-add" onclick="addToCart(this)">Add</button>
+                            <form asp-action="AddToCart" asp-controller="Cart" method="post">
+                                <input type="hidden" name="id" value="@item.Id" />
+                                <button type="submit" class="btn-add">Add</button>
+                            </form>
                         </div>
                     </div>
                 }
