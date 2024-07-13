@@ -3,6 +3,29 @@
 }
 @model IEnumerable<WebAppProject.ViewModels.GroceryItemViewModel>
 
+<!-- Banner Section Start -->
+<div class="banner-section">
+    <div class="banner-left">
+        <h2>Exclusive offer <span>30% Off</span></h2>
+        <p>STAY HOME & DELIVERED YOUR DAILY NEEDS</p>
+        <p>Vegetables contain many vitamins and minerals that are good for your health.</p>
+        <a href="#" class="shop-now">Shop Now</a>
+    </div>
+    <div class="banner-right">
+        <div class="banner-ad">
+            <h2>45% OFF Nut Collection</h2>
+            <p>We deliver organic vegetables & fruits</p>
+            <a href="#" class="shop-now">Shop Now</a>
+        </div>
+        <div class="banner-ad">
+            <h2>Healthy Food Organic Market</h2>
+            <p>Start your daily shopping with some Organic food</p>
+            <a href="#" class="shop-now">Shop Now</a>
+        </div>
+    </div>
+</div>
+<!-- Banner Section End -->
+
 <div class="homepage">
     <aside class="sidebar">
         <h2>Category</h2>
@@ -22,6 +45,9 @@
             <li><a href="#">Top 50 Offers</a></li>
             <li><a href="#">New Arrivals</a></li>
         </ul>
+        <div class="sidebar-banner">
+            <img src="~/images/banner.png" alt="Sidebar Banner">
+        </div>
     </aside>
 
     <main class="main-content">
@@ -31,6 +57,7 @@
                 <a href="#" class="see-all">See All</a>
             </div>
             <div class="products-grid">
+<<<<<<< HEAD
                 @foreach (var item in Model)
                 {
                     <div class="product-card">
@@ -51,6 +78,119 @@
                         </div>
                     </div>
                 }
+=======
+                <!-- Product Cards -->
+                <div class="product-card" data-id="1">
+                    <img src="/images/chocochip.png.png" alt="Fantasy Crunchy Choco Chip Cookies      " onclick="goToProductDetails(this)">
+                    <div class="product-info">
+                        <h3 onclick="goToProductDetails(this)">Fantasy Crunchy Choco Chip Cookies</h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add" onclick="addToCart(this)">Add</button>
+                    </div>
+                </div>
+                <div class="product-card" data-id="2">
+                    <img src="/images/peanut.png" alt="Peanut Butter Bite Premium Butter Cookies" onclick="goToProductDetails(this)">
+                    <div class="product-info">
+                        <h3 onclick="goToProductDetails(this)">Peanut Butter Bite Premium Butter Cookies</h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add" onclick="addToCart(this)">Add</button>
+                    </div>
+                </div>
+                <div class="product-card" data-id="3">
+                    <img src="/images/chips.png" alt="Yumitos Chilli Sprinkled Potato Chips" onclick="goToProductDetails(this)">
+                    <div class="product-info">
+                        <h3 onclick="goToProductDetails(this)">Yumitos Chilli Sprinkled Potato Chips</h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add" onclick="addToCart(this)">Add</button>
+                    </div>
+                </div>
+                <div class="product-card" data-id="4">
+                    <img src="/images/milk1l.png" alt="Healthy Long Life Toned Milk " onclick="goToProductDetails(this)">
+                    <div class="product-info">
+                        <h3 onclick="goToProductDetails(this)">Healthy Long Life Toned Milk 1.5L</h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add" onclick="addToCart(this)">Add</button>
+                    </div>
+                </div>
+                <div class="product-card" data-id="5">
+                    <img src="/images/beef.png" alt="Raw Mutton Leg, Packaging 5 Kg      " onclick="goToProductDetails(this)">
+                    <div class="product-info">
+                        <h3 onclick="goToProductDetails(this)">Raw Mutton Leg, Packaging with 5kg </h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add" onclick="addToCart(this)">Add</button>
+                    </div>
+                </div>
+                <div class="product-card" data-id="6">
+                    <img src="/images/coffee.png" alt="Cold Brew Coffee Instant Coffee" onclick="goToProductDetails(this)">
+                    <div class="product-info">
+                        <h3 onclick="goToProductDetails(this)">Cold Brew Coffee Instant Coffee  Original Taste </h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add" onclick="addToCart(this)">Add</button>
+                    </div>
+                </div>
+                <div class="product-card" data-id="7">
+                    <img src="/images/snackarmor.png" alt="SnackAmor Combo Pack of Jowar Stick and Jowar Chips" onclick="goToProductDetails(this)">
+                    <div class="product-info">
+                        <h3 onclick="goToProductDetails(this)">SnackAmor Combo Pack of Jowar Stick </h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add" onclick="addToCart(this)">Add</button>
+                    </div>
+                </div>
+                <div class="product-card" data-id="8">
+                    <img src="/images/neufarm.png" alt="Neu Farm Unpolished Desi Toor Dal       " onclick="goToProductDetails(this)">
+                    <div class="product-info">
+                        <h3 onclick="goToProductDetails(this)">Neu Farm Unpolished Desi Toor Dal</h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add" onclick="addToCart(this)">Add</button>
+                    </div>
+                </div>
+                <div class="product-card" data-id="9">
+                    <img src="/images/dogfood.png" alt="Dog Treats Natural Yak Milk Bars For Small Dogs" onclick="goToProductDetails(this)">
+                    <div class="product-info">
+                        <h3 onclick="goToProductDetails(this)">Dog Treats Natural Yak Milk Bars For Dogs</h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add" onclick="addToCart(this)">Add</button>
+                    </div>
+                </div>
+                <div class="product-card" data-id="10">
+                    <img src="/images/coffee1get1.png" alt="Blended Instant Coffee 50 g Buy 1 Get 1 Free" onclick="goToProductDetails(this)">
+                    <div class="product-info">
+                        <h3 onclick="goToProductDetails(this)">Blended Instant Coffee 50 g Buy 1 Get 1 Free</h3>
+                        <div class="price">
+                            <span class="current-price">$26.69</span>
+                            <span class="original-price">$28.66</span>
+                        </div>
+                        <button class="btn-add" onclick="addToCart(this)">Add</button>
+                    </div>
+                </div>
+>>>>>>> Branch-Kelvin-New
             </div>
         </section>
 
@@ -61,7 +201,92 @@
     </main>
 </div>
 
+<script>
+    function goToProductDetails(element) {
+        var productId = element.closest('.product-card').getAttribute('data-id');
+        window.location.href = '/Home/ProductDetails/' + productId;
+    }
+</script>
+
 <style>
+    .banner-section {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f9f9f9;
+        text-decoration: none;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .banner-left {
+        width: 60%;
+        padding: 20px;
+        background-image: url('../images/ads.png');
+        background-size: cover;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        .banner-left h2 {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+            .banner-left h2 span {
+                color: red;
+            }
+
+        .banner-left p {
+            font-size: 0.65em;
+            margin-bottom: 10px;
+        }
+
+    .shop-now {
+        padding: 5px 10px; 
+        
+        color: green; 
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: bold; 
+        margin-top: 10px;
+        display: inline-block;
+        border: none; 
+        border-radius: 3px; 
+    }
+
+
+
+    .banner-right {
+        width: 35%;
+        gap: 20px;
+        background: url('../images/banner-right.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+    }
+
+    .banner-ad {
+        padding: 20px;
+        background-color: rgba(0 0, 0, 0.1);
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+        .banner-ad h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color:Black;
+        }
+
+        .banner-ad p {
+            font-size: 1em;
+            margin-bottom: 10px;
+            color: black;
+        }
+
     .homepage {
         display: flex;
     }
@@ -96,6 +321,14 @@
         width: 80%;
         padding: 20px;
     }
+    
+    .sidebar-banner img {
+        width: 100%;
+        height: 750px; 
+        object-fit: cover; 
+        object-position: center; 
+        border-radius: 20px;
+    }
 
     .section-header {
         display: flex;
@@ -122,28 +355,44 @@
     }
 
     .product-card {
-        width: 22%;
+        width: calc(22% - 20px);
         border: 1px solid #ddd;
         border-radius: 5px;
         overflow: hidden;
         background-color: #fff;
         text-align: center;
         padding: 10px;
+        margin-bottom: 20px;
+        flex:none;
+        
+
+        
     }
 
         .product-card img {
             max-width: 100%;
             height: auto;
+            
         }
 
     .product-info {
         padding: 10px;
+        flex: none; 
+        display: flex; 
+        flex-direction: column; 
+        flex-grow: 1;
     }
 
         .product-info h3 {
             font-size: 1em;
             margin: 10px 0;
+            cursor: pointer;
+            
         }
+
+            .product-info h3:hover {
+                text-decoration: underline;
+            }
 
     .price {
         display: flex;
@@ -164,10 +413,10 @@
     }
 
     .btn-add {
+        margin-top: auto;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        margin-top: 10px;
         padding: 10px 20px;
         font-size: 1em;
         color: #fff;
@@ -177,6 +426,7 @@
         cursor: pointer;
         text-align: center;
         transition: background-color 0.3s;
+        width: 100%;
     }
 
         .btn-add:hover {

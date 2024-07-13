@@ -18,6 +18,7 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\kaibo\OneDrive\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\WebAppProject
 build_property._RazorSourceGeneratorDebug = 
 
+<<<<<<< HEAD
 [C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Areas/Admin/Views/Home/AddProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxBZGRQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -71,6 +72,21 @@ build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFy
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Views/Home/Contact.cshtml]
+=======
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/CheckOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGVja091dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/Contact.cshtml]
+>>>>>>> Branch-Kelvin-New
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -86,11 +102,27 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
 [C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Views/Home/Register.cshtml]
+=======
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/ProductDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/Register.cshtml]
+>>>>>>> Branch-Kelvin-New
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 

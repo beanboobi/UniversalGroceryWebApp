@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .checkout-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .checkout-container h1 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+        .checkout-form {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .billing-details, .order-summary {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+
+            .billing-details h2, .order-summary h2 {
+                margin-bottom: 10px;
+                font-size: 1.5em;
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 10px;
+            }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .order-summary .order-items {
+            margin-bottom: 20px;
+        }
+
+        .order-summary .order-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .order-total {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px 0;
+            border-top: 2px solid #ddd;
+            margin-top: 20px;
+        }
+
+        .payment-options {
+            margin-top: 20px;
+        }
+
+            .payment-options label {
+                font-weight: normal;
+            }
+
+            .payment-options input {
+                margin-right: 10px;
+            }
+
+        .terms {
+            margin: 20px 0;
+        }
+
+            .terms input {
+                margin-right: 10px;
+            }
+
+        .btn-checkout {
+            width: 100%;
+            padding: 15px;
+            background-color: #28a745;
+            color: #fff;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            .btn-checkout:hover {
+                background-color: #218838;
+            }
+    </style>
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Check Out</h1>
+        <div class="checkout-form">
+            <div class="billing-details">
+                <h2>Billing Details</h2>
+                <form>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required>
+
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required>
+
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" required>
+
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="zip" required>
+                </form>
+            </div>
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <div class="order-items">
+                    
+                    <div class="order-item">
+                        <span>Fantasy Crunchy Choco Chip Cookies</span>
+                        <span>$26.69</span>
+                    </div>
+                    <div class="order-item">
+                        <span>Peanut Butter Bite Premium Butter Cookies</span>
+                        <span>$26.69</span>
+                    </div>
+                    
+                </div>
+                <div class="order-total">
+                    <span>Total</span>
+                    <span>$53.38</span>
+                </div>
+
+                <div class="payment-options">
+                    <h2>Payment Options</h2>
+                    <label>
+                        <input type="radio" name="payment" value="cod" checked> <strong>Cash On Delivery</strong><br>
+                       - Pay with cash upon delivery.
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="payment" value="card"> <strong>Credit/Debit Card</strong><br>
+                       - Pay with your Visa, Mastercard.
+                    </label>
+                </div>
+
+                <div class="terms">
+                    <label>
+                        <input type="checkbox" name="terms" required> I agree to the <a href="#">Terms & conditions</a>, <a href="#">Privacy policy</a> & <a href="#">Return policy</a>
+                    </label>
+                </div>
+
+                <a href="/Home/Payment" class="btn btn-checkout btn-block">Proceed to Payment</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const orderItems = document.querySelectorAll('.order-item span:last-child');
+            let total = 0;
+
+            orderItems.forEach(item => {
+                total += parseFloat(item.textContent.replace('$', ''));
+            });
+
+            document.querySelector('.order-total span:last-child').textContent = '$' + total.toFixed(2);
+        });
+    </script>
+</body>
+</html>

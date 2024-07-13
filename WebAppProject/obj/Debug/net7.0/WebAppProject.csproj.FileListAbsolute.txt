@@ -60,6 +60,7 @@
 /Users/bean/Documents/GitHub/WebAppProject/WebAppProject/obj/Debug/net7.0/WebAppProject.pdb
 /Users/bean/Documents/GitHub/WebAppProject/WebAppProject/obj/Debug/net7.0/WebAppProject.genruntimeconfig.cache
 /Users/bean/Documents/GitHub/WebAppProject/WebAppProject/obj/Debug/net7.0/ref/WebAppProject.dll
+<<<<<<< HEAD
 C:\Mac\Home\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\WebAppProject\bin\Debug\net7.0\appsettings.Development.json
 C:\Mac\Home\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\WebAppProject\bin\Debug\net7.0\appsettings.json
 C:\Mac\Home\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\WebAppProject\bin\Debug\net7.0\WebAppProject.staticwebassets.runtime.json
@@ -510,3 +511,36 @@ C:\Users\kaibo\OneDrive\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\We
 C:\Users\kaibo\OneDrive\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\WebAppProject\obj\Debug\net7.0\WebAppProject.pdb
 C:\Users\kaibo\OneDrive\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\WebAppProject\obj\Debug\net7.0\WebAppProject.genruntimeconfig.cache
 C:\Users\kaibo\OneDrive\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\WebAppProject\obj\Debug\net7.0\ref\WebAppProject.dll
+=======
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net7.0\appsettings.json
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net7.0\WebAppProject.staticwebassets.runtime.json
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net7.0\WebAppProject.exe
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net7.0\WebAppProject.deps.json
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net7.0\WebAppProject.runtimeconfig.json
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net7.0\WebAppProject.dll
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net7.0\WebAppProject.pdb
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.AssemblyInfoInputs.cache
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.AssemblyInfo.cs
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.csproj.CoreCompileInputs.cache
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.RazorAssemblyInfo.cache
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.RazorAssemblyInfo.cs
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.sourcelink.json
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\staticwebassets\msbuild.WebAppProject.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\staticwebassets\msbuild.build.WebAppProject.props
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.WebAppProject.props
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.WebAppProject.props
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\scopedcss\bundle\WebAppProject.styles.css
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\scopedcss\projectbundle\WebAppProject.bundle.scp.css
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.dll
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\refint\WebAppProject.dll
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.pdb
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\WebAppProject.genruntimeconfig.cache
+C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net7.0\ref\WebAppProject.dll
+>>>>>>> Branch-Kelvin-New
