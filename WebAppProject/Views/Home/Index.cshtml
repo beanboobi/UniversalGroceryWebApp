@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model IEnumerable<WebAppProject.ViewModels.GroceryItemViewModel>
 
 <div class="homepage">
     <aside class="sidebar">
@@ -30,118 +31,26 @@
                 <a href="#" class="see-all">See All</a>
             </div>
             <div class="products-grid">
-                
-                <div class="product-card">
-                    <img src="/images/chocochip.png.png" alt="Fantasy Crunchy Choco Chip Cookies">
-                    <div class="product-info">
-                        <h3>Fantasy Crunchy Choco Chip Cookies</h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
+                @foreach (var item in Model)
+                {
+                    <div class="product-card">
+                        <img src="@item.ImageUrl" alt="@item.Name">
+                        <div class="product-info">
+                            <h3>@item.Name</h3>
+                            <div class="price">
+                                <span class="current-price">
+                                    $
+                                    @item.Price.ToString("F2")
+                                </span>
+                                <span class="original-price">
+                                    $
+                                    @item.OriginalPrice.ToString("F2")
+                                </span>
+                            </div>
+                            <button class="btn-add">Add</button>
                         </div>
-                        <button class="btn-add">Add</button>
                     </div>
-                </div>
-                
-                <div class="product-card">
-                    <img src="/images/peanut.png" alt="Peanut Butter Bite Premium Butter Cookies">
-                    <div class="product-info">
-                        <h3>Peanut Butter Bite Premium Butter Cookies</h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add">Add</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="/images/chips.png" alt="Yumitos Chilli Sprinkled Potato Chips">
-                    <div class="product-info">
-                        <h3>Yumitos Chilli Sprinkled Potato Chips</h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add">Add</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="/images/milk1l.png" alt="healthy Long Life Toned Milk">
-                    <div class="product-info">
-                        <h3>healthy Long Life Toned Milk</h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add">Add</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="/images/beef.png" alt="Raw Mutton Leg, Packaging 5 Kg">
-                    <div class="product-info">
-                        <h3>Raw Mutton Leg, Packaging 5 Kg</h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add">Add</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="/images/coffee.png" alt="Cold Brew Coffee Instant Coffee">
-                    <div class="product-info">
-                        <h3>Cold Brew Coffee Instant Coffee</h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add">Add</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="/images/snackarmor.png" alt="SnackAmor Combo Pack of Jowar Stick and Jowar Chips">
-                    <div class="product-info">
-                        <h3>SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add">Add</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="/images/neufarm.png" alt="Neu Farm Unpolished Desi Toor Dal">
-                    <div class="product-info">
-                        <h3>Neu Farm Unpolished Desi Toor Dal</h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add">Add</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="/images/dogfood.png" alt="Dog Treats Natural Yak Milk Bars For Small Dogs">
-                    <div class="product-info">
-                        <h3>Dog Treats Natural Yak Milk Bars For Small Dogs</h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add">Add</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="/images/coffee1get1.png" alt="Blended Instant Coffee 50 g Buy 1 Get 1 Free">
-                    <div class="product-info">
-                        <h3>Blended Instant Coffee 50 g Buy 1 Get 1 Free</h3>
-                        <div class="price">
-                            <span class="current-price">$26.69</span>
-                            <span class="original-price">$28.66</span>
-                        </div>
-                        <button class="btn-add">Add</button>
-                    </div>
-                </div>
+                }
             </div>
         </section>
 
