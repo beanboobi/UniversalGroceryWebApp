@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model WebAppProject.ViewModels.RegisterViewModel
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -92,7 +94,8 @@
         }
 
             .btn:hover {
-                background-color: #218838; 
+                background-color: #218838;
+            }
 
         .signup-link {
             display: block;
@@ -116,27 +119,37 @@
             <div class="right-side col-md-6">
                 <div class="login-container">
                     <h2>Create an account</h2>
-                    <form action="/Home/Login" method="post">
+                    <form asp-action="Register" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
                         <div class="form-group mb-3">
-                            <label for="Name">Your Name</label>
-                            <input type="text" class="form-control" id="Name" name="Name" required>
+                            <label asp-for="Username"></label>
+                            <input asp-for="Username" class="form-control" />
+                            <span asp-validation-for="Username" class="text-danger"></span>
                         </div>
+
                         <div class="form-group mb-3">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
+                            <label asp-for="Email"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
                         </div>
+
                         <div class="form-group mb-3">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" name="password" required>
+                            <label asp-for="Password"></label>
+                            <input asp-for="Password" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
+
                         <div class="form-group mb-3">
-                            <label for="confirm-password">Confirm Password</label>
-                            <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+                            <label asp-for="ConfirmPassword"></label>
+                            <input asp-for="ConfirmPassword" class="form-control" />
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                         </div>
+
                         <button type="submit" class="btn">Sign Up</button>
                     </form>
                     <div class="text-center mt-3">
-                        Already have an account? <a href="/Home/Login" class="signup-link">Log In</a>
+                        Already have an account? <a href="/Account/Login" class="signup-link">Log In</a>
                     </div>
                 </div>
             </div>

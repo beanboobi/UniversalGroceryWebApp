@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using WebAppProject.ViewModels
+@model LoginViewModel
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -84,7 +87,7 @@
         .btn {
             width: 100%;
             padding: 10px;
-            background-color: #28a745; 
+            background-color: #28a745;
             color: #fff;
             font-size: 1em;
             cursor: pointer;
@@ -92,7 +95,7 @@
         }
 
             .btn:hover {
-                background-color: #218838; 
+                background-color: #218838;
             }
 
         .signup-link {
@@ -118,18 +121,21 @@
                 <div class="login-container">
                     <h2>Welcome back!</h2>
                     <p>Enter your credentials to access your account</p>
-                    <form action="/Home/Login" method="post">
+                    <form asp-action="Login" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <div class="form-group mb-3">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
+                            <label asp-for="Username"></label>
+                            <input asp-for="Username" class="form-control" />
+                            <span asp-validation-for="Username" class="text-danger"></span>
                         </div>
                         <div class="form-group mb-3">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" name="password" required>
+                            <label asp-for="Password"></label>
+                            <input asp-for="Password" type="password" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
-                        <div class="form">
-                            <input type="checkbox" class="form-check-input" id="remember-me">
-                            <label class="form-check-label" for="remember-me">Remember me</label>
+                        <div class="form-group form-check">
+                            <input asp-for="RememberMe" class="form-check-input" id="remember-me" />
+                            <label asp-for="RememberMe" class="form-check-label"></label>
                         </div>
                         <button type="submit" class="btn">Login</button>
                     </form>
@@ -137,7 +143,7 @@
                         <a href="#">Forgot password?</a>
                     </div>
                     <div class="text-center mt-3">
-                        Don't have an account? <a href="/Home/Register" class="signup-link">Sign Up</a>
+                        Don't have an account? <a href="/Login/Register" class="signup-link">Sign Up</a>
                     </div>
                 </div>
             </div>

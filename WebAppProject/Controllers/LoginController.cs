@@ -1,38 +1,98 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Linq;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 using WebAppProject.Data;
-using WebAppProject.Models;
+using WebAppProject.ViewModels;
 
-public class LoginController : Controller
+
+namespace WebAppProject.Controllers
 {
-    private readonly ApplicationDbContext _context;
-    public LoginController(ApplicationDbContext context)
+    public class LoginController : Controller
     {
-        _context = context;
-    }
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-    // POST: /Home/Login
-    [HttpPost]
-    public IActionResult Login(Login model)
-    {
-        if (ModelState.IsValid)
+        public LoginController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
         {
-            // Simulate a simple login check (without real password hashing or security checks)
-            var user = _context.Users.FirstOrDefault(u => u.Username == model.Username && u.Password == model.Password);
 
-            if (user != null)
+            _signInManager = signInManager;
+            _userManager = userManager;
+        }
+
+        [HttpGet]
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Register(RegisterViewModel model)
+        {
+            if (ModelState.IsValid)
             {
-                // Login successful, redirect to home or dashboard
-                return RedirectToAction("Index", "Home");
+                var user = new ApplicationUser { UserName = model.Username, Email = model.Email };
+                var result = await _userManager.CreateAsync(user, model.Password);
+
+                if (result.Succeeded)
+                {
+                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    return RedirectToAction("Index", "Home");
+                }
+
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+            }
+
+            return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = null)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberMe, lockoutOnFailure: false);
+
+                if (result.Succeeded)
+                {
+                    return RedirectToLocal(returnUrl);
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                    return View(model);
+                }
+            }
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction(nameof(HomeController.Index), "Home");
+        }
+
+        private IActionResult RedirectToLocal(string returnUrl)
+        {
+            if (Url.IsLocalUrl(returnUrl))
+            {
+                return Redirect(returnUrl);
             }
             else
             {
-                ModelState.AddModelError(string.Empty, "Invalid username or password");
+                return RedirectToAction(nameof(HomeController.Index), "Home");
             }
         }
-
-        // If we got this far, something failed, redisplay form
-        return View("~/Views/Home/Login.cshtml", model);
     }
 }
