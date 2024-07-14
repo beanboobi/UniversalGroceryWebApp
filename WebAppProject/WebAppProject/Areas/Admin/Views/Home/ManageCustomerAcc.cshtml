@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<WebAppProject.Models.User>
+
+@{
     ViewData["Title"] = "Manage Customer Account";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
@@ -8,9 +10,9 @@
     <div class="row mb-3">
         <div class="col-md-6">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search customer...">
+                <input type="text" class="form-control" placeholder="Search customers..." id="searchBox">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button">
+                    <button class="btn btn-outline-secondary" type="button" onclick="searchCustomers()">
                         <img src="~/images/search.png" alt="Search" style="width:20px;">
                     </button>
                 </div>
@@ -20,58 +22,53 @@
     <div class="table-responsive">
         <table class="table table-bordered">
             <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email Address</th>
+                    <th>Role</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="customersTableBody">
+                @foreach (var customer in Model)
+                {
                     <tr>
-                        <th style="width: 20%">Name </th>
-                        <th style="width: 20%">Phone number </th>
-                        <th style="width: 20%">Email Address </th>
-                        <th style="width: 20%">Joint Date</th>
-                        <th style="width: 20%">Action </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>David Wagner</td>
-                        <td>87773757</td>
-                        <td>david_wagner@example.com</td>
-                        <td>24 Otc, 2015</td>
+                        <td>@customer.Username</td>
+                        <td>@customer.Email</td>
+                        <td>@customer.Role</td>
                         <td>
-                            <a href="@Url.Action("Edit", "ManageCustomerAcc", new { id = 3, area = "Admin" })">
-                                <img src="~/images/edit.png" alt="Edit" style="width:20px;" />
+                            <a href="@Url.Action("EditCustomer", "Home", new { id = customer.UserId, area = "Admin" })" class="btn btn-sm btn-warning">
+                                Edit
                             </a>
-                            <a href="@Url.Action("Delete", "ManageCustomerAcc", new { id = 3, area = "Admin" })">
-                                <img src="~/images/remove.png" alt="Remove" style="width:20px;" />
-                            </a>
+                            <form asp-action="DeleteCustomer" asp-route-id="@customer.UserId" method="post" style="display:inline;">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this customer?');">
+                                    Remove
+                                </button>
+                            </form>
                         </td>
                     </tr>
-                   
-                    <tr>
-                        <td>Kai Boonr</td>
-                        <td>87773757</td>
-                        <td>kaiboon_wagner@example.com</td>
-                        <td>24 Otc, 2015</td>
-                        <td>
-                            <a href="@Url.Action("Edit", "ManageCustomerAcc", new { id = 3, area = "Admin" })">
-                                <img src="~/images/edit.png" alt="Edit" style="width:20px;" />
-                            </a>
-
-                            <a href="@Url.Action("Delete", "ManageCustomerAcc", new { id = 3, area = "Admin" })">
-                                <img src="~/images/remove.png" alt="Remove" style="width:20px;" />
-                            </a>
-                        </td>
-                    </tr>
-                   
-                </tbody>
-            </table>
-        </div>
+                }
+            </tbody>
+        </table>
     </div>
 </div>
 
-<style>
-    .form-control {
-        margin-bottom: 10px;
-    }
+@section Scripts {
+    <script>
+        function searchCustomers() {
+            var searchBox = document.getElementById('searchBox');
+            var filter = searchBox.value.toLowerCase();
+            var rows = document.querySelectorAll('#customersTableBody tr');
 
-    .btn-primary {
-        margin-bottom: 10px;
-    }
-</style>
+            rows.forEach(function (row) {
+                var customerName = row.querySelector('td:nth-child(1)').textContent.toLowerCase();
+                if (customerName.includes(filter)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+    </script>
+}

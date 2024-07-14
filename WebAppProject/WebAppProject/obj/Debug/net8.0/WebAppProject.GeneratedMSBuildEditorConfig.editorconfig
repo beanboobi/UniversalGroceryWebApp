@@ -34,8 +34,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxBZGRQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/eugen/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Areas/Admin/Views/Home/CustomerEditForm.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxDdXN0b21lckVkaXRGb3JtLmNzaHRtbA==
+[C:/Users/eugen/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Areas/Admin/Views/Home/EditCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxFZGl0Q3VzdG9tZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/eugen/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/WebAppProject/Areas/Admin/Views/Home/EmployeeEditForm.cshtml]

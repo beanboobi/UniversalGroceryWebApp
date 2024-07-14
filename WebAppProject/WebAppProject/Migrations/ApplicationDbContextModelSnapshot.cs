@@ -55,40 +55,48 @@ namespace WebAppProject.Migrations
                     b.Property<int>("Salary")
                         .HasColumnType("int");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Employee");
 
                     b.HasData(
                         new
                         {
-                            Id = 1,
+                            Id = 110,
                             Email = "john.doe@example.com",
                             JoinDate = "2024-01-01",
                             Name = "John Doe",
                             Password = "password123",
                             Role = "Admin",
-                            Salary = 60000
+                            Salary = 60000,
+                            UserId = 1
                         },
                         new
                         {
-                            Id = 2,
+                            Id = 112,
                             Email = "jane.smith@example.com",
                             JoinDate = "2024-01-15",
                             Name = "Jane Smith",
                             Password = "password456",
                             Role = "Employee",
-                            Salary = 50000
+                            Salary = 50000,
+                            UserId = 2
                         },
                         new
                         {
-                            Id = 3,
+                            Id = 113,
                             Email = "bob.johnson@example.com",
                             JoinDate = "2024-02-01",
                             Name = "Bob Johnson",
                             Password = "password789",
                             Role = "Employee",
-                            Salary = 55000
+                            Salary = 55000,
+                            UserId = 3
                         });
                 });
 
@@ -168,11 +176,86 @@ namespace WebAppProject.Migrations
                             CreatedDate = "2024-07-05",
                             Description = "Juicy oranges",
                             Discount = 5,
-                            ImageUrl = "/images/orange.png",
+                            ImageUrl = "/images/Orange.png",
                             Name = "Orange",
                             Price = 1.29m,
                             Quantity = 75
                         });
+                });
+
+            modelBuilder.Entity("WebAppProject.Models.User", b =>
+                {
+                    b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            Email = "john.doe@example.com",
+                            Password = "password123",
+                            Role = "Admin",
+                            Username = "john.doe"
+                        },
+                        new
+                        {
+                            UserId = 2,
+                            Email = "jane.smith@example.com",
+                            Password = "password456",
+                            Role = "Employee",
+                            Username = "jane.smith"
+                        },
+                        new
+                        {
+                            UserId = 3,
+                            Email = "bob.johnson@example.com",
+                            Password = "password789",
+                            Role = "Employee",
+                            Username = "bob.johnson"
+                        });
+                });
+
+            modelBuilder.Entity("WebAppProject.Models.Employee", b =>
+                {
+                    b.HasOne("WebAppProject.Models.User", "User")
+                        .WithMany("Employees")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("WebAppProject.Models.User", b =>
+                {
+                    b.Navigation("Employees");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,4 +1,4 @@
-﻿@model WebAppProject.Models.Employee
+﻿@model WebAppProject.ViewModels.EmployeeViewModel
 
 @{
     ViewData["Title"] = "Edit Employee Account";
@@ -48,11 +48,9 @@
                     <span asp-validation-for="Salary" class="text-danger"></span>
                 </div>
             </div>
-        </div>
-        <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="Password">Password</label>
+                    <label for="Password">Password (Leave blank to keep current password)</label>
                     <input asp-for="Password" class="form-control" id="Password" />
                     <span asp-validation-for="Password" class="text-danger"></span>
                 </div>

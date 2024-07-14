@@ -7,6 +7,8 @@ using System.IO;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using WebAppProject.ViewModels;
 
 namespace WebAppProject.Areas.Admin.Controllers
 {
@@ -118,7 +120,22 @@ namespace WebAppProject.Areas.Admin.Controllers
 
         public IActionResult ManageCustomerAcc()
         {
-            return View();
+            var customers = _context.Users.Where(u => u.Role == "Customer").ToList(); // Adjust query to filter by role or any other condition as needed
+            return View(customers);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteCustomer(int id)
+        {
+            var customer = _context.Users.Find(id);
+            if (customer == null)
+            {
+                return NotFound();
+            }
+            _context.Users.Remove(customer);
+            _context.SaveChanges();
+            return RedirectToAction(nameof(ManageCustomerAcc));
         }
 
         public IActionResult ManageWebsite()
@@ -126,11 +143,59 @@ namespace WebAppProject.Areas.Admin.Controllers
             return View();
         }
 
-        public IActionResult Edit()
+        public IActionResult EditCustomer(int id)
         {
-            return View("CustomerEditForm");
-        }
+            var customer = _context.Users.Find(id);
+            if (customer == null)
+            {
+                return NotFound();
+            }
 
+            var viewModel = new UsersViewModel
+            {
+                UserId = id,
+                Username = customer.Username,
+                Email = customer.Email,
+                Role = customer.Role
+                // Password is not populated here for security reasons
+            };
+
+            return View("EditCustomer", viewModel);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditCustomer(UsersViewModel viewModel)
+        {
+            // Remove password from model state to avoid validation issues if not provided
+            ModelState.Remove("Password");
+
+            if (ModelState.IsValid)
+            {
+                // Retrieve the existing user from the database
+                var existingUser = await _context.Users.FindAsync(viewModel.UserId);
+                if (existingUser == null)
+                {
+                    return NotFound();
+                }
+
+                // Update properties except password
+                existingUser.Username = viewModel.Username;
+                existingUser.Email = viewModel.Email;
+                existingUser.Role = viewModel.Role;
+
+                // Update password if provided (ensure to hash in production)
+                if (!string.IsNullOrEmpty(viewModel.Password))
+                {
+                    existingUser.Password = viewModel.Password; // This should be hashed in production
+                }
+
+                _context.Update(existingUser);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(ManageCustomerAcc)); // Ensure ManageCustomerAcc action exists
+            }
+
+            return View("EditCustomer", viewModel);
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteItem(int id)
@@ -153,15 +218,42 @@ namespace WebAppProject.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddEmployee(Employee employee)
+        public async Task<IActionResult> AddEmployee(EmployeeViewModel viewModel)
         {
             if (ModelState.IsValid)
             {
+                // Create a new User
+                var user = new User
+                {
+                    Username = viewModel.Email,  // Example: Use email as username or any unique identifier
+                    Password = "defaultpassword", // Example: Provide a default password or implement hashing
+                    Email = viewModel.Email,
+                    Role = viewModel.Role  // Assign role based on employee's role
+                };
+
+                // Add and save User first to get the UserId
+                _context.Users.Add(user);
+                await _context.SaveChangesAsync();
+
+                // Create Employee from ViewModel
+                var employee = new Employee
+                {
+                    Name = viewModel.Name,
+                    Email = viewModel.Email,
+                    Password = viewModel.Password,
+                    JoinDate = viewModel.JoinDate,
+                    Salary = viewModel.Salary,
+                    Role = viewModel.Role,
+                    UserId = user.UserId  // Assign UserId from created User
+                };
+
+                // Add Employee to database
                 _context.Employee.Add(employee);
                 await _context.SaveChangesAsync();
+
                 return RedirectToAction(nameof(ManageEmployee));
             }
-            return View(employee);
+            return View(viewModel);
         }
 
         [HttpPost]
@@ -186,20 +278,54 @@ namespace WebAppProject.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            return View("EmployeeEditForm", employee);
+
+            var viewModel = new EmployeeViewModel
+            {
+                Id = employee.Id,
+                Name = employee.Name,
+                Email = employee.Email,
+                Password = employee.Password,
+                JoinDate = employee.JoinDate,
+                Salary = employee.Salary,
+                Role = employee.Role
+            };
+
+            return View("EmployeeEditForm", viewModel);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EditEmployee(Employee employee)
+        public async Task<IActionResult> EditEmployee(EmployeeViewModel viewModel)
         {
+            // Remove password validation temporarily
+            ModelState.Remove("Password");
+
             if (ModelState.IsValid)
             {
-                _context.Update(employee);
+                var existingEmployee = await _context.Employee.FindAsync(viewModel.Id);
+                if (existingEmployee == null)
+                {
+                    return NotFound();
+                }
+
+                // Update the properties
+                existingEmployee.Name = viewModel.Name;
+                existingEmployee.Email = viewModel.Email;
+                existingEmployee.JoinDate = viewModel.JoinDate;
+                existingEmployee.Salary = viewModel.Salary;
+                existingEmployee.Role = viewModel.Role;
+
+                // Update the password only if a new password is provided
+                if (!string.IsNullOrEmpty(viewModel.Password))
+                {
+                    existingEmployee.Password = viewModel.Password; // Remember to hash the password in production
+                }
+
+                _context.Update(existingEmployee);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(ManageEmployee));
             }
-            return View("EmployeeEditForm", employee);
+            return View("EmployeeEditForm", viewModel);
         }
 
         private bool EmployeeExists(int id)
@@ -220,20 +346,74 @@ namespace WebAppProject.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+       
+
         public async Task<IActionResult> EditItem(GroceryItem item, IFormFile productPicture)
         {
-            // Remove ImageUrl from ModelState to bypass validation for this field
-            ModelState.Remove(nameof(item.ImageUrl));
-
+            // Remove validation for the CreatedDate and ImageUrl fields
             ModelState.Remove(nameof(item.CreatedDate));
+            ModelState.Remove(nameof(item.ImageUrl));
+           
+
+            // Retrieve the original item from the database to preserve the original ImageUrl and CreatedDate
             var originalItem = await _context.GroceryItem.AsNoTracking().FirstOrDefaultAsync(i => i.Id == item.Id);
-            if (originalItem != null)
+            if (originalItem == null)
             {
-                item.CreatedDate = originalItem.CreatedDate;
+                return NotFound();
             }
 
-            if (!ModelState.IsValid)
+            item.CreatedDate = originalItem.CreatedDate;
+
+            // Preserve the original ImageUrl if no new image is uploaded
+            if (productPicture == null)
             {
+                item.ImageUrl = originalItem.ImageUrl;
+                ModelState.Remove(nameof(productPicture));
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    // Only process the image if a new one is uploaded
+                    if (productPicture != null && productPicture.Length > 0)
+                    {
+                        var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+                        if (!Directory.Exists(uploadsFolder))
+                        {
+                            Directory.CreateDirectory(uploadsFolder);
+                        }
+
+                        var uniqueFileName = Guid.NewGuid().ToString() + "_" + productPicture.FileName;
+                        var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                        using (var fileStream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await productPicture.CopyToAsync(fileStream);
+                        }
+
+                        item.ImageUrl = "/uploads/" + uniqueFileName;
+                    }
+
+                    _context.Update(item);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(ManageItem));
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!GroceryItemExists(item.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+            }
+            else
+            {
+                // Log model state errors
                 foreach (var modelState in ModelState.Values)
                 {
                     foreach (var error in modelState.Errors)
@@ -241,48 +421,10 @@ namespace WebAppProject.Areas.Admin.Controllers
                         _logger.LogError($"Model Error: {error.ErrorMessage}");
                     }
                 }
-                return View("ItemEditForm", item);
             }
 
-            try
-            {
-                var existingItem = await _context.GroceryItem.FindAsync(item.Id);
-                if (existingItem == null)
-                {
-                    return NotFound();
-                }
-
-                // Update the existing item with the new values
-                _context.Entry(existingItem).CurrentValues.SetValues(item);
-
-                if (productPicture != null && productPicture.Length > 0)
-                {
-                    var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
-                    if (!Directory.Exists(uploadsFolder))
-                    {
-                        Directory.CreateDirectory(uploadsFolder);
-                    }
-
-                    var uniqueFileName = Guid.NewGuid().ToString() + "_" + productPicture.FileName;
-                    var filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
-                    {
-                        await productPicture.CopyToAsync(fileStream);
-                    }
-
-                    existingItem.ImageUrl = "/uploads/" + uniqueFileName;
-                }
-
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(ManageItem));
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Error updating item: {ex.Message}");
-                ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
-                return View("ItemEditForm", item);
-            }
+            // If we got this far, something failed, redisplay form
+            return View("ItemEditForm", item);
         }
         private bool GroceryItemExists(int id)
         {
@@ -290,3 +432,4 @@ namespace WebAppProject.Areas.Admin.Controllers
         }
     }
 }
+

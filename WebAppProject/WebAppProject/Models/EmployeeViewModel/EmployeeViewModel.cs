@@ -1,9 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WebAppProject.Models
+namespace WebAppProject.ViewModels
 {
-    public class Employee
+    public class EmployeeViewModel
     {
         public int Id { get; set; }
 
@@ -16,7 +15,8 @@ namespace WebAppProject.Models
         [EmailAddress]
         public string Email { get; set; }
 
-        [Required]
+        [StringLength(100)]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
 
         [Required]
@@ -27,15 +27,8 @@ namespace WebAppProject.Models
 
         [Required]
         [StringLength(100)]
-        public string Role { get; set; } // To differentiate the admin or employee role
+        public string Role { get; set; }
 
-        public int UserId { get; set; } // Foreign key
-
-        // Navigation property
-        public User User { get; set; }
+        // Additional properties as needed
     }
 }
-
-
-
-
