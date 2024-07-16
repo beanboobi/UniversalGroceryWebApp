@@ -12,7 +12,7 @@ using System.Linq;
 
 namespace WebAppProject.Controllers
 {
-    
+
     public class HomeController : Controller
     {
 
@@ -43,6 +43,24 @@ namespace WebAppProject.Controllers
                .ToList();
 
             return View(items);
+        }
+        [HttpGet]
+        public IActionResult ProductCategory(string category)
+        {
+            var product = _context.GroceryItem
+               .Where(c => c.Category == category)
+               .Select(item => new GroceryItemViewModel
+               {
+                   Id = item.Id,
+                   Name = item.Name,
+                   Price = item.Price - (item.Price * ((decimal)item.Discount / 100)),
+                   ImageUrl = item.ImageUrl,
+                   OriginalPrice = item.Price, // Assuming original price is the same for now
+                   Description = item.Description,
+               })
+               .ToList();
+
+            return View(product);
         }
 
 
@@ -94,11 +112,6 @@ namespace WebAppProject.Controllers
         }
 
         public IActionResult AboutUs()
-        {
-            return View();
-        }
-
-        public IActionResult Cart()
         {
             return View();
         }

@@ -1,30 +1,12 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Category";
 }
 @model IEnumerable<WebAppProject.ViewModels.GroceryItemViewModel>
 
-<!-- Banner Section Start -->
-<div class="banner-section">
-    <div class="banner-left">
-        <h2>Exclusive offer <span>30% Off</span></h2>
-        <p>STAY HOME & DELIVERED YOUR DAILY NEEDS</p>
-        <p>Vegetables contain many vitamins and minerals that are good for your health.</p>
-        <a href="#" class="shop-now">Shop Now</a>
-    </div>
-    <div class="banner-right">
-        <div class="banner-ad">
-            <h2>45% OFF Nut Collection</h2>
-            <p>We deliver organic vegetables & fruits</p>
-            <a href="#" class="shop-now">Shop Now</a>
-        </div>
-        <div class="banner-ad">
-            <h2>Healthy Food Organic Market</h2>
-            <p>Start your daily shopping with some Organic food</p>
-            <a href="#" class="shop-now">Shop Now</a>
-        </div>
-    </div>
-</div>
-<!-- Banner Section End -->
+@{
+    var category = Context.Request.Query["category"].ToString();
+}
+
 
 <div class="homepage">
     <aside class="sidebar">
@@ -40,7 +22,6 @@
             <li><a asp-controller="Home" asp-action="ProductCategory" asp-route-category="Drinks">Drinks</a></li>
             <li><a asp-controller="Home" asp-action="ProductCategory" asp-route-category="PetFoods">Pet Foods</a></li>
         </ul>
-
         <ul class="additional-categories">
             <li><a href="#">Value of the Day</a></li>
             <li><a href="#">Top 50 Offers</a></li>
@@ -54,34 +35,28 @@
     <main class="main-content">
         <section class="deal-of-the-day">
             <div class="section-header">
-                <h2>Deal of the day</h2>
+                <h2>@category</h2>
                 <a href="#" class="see-all">See All</a>
             </div>
             <div class="products-grid">
-                @foreach (var item in Model)
+                @foreach (var product in Model)
                 {
-                    <div class="product-card" data-id="@item.Id">
-                        <img src="@item.ImageUrl" alt="@item.Name" onclick="goToProductDetails(this)">
+                    <div class="product-card">
+                        <img src="@product.ImageUrl" alt="@product.Name" />
                         <div class="product-info">
-                            <h3 onclick="goToProductDetails(this)">@item.Name</h3>
+                            <h3>@product.Name</h3>
                             <div class="price">
-                                <span class="current-price">
-                                    $
-                                    @item.Price.ToString("F2")
-                                </span>
-                                <span class="original-price">
-                                    $
-                                    @item.OriginalPrice.ToString("F2")
-                                </span>
+                                <span class="current-price">$@product.Price.ToString("F2")</span>
+                                <span class="original-price">$@product.OriginalPrice.ToString("F2")</span>
                             </div>
+                            <p>@product.Description</p>
                             <form asp-action="AddToCart" asp-controller="Cart" method="post">
-                                <input type="hidden" name="id" value="@item.Id" />
-                                <button type="submit" class="btn-add">Add</button>
+                                <input type="hidden" name="id" value="@product.Id" />
+                                <button type="submit" class="btn-add">Add to Cart</button>
                             </form>
                         </div>
                     </div>
                 }
-                
             </div>
         </section>
 
@@ -93,91 +68,8 @@
         var productId = element.closest('.product-card').getAttribute('data-id');
         window.location.href = '/Home/ProductDetails/' + productId;
     }
-
-    function goToProductCategory(category) {
-        window.location.href = '/Home/ProductCategory/' + encodeURIComponent(category);
-    }
 </script>
-
 <style>
-    .banner-section {
-        display: flex;
-        justify-content: space-between;
-        background-color: #f9f9f9;
-        text-decoration: none;
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-
-    .banner-left {
-        width: 60%;
-        padding: 20px;
-        background-image: url('../images/ads.png');
-        background-size: cover;
-        color: black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-        .banner-left h2 {
-            font-size: 2em;
-            margin-bottom: 5px;
-        }
-
-            .banner-left h2 span {
-                color: red;
-            }
-
-        .banner-left p {
-            font-size: 0.65em;
-            margin-bottom: 10px;
-        }
-
-    .shop-now {
-        padding: 5px 10px; 
-        
-        color: green; 
-        text-decoration: none;
-        font-size: 1em;
-        font-weight: bold; 
-        margin-top: 10px;
-        display: inline-block;
-        border: none; 
-        border-radius: 3px; 
-    }
-
-
-
-    .banner-right {
-        width: 35%;
-        gap: 20px;
-        background: url('../images/banner-right.jpg');
-        background-size: cover;
-        background-position: center;
-        padding: 20px;
-    }
-
-    .banner-ad {
-        padding: 20px;
-        background-color: rgba(0 0, 0, 0.1);
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        text-align: center;
-    }
-
-        .banner-ad h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            color:Black;
-        }
-
-        .banner-ad p {
-            font-size: 1em;
-            margin-bottom: 10px;
-            color: black;
-        }
-
     .homepage {
         display: flex;
     }
@@ -212,12 +104,12 @@
         width: 80%;
         padding: 20px;
     }
-    
+
     .sidebar-banner img {
         width: 100%;
-        height: 750px; 
-        object-fit: cover; 
-        object-position: center; 
+        height: 750px;
+        object-fit: cover;
+        object-position: center;
         border-radius: 20px;
     }
 
@@ -254,23 +146,19 @@
         text-align: center;
         padding: 10px;
         margin-bottom: 20px;
-        flex:none;
-        
-
-        
+        flex: none;
     }
 
         .product-card img {
             max-width: 100%;
             height: auto;
-            
         }
 
     .product-info {
         padding: 10px;
-        flex: none; 
-        display: flex; 
-        flex-direction: column; 
+        flex: none;
+        display: flex;
+        flex-direction: column;
         flex-grow: 1;
     }
 
@@ -278,7 +166,6 @@
             font-size: 1em;
             margin: 10px 0;
             cursor: pointer;
-            
         }
 
             .product-info h3:hover {

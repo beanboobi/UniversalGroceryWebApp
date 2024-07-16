@@ -20,6 +20,8 @@ namespace WebAppProject.Models
         [DataType(DataType.Currency)]
         public decimal Price { get; set; }
 
+        public string Category { get; set; }
+
         [StringLength(255)]
         public string ImageUrl { get; set; }
 
