@@ -760,3 +760,9 @@ C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\WebAppProje
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\WebAppProject\obj\Debug\net8.0\WebAppProject.pdb
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\WebAppProject\obj\Debug\net8.0\WebAppProject.genruntimeconfig.cache
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\WebAppProject\obj\Debug\net8.0\ref\WebAppProject.dll
+C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\WebAppProject\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\WebAppProject\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\WebAppProject\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\WebAppProject\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\WebAppProject\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\WebAppProject\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

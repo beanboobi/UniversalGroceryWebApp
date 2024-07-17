@@ -1,16 +1,23 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using WebAppProject.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace WebAppProject.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationUser : IdentityUser
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-            : base(options)
-        {
-        }
+    }
+    
 
-        public DbSet<GroceryItem> GroceryItem { get; set; }
+        public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+        {
+            public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+                : base(options)
+            {
+            }
+
+            public DbSet<GroceryItem> GroceryItem { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Employee> Employee { get; set; }
 
