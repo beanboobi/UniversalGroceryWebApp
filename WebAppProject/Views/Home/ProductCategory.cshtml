@@ -1,0 +1,220 @@
+﻿@{
+    ViewData["Title"] = "Category";
+}
+@model IEnumerable<WebAppProject.ViewModels.GroceryItemViewModel>
+
+@{
+    var category = Context.Request.Query["category"].ToString();
+}
+
+
+<div class="homepage">
+    <aside class="sidebar">
+        <h2>Category</h2>
+        <ul>
+            <li><a asp-controller="Home" asp-action="ProductCategory" asp-route-category="VegetablesAndFruit">Vegetables & Fruit</a></li>
+            <li><a asp-controller="Home" asp-action="ProductCategory" asp-route-category="Beverages">Beverages</a></li>
+            <li><a asp-controller="Home" asp-action="ProductCategory" asp-route-category="MeatsAndSeafood">Meats & Seafood</a></li>
+            <li><a asp-controller="Home" asp-action="ProductCategory" asp-route-category="MilkAndDairies">Milk & Dairies</a></li>
+            <li><a asp-controller="Home" asp-action="ProductCategory" asp-route-category="FrozenFoods">Frozen Foods</a></li>
+            <li><a asp-controller="Home" asp-action="ProductCategory" asp-route-category="Snacks">Biscuits & Snacks</a></li>
+            <li><a asp-controller="Home" asp-action="ProductCategory" asp-route-category="Household">Household</a></li>
+            <li><a asp-controller="Home" asp-action="ProductCategory" asp-route-category="Drinks">Drinks</a></li>
+            <li><a asp-controller="Home" asp-action="ProductCategory" asp-route-category="PetFoods">Pet Foods</a></li>
+        </ul>
+        <ul class="additional-categories">
+            <li><a href="#">Value of the Day</a></li>
+            <li><a href="#">Top 50 Offers</a></li>
+            <li><a href="#">New Arrivals</a></li>
+        </ul>
+        <div class="sidebar-banner">
+            <img src="~/images/banner.png" alt="Sidebar Banner">
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <section class="deal-of-the-day">
+            <div class="section-header">
+                <h2>@category</h2>
+                <a href="#" class="see-all">See All</a>
+            </div>
+            <div class="products-grid">
+                @foreach (var product in Model)
+                {
+                    <div class="product-card">
+                        <img src="@product.ImageUrl" alt="@product.Name" />
+                        <div class="product-info">
+                            <h3>@product.Name</h3>
+                            <div class="price">
+                                <span class="current-price">$@product.Price.ToString("F2")</span>
+                                <span class="original-price">$@product.OriginalPrice.ToString("F2")</span>
+                            </div>
+                            <p>@product.Description</p>
+                            <form asp-action="AddToCart" asp-controller="Cart" method="post">
+                                <input type="hidden" name="id" value="@product.Id" />
+                                <button type="submit" class="btn-add">Add to Cart</button>
+                            </form>
+                        </div>
+                    </div>
+                }
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<script>
+    function goToProductDetails(element) {
+        var productId = element.closest('.product-card').getAttribute('data-id');
+        window.location.href = '/Home/ProductDetails/' + productId;
+    }
+</script>
+<style>
+    .homepage {
+        display: flex;
+    }
+
+    .sidebar {
+        width: 20%;
+        padding: 20px;
+        background-color: #f8f8f8;
+    }
+
+        .sidebar h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .sidebar ul li {
+                margin-bottom: 10px;
+            }
+
+                .sidebar ul li a {
+                    text-decoration: none;
+                    color: #333;
+                    font-size: 1em;
+                }
+
+    .main-content {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .sidebar-banner img {
+        width: 100%;
+        height: 750px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 20px;
+    }
+
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .deal-of-the-day h2 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    .see-all {
+        font-size: 1em;
+        color: green;
+        text-decoration: none;
+    }
+
+    .products-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .product-card {
+        width: calc(22% - 20px);
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: #fff;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 20px;
+        flex: none;
+    }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+    .product-info {
+        padding: 10px;
+        flex: none;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+        .product-info h3 {
+            font-size: 1em;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+            .product-info h3:hover {
+                text-decoration: underline;
+            }
+
+    .price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .current-price {
+        font-size: 1.2em;
+        color: #28a745;
+    }
+
+    .original-price {
+        font-size: 1em;
+        color: #777;
+        text-decoration: line-through;
+    }
+
+    .btn-add {
+        margin-top: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        font-size: 1em;
+        color: #fff;
+        background-color: #28a745;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        transition: background-color 0.3s;
+        width: 100%;
+    }
+
+        .btn-add:hover {
+            background-color: #218838;
+        }
+
+        .btn-add::after {
+            content: '+';
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 1.2em;
+        }
+</style>

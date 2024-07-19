@@ -1,0 +1,143 @@
+﻿@model WebAppProject.ViewModels.GroceryItemViewModel
+
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<div class="product-details">
+    <button class="btn-close" onclick="goToHomePage()">X</button>
+    <h1>@Model.Name</h1>
+    <img src="@Model.ImageUrl" alt="@Model.Name" class="main-image">
+    <p>@Model.Description</p>
+    <div class="price">
+        <span class="current-price">$@Model.Price.ToString("F2")</span>
+        @if (Model.OriginalPrice != Model.Price)
+        {
+            <span class="original-price">$@Model.OriginalPrice.ToString("F2")</span>
+        }
+    </div>
+    <div class="quantity-selection">
+        <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+        <input id="quantityInput" type="number" value="1" min="1" />
+        <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+    </div>
+    <button class="btn-add">Add to Cart</button>
+</div>
+
+<script>
+    function changeQuantity(amount) {
+        var input = document.getElementById("quantityInput");
+        var currentValue = parseInt(input.value);
+        if (!isNaN(currentValue) && currentValue + amount >= 1) {
+            input.value = currentValue + amount;
+        }
+    }
+
+    function goToHomePage() {
+        window.location.href = '@Url.Action("Index", "Home")';
+    }
+</script>
+
+<style>
+    .product-details {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        position: relative;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #dc3545;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 1em;
+        color: #fff;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .btn-close:hover {
+            background-color: #c82333;
+        }
+
+    .product-details h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    .main-image {
+        width: 100%;
+        max-width: 400px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .product-details p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    .price {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .current-price {
+        color: #28a745;
+        font-weight: bold;
+    }
+
+    .original-price {
+        text-decoration: line-through;
+        margin-left: 10px;
+        color: #dc3545;
+    }
+
+    .quantity-selection {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .quantity-btn {
+        background-color: #f0f0f0;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+        .quantity-btn:hover {
+            background-color: #e0e0e0;
+        }
+
+    .quantity-selection input {
+        width: 50px;
+        text-align: center;
+        margin: 0 10px;
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .btn-add {
+        background-color: #ffc107;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 1.2em;
+    }
+
+        .btn-add:hover {
+            background-color: #e0a800;
+        }
+</style>

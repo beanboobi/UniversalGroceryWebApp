@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Manage Items";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        @Html.Partial("_Sidebar")
+    </div>
+    <div class="col-md-9">
+        <h2>Manage Items</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Picture</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Discount</th>
+                        <th>Category</th>
+                        <th>Created Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.ID</td>
+                            <td>@item.Name</td>
+                            <td><img src="@item.Picture" alt="@item.Name" style="width:50px;" /></td>
+                            <td>@item.Description</td>
+                            <td>@item.Price</td>
+                            <td>@item.Qty</td>
+                            <td>@item.Discount%</td>
+                            <td>@item.Category</td>
+                            <td>@item.CreatedDate.ToString("dd-MM-yyyy")</td>
+                            <td>
+                                <a href="#">Edit</a> | <a href="#">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
