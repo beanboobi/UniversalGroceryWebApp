@@ -29,5 +29,8 @@ namespace WebAppProject.Models
         [Required]
         public String CreatedDate { get; set; }
 
+        [Required]
+        public String Category { get; set; }
+
     }
 }
