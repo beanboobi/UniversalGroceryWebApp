@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Http;
 using WebAppProject.ViewModels;
 
 namespace WebAppProject.Areas.Admin.Controllers
-{
+{3
     [Area("Admin")]
     public class HomeController : Controller
     {
