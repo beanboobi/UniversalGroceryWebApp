@@ -1,19 +1,17 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace WebAppProject.Models
+namespace WebAppProject.ViewModels
+
 {
-    public class User
+    public class UsersViewModel
     {
-        
+        [Required]
         public int UserId { get; set; }
 
         [Required]
         [StringLength(100)]
         public string Username { get; set; }
 
-        [Required]
         [StringLength(100)]
         [DataType(DataType.Password)]
         public string Password { get; set; }
@@ -25,10 +23,5 @@ namespace WebAppProject.Models
         [Required]
         [StringLength(100)]
         public string Role { get; set; } // To differentiate between Employee, Admin, and Customer
-
-        // Navigation property
-        public ICollection<Employee> Employees { get; set; }
     }
 }
-
-
