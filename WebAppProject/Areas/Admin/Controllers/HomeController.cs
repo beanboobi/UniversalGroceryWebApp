@@ -9,6 +9,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using WebAppProject.ViewModels;
+using Microsoft.AspNetCore.Http;
 
 namespace WebAppProject.Areas.Admin.Controllers
 {
@@ -138,10 +139,7 @@ namespace WebAppProject.Areas.Admin.Controllers
             return RedirectToAction(nameof(ManageCustomerAcc));
         }
 
-        public IActionResult ManageWebsite()
-        {
-            return View();
-        }
+        
 
         public IActionResult EditCustomer(int id)
         {
@@ -430,6 +428,95 @@ namespace WebAppProject.Areas.Admin.Controllers
         {
             return _context.GroceryItem.Any(e => e.Id == id);
         }
+        public IActionResult ManageWebsite()
+        {
+            var viewModel = new ManageWebsiteViewModel
+            {
+                BannerImages = _context.BannerImage.ToList(),
+                BannerImage = new BannerImage()
+            };
+            return View(viewModel);
+        }
+
+        public IActionResult EditBanner(int id)
+        {
+            var banner = _context.BannerImage.Find(id);
+            if (banner == null)
+            {
+                return NotFound();
+            }
+
+
+            var viewModel = new ManageWebsiteViewModel
+            {
+                BannerImages = _context.BannerImage.ToList(),
+                BannerImage = banner
+            };
+            return View("ManageWebsite", viewModel);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> SaveBannerImage(ManageWebsiteViewModel model, IFormFile bannerPicture)
+        {
+            if (bannerPicture != null)
+            {
+                var uniqueFileName = await SaveBannerImageAsync(bannerPicture);
+                model.BannerImage.ImagePath = "/uploads/" + uniqueFileName;
+            }
+
+            if (model.BannerImage.Id == 0)
+            {
+                model.BannerImage.CreatedDate = DateTime.Now;
+                _context.BannerImage.Add(model.BannerImage);
+            }
+            else
+            {
+                var existingBanner = _context.BannerImage.Find(model.BannerImage.Id);
+                if (existingBanner == null)
+                {
+                    return NotFound();
+                }
+                existingBanner.ImagePath = model.BannerImage.ImagePath ?? existingBanner.ImagePath;
+                existingBanner.RedirectUrl = model.BannerImage.RedirectUrl;
+                _context.BannerImage.Update(existingBanner);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(ManageWebsite));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteBannerImage(int id)
+        {
+            var banner = _context.BannerImage.Find(id);
+            if (banner == null)
+            {
+                return NotFound();
+            }
+            _context.BannerImage.Remove(banner);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(ManageWebsite));
+        }
+
+        private async Task<string> SaveBannerImageAsync(IFormFile bannerPicture)
+        {
+            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+            if (!Directory.Exists(uploadsFolder))
+            {
+                Directory.CreateDirectory(uploadsFolder);
+            }
+            var uniqueFileName = Guid.NewGuid().ToString() + "_" + bannerPicture.FileName;
+            var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+            using (var fileStream = new FileStream(filePath, FileMode.Create))
+            {
+                await bannerPicture.CopyToAsync(fileStream);
+            }
+            return uniqueFileName;
+        }
+
+
+
     }
 }
 

@@ -28,7 +28,6 @@ namespace WebAppProject.Controllers
         public IActionResult Index()
         {
             var items = _context.GroceryItem
-
                 .OrderByDescending(item => item.Discount)
                 .Take(8)
                 .Select(item => new GroceryItemViewModel
@@ -40,10 +39,21 @@ namespace WebAppProject.Controllers
                     OriginalPrice = item.Price, // Assuming original price is the same for now
                     Description = item.Description,
                 })
-               .ToList();
+                .ToList();
 
-            return View(items);
+            var banners = _context.BannerImage
+                .OrderByDescending(b => b.CreatedDate)
+                .ToList();
+
+            var viewModel = new HomePageViewModel
+            {
+                GroceryItems = items,
+                BannerImages = banners
+            };
+
+            return View(viewModel);
         }
+
         [HttpGet]
         public IActionResult ProductCategory(string category)
         {

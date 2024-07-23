@@ -1,7 +1,7 @@
-﻿@{
+﻿@model WebAppProject.ViewModels.HomePageViewModel
+@{
     ViewData["Title"] = "Home Page";
 }
-@model IEnumerable<WebAppProject.ViewModels.GroceryItemViewModel>
 
 <!-- Banner Section Start -->
 <div class="banner-section">
@@ -12,16 +12,13 @@
         <a href="#" class="shop-now">Shop Now</a>
     </div>
     <div class="banner-right">
-        <div class="banner-ad">
-            <h2>45% OFF Nut Collection</h2>
-            <p>We deliver organic vegetables & fruits</p>
-            <a href="#" class="shop-now">Shop Now</a>
-        </div>
-        <div class="banner-ad">
-            <h2>Healthy Food Organic Market</h2>
-            <p>Start your daily shopping with some Organic food</p>
-            <a href="#" class="shop-now">Shop Now</a>
-        </div>
+        @foreach (var banner in Model.BannerImages)
+        {
+            <div class="banner-ad">
+                <img src="@banner.ImagePath" alt="Banner Image" />
+                <a href="@banner.RedirectUrl" class="shop-now">Shop Now</a>
+            </div>
+        }
     </div>
 </div>
 <!-- Banner Section End -->
@@ -58,7 +55,7 @@
                 <a href="#" class="see-all">See All</a>
             </div>
             <div class="products-grid">
-                @foreach (var item in Model)
+                @foreach (var item in Model.GroceryItems)
                 {
                     <div class="product-card" data-id="@item.Id">
                         <img src="@item.ImageUrl" alt="@item.Name" onclick="goToProductDetails(this)">
@@ -81,10 +78,8 @@
                         </div>
                     </div>
                 }
-                
             </div>
         </section>
-
     </main>
 </div>
 
@@ -98,6 +93,10 @@
         window.location.href = '/Home/ProductCategory/' + encodeURIComponent(category);
     }
 </script>
+
+<style>
+    /* Your existing styles */
+</style>
 
 <style>
     .banner-section {
@@ -135,19 +134,16 @@
         }
 
     .shop-now {
-        padding: 5px 10px; 
-        
-        color: green; 
+        padding: 5px 10px;
+        color: green;
         text-decoration: none;
         font-size: 1em;
-        font-weight: bold; 
+        font-weight: bold;
         margin-top: 10px;
         display: inline-block;
-        border: none; 
-        border-radius: 3px; 
+        border: none;
+        border-radius: 3px;
     }
-
-
 
     .banner-right {
         width: 35%;
@@ -169,7 +165,7 @@
         .banner-ad h2 {
             font-size: 1.5em;
             margin-bottom: 10px;
-            color:Black;
+            color: black;
         }
 
         .banner-ad p {
@@ -212,12 +208,12 @@
         width: 80%;
         padding: 20px;
     }
-    
+
     .sidebar-banner img {
         width: 100%;
-        height: 750px; 
-        object-fit: cover; 
-        object-position: center; 
+        height: 750px;
+        object-fit: cover;
+        object-position: center;
         border-radius: 20px;
     }
 
@@ -254,23 +250,19 @@
         text-align: center;
         padding: 10px;
         margin-bottom: 20px;
-        flex:none;
-        
-
-        
+        flex: none;
     }
 
         .product-card img {
             max-width: 100%;
             height: auto;
-            
         }
 
     .product-info {
         padding: 10px;
-        flex: none; 
-        display: flex; 
-        flex-direction: column; 
+        flex: none;
+        display: flex;
+        flex-direction: column;
         flex-grow: 1;
     }
 
@@ -278,7 +270,6 @@
             font-size: 1em;
             margin: 10px 0;
             cursor: pointer;
-            
         }
 
             .product-info h3:hover {
@@ -299,35 +290,21 @@
 
     .original-price {
         font-size: 1em;
-        color: #777;
+        color: #999;
         text-decoration: line-through;
     }
 
     .btn-add {
-        margin-top: auto;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 20px;
-        font-size: 1em;
+        background-color: #007bff;
         color: #fff;
-        background-color: #28a745;
         border: none;
+        padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
-        text-align: center;
-        transition: background-color 0.3s;
-        width: 100%;
+        font-size: 1em;
     }
 
         .btn-add:hover {
-            background-color: #218838;
-        }
-
-        .btn-add::after {
-            content: '+';
-            display: inline-block;
-            margin-left: 10px;
-            font-size: 1.2em;
+            background-color: #0056b3;
         }
 </style>

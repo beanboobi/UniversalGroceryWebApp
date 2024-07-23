@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject.csproj": {}
+    "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject.csproj": {
+    "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject.csproj",
+        "projectUniqueName": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject.csproj",
         "projectName": "WebAppProject",
-        "projectPath": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject.csproj",
-        "packagesPath": "C:\\Users\\kaibo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\obj\\",
+        "projectPath": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\WebAppProject.csproj",
+        "packagesPath": "C:\\Users\\eugen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kaibo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eugen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -95,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
