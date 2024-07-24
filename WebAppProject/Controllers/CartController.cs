@@ -6,6 +6,9 @@ using System.Collections.Generic;
 using System.Linq;
 using WebAppProject.Helpers;
 using WebAppProject.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using System.Security.Claims;
 
 public class CartController : Controller
 {
@@ -16,16 +19,26 @@ public class CartController : Controller
         _context = context;
     }
 
+    private string GetCartSessionKey()
+    {
+        var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
+        var userId = userIdClaim?.Value;
+        Console.WriteLine("User ID: " + userId); // Check if user ID is being retrieved correctly
+        return $"cart_{userId}";
+    }
+
     public IActionResult Cart()
     {
-        var cart = SessionHelper.GetObjectFromJson<List<CartItem>>(HttpContext.Session, "cart") ?? new List<CartItem>();
+        var cart = SessionHelper.GetObjectFromJson<List<CartItem>>(HttpContext.Session, GetCartSessionKey()) ?? new List<CartItem>();
         return View(cart);
     }
 
     [HttpPost]
     public IActionResult AddToCart(int id)
     {
-        var cart = SessionHelper.GetObjectFromJson<List<CartItem>>(HttpContext.Session, "cart") ?? new List<CartItem>();
+        var cartSessionKey = GetCartSessionKey();
+        Console.WriteLine("Session Key: " + cartSessionKey);
+        var cart = SessionHelper.GetObjectFromJson<List<CartItem>>(HttpContext.Session, GetCartSessionKey()) ?? new List<CartItem>();
 
         var item = _context.GroceryItem.FirstOrDefault(i => i.Id == id);
         if (item == null)
@@ -44,14 +57,14 @@ public class CartController : Controller
             cartItem.Quantity++;
         }
 
-        SessionHelper.SetObjectAsJson(HttpContext.Session, "cart", cart);
+        SessionHelper.SetObjectAsJson(HttpContext.Session, GetCartSessionKey(), cart);
         return RedirectToAction("Cart");
     }
 
     [HttpPost]
     public IActionResult Remove(int itemId)
     {
-        var cart = SessionHelper.GetObjectFromJson<List<CartItem>>(HttpContext.Session, "cart") ?? new List<CartItem>();
+        var cart = SessionHelper.GetObjectFromJson<List<CartItem>>(HttpContext.Session, GetCartSessionKey()) ?? new List<CartItem>();
 
         var cartItem = cart.FirstOrDefault(x => x.Item.Id == itemId);
         if (cartItem != null)
@@ -62,6 +75,8 @@ public class CartController : Controller
 
         return RedirectToAction("Cart"); // Redirect to the cart view
     }
+
+    
 
 
     private GroceryItemViewModel MapToViewModel(GroceryItem item)
@@ -76,6 +91,8 @@ public class CartController : Controller
             Description = item.Description,
         };
     }
+
+
 
 }
 

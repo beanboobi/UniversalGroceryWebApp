@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using WebAppProject.Helpers;
 
 namespace WebAppProject.ViewModels
 {
@@ -70,6 +71,11 @@ namespace WebAppProject.ViewModels
         public int Quantity { get; set; }
 
         public decimal TotalPrice => Item.Price * Quantity;
+    }
+
+    public class CartSummaryViewModel
+    {
+        public int ItemCount { get; set; }
     }
 }
 

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using WebAppProject.Data;
 using WebAppProject.ViewModels;
@@ -80,6 +81,10 @@ namespace WebAppProject.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
+
+            var cartSessionKey = $"cart_{User.FindFirstValue(ClaimTypes.NameIdentifier)}";
+            HttpContext.Session.Remove(cartSessionKey);
+
             return RedirectToAction(nameof(HomeController.Index), "Home");
         }
 

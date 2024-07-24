@@ -9,6 +9,9 @@ using WebAppProject.ViewModels;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Linq;
+using WebAppProject.Helpers;
+using System.Security.Claims;
+using Newtonsoft.Json;
 
 namespace WebAppProject.Controllers
 {
@@ -85,6 +88,7 @@ namespace WebAppProject.Controllers
 
             return View(product);
         }
+
 
         public IActionResult Privacy()
         {
