@@ -32,7 +32,11 @@ namespace WebAppProject.Models
         public int UserId { get; set; } // Foreign key
 
         // Navigation property
+<<<<<<< HEAD
         public User User { get; set; }
+=======
+        public User Users { get; set; }
+>>>>>>> origin/Kaiboon2
     }
 }
 

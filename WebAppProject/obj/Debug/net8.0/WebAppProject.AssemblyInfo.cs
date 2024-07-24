@@ -14,11 +14,15 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebAppProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 <<<<<<< HEAD:WebAppProject/WebAppProject/obj/Debug/net8.0/WebAppProject.AssemblyInfo.cs
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09c8ce0c1cbec044333ff361607c9f5d7fcc5774")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+539dd71f82c0accded09e093027fe8a27fe8c804")]
 >>>>>>> origin/Kaiboon2:WebAppProject/obj/Debug/net8.0/WebAppProject.AssemblyInfo.cs
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0e8e99751c64cf391085f2858653a15f4fb7aa7")]
+>>>>>>> origin/Kaiboon2
 [assembly: System.Reflection.AssemblyProductAttribute("WebAppProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebAppProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
