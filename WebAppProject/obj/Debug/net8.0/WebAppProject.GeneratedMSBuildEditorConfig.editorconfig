@@ -17,147 +17,155 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebAppProject
 build_property.RootNamespace = WebAppProject
-build_property.ProjectDir = C:\Users\kaibo\OneDrive\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\
+build_property.ProjectDir = C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\kaibo\OneDrive\Documents\GitHub\UniversalGroceryWebApp\WebAppProject
+build_property.MSBuildProjectDirectory = C:\Users\Kelvin Mai\OneDrive\Tài liệu\GitHub\UniversalGroceryWebApp\WebAppProject
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/AddEmployee.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/AddEmployee.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxBZGRFbXBsb3llZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/AddProduct.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/AddProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxBZGRQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/EditCustomer.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/EditCustomer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxFZGl0Q3VzdG9tZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/EmployeeEditForm.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/EmployeeEditForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxFbXBsb3llZUVkaXRGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/Index.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/ItemEditForm.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/ItemEditForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJdGVtRWRpdEZvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/ManageCustomerAcc.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/ManageCustomerAcc.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxNYW5hZ2VDdXN0b21lckFjYy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/ManageEmployee.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/ManageEmployee.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxNYW5hZ2VFbXBsb3llZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/ManageItem.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/ManageItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxNYW5hZ2VJdGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/ManageWebsite.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Home/ManageWebsite.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxNYW5hZ2VXZWJzaXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/ManageItem/Index.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/ManageItem/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFuYWdlSXRlbVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Shared/Error.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Shared/_Sidebar.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Shared/_Sidebar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9TaWRlYmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Cart/Cart.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Cart/Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/AboutUs.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/CheckOut.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/CheckOut.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGVja091dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/Contact.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/FeedBack.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/FeedBack.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGZWVkQmFjay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/Index.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/Payment.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/OrderDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPcmRlckRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/OrderHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPcmRlckhpc3RvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/Payment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYXltZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/Privacy.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/ProductCategory.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/ProductCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0Q2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/ProductDetails.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Home/ProductDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0RGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Login/Login.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Login/Register.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Login/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Shared/Error.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Views/_ViewImports.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Views/_ViewStart.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-tpg8ps29wy
 
-[C:/Users/kaibo/OneDrive/Documents/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Shared/_Layout.cshtml]
+[C:/Users/Kelvin Mai/OneDrive/Tài liệu/GitHub/UniversalGroceryWebApp/WebAppProject/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-8oaowa1aje
