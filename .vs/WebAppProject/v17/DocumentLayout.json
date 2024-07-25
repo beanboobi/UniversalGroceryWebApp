@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\models\\viewmodel2\\homepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\models\\viewmodel2\\homepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\areas\\admin\\views\\home\\managewebsite.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\areas\\admin\\views\\home\\managewebsite.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\models\\viewmodel2\\managewebsiteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,48 +27,89 @@
       "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\models\\bannerimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\models\\viewmodel2\\homepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\models\\viewmodel2\\homepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\viewmodels\\viewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\viewmodels\\viewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\views\\home\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\views\\home\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\areas\\admin\\views\\home\\manageitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\areas\\admin\\views\\home\\manageitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\areas\\admin\\views\\home\\manageemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\areas\\admin\\views\\home\\manageemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\models\\viewmodel2\\employeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\models\\viewmodel2\\employeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\models\\viewmodel2\\usersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\models\\viewmodel2\\usersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WebAppProject/True/SqlTable/dbo.BannerImage.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\migrations\\20240725021012_addbannertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\migrations\\20240725021012_addbannertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\viewmodels\\viewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\viewmodels\\viewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\areas\\admin\\views\\home\\manageemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\areas\\admin\\views\\home\\manageemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\models\\viewmodel2\\grocerybannerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\models\\viewmodel2\\grocerybannerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\models\\viewmodel2\\employeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\models\\viewmodel2\\employeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WebAppProject/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WebAppProject/True/SqlTable/dbo.AspNetUserTokens.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WebAppProject/True/SqlTable/dbo.AspNetUserRoles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WebAppProject/True/SqlTable/dbo.AspNetUserLogins.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WebAppProject/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WebAppProject/True/SqlTable/dbo.Employee.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\data\\identitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\data\\identitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\views\\home\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\views\\home\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\areas\\admin\\views\\home\\manageitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\areas\\admin\\views\\home\\manageitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -73,10 +118,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\views\\home\\productdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\views\\home\\productdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|solutionrelative:webappproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67CD02B7-957E-4847-A46A-BDEEC549D83D}|WebAppProject\\WebAppProject.csproj|c:\\users\\eugen\\documents\\github\\universalgrocerywebapp\\webappproject\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,58 +144,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "WebAppProject\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "WebAppProject\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAlwBQAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T02:57:26.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ManageWebsiteViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\ViewModel2\\ManageWebsiteViewModel.cs",
-              "RelativeDocumentMoniker": "WebAppProject\\Models\\ViewModel2\\ManageWebsiteViewModel.cs",
-              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\ViewModel2\\ManageWebsiteViewModel.cs",
-              "RelativeToolTip": "WebAppProject\\Models\\ViewModel2\\ManageWebsiteViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T02:17:05.591Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BannerImage.cs",
-              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\BannerImage.cs",
-              "RelativeDocumentMoniker": "WebAppProject\\Models\\BannerImage.cs",
-              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\BannerImage.cs",
-              "RelativeToolTip": "WebAppProject\\Models\\BannerImage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T07:27:22.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "WebAppProject\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Areas\\Admin\\Controllers\\HomeController.cs*",
-              "RelativeToolTip": "WebAppProject\\Areas\\Admin\\Controllers\\HomeController.cs*",
-              "ViewState": "AQIAAIEAAAAAAAAAAIA4wI0AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T06:27:45.628Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebAppProject\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Index.cshtml*",
+              "RelativeToolTip": "WebAppProject\\Views\\Home\\Index.cshtml*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T08:42:03.54Z",
               "EditorCaption": ""
             },
             {
@@ -165,7 +167,7 @@
               "RelativeDocumentMoniker": "WebAppProject\\Areas\\Admin\\Views\\Home\\ManageWebsite.cshtml",
               "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Areas\\Admin\\Views\\Home\\ManageWebsite.cshtml",
               "RelativeToolTip": "WebAppProject\\Areas\\Admin\\Views\\Home\\ManageWebsite.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAMwB0AAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-21T14:28:19.006Z",
               "EditorCaption": ""
@@ -176,124 +178,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "HomePageViewModel.cs",
               "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\ViewModel2\\HomePageViewModel.cs",
               "RelativeDocumentMoniker": "WebAppProject\\Models\\ViewModel2\\HomePageViewModel.cs",
               "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\ViewModel2\\HomePageViewModel.cs",
               "RelativeToolTip": "WebAppProject\\Models\\ViewModel2\\HomePageViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T07:39:40.279Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ViewModels.cs",
-              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\ViewModels\\ViewModels.cs",
-              "RelativeDocumentMoniker": "WebAppProject\\ViewModels\\ViewModels.cs",
-              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\ViewModels\\ViewModels.cs",
-              "RelativeToolTip": "WebAppProject\\ViewModels\\ViewModels.cs",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebAppProject\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebAppProject\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAMcBAAAAAAAAAAAUwOoBAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T06:27:45.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ManageWebsiteViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\ViewModel2\\ManageWebsiteViewModel.cs",
+              "RelativeDocumentMoniker": "WebAppProject\\Models\\ViewModel2\\ManageWebsiteViewModel.cs",
+              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\ViewModel2\\ManageWebsiteViewModel.cs",
+              "RelativeToolTip": "WebAppProject\\Models\\ViewModel2\\ManageWebsiteViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T14:14:32.152Z",
+              "WhenOpened": "2024-07-23T02:17:05.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Payment.cshtml",
-              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Payment.cshtml",
-              "RelativeDocumentMoniker": "WebAppProject\\Views\\Home\\Payment.cshtml",
-              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Payment.cshtml",
-              "RelativeToolTip": "WebAppProject\\Views\\Home\\Payment.cshtml",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAAAGcAAABiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-12T06:26:04.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebAppProject\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebAppProject\\Views\\Home\\Index.cshtml",
+              "DocumentIndex": 5,
+              "Title": "BannerImage.cs",
+              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\BannerImage.cs",
+              "RelativeDocumentMoniker": "WebAppProject\\Models\\BannerImage.cs",
+              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\BannerImage.cs",
+              "RelativeToolTip": "WebAppProject\\Models\\BannerImage.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-10T08:42:03.54Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T07:27:22.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ManageItem.cshtml",
-              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Areas\\Admin\\Views\\Home\\ManageItem.cshtml",
-              "RelativeDocumentMoniker": "WebAppProject\\Areas\\Admin\\Views\\Home\\ManageItem.cshtml",
-              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Areas\\Admin\\Views\\Home\\ManageItem.cshtml",
-              "RelativeToolTip": "WebAppProject\\Areas\\Admin\\Views\\Home\\ManageItem.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-22T06:40:52.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ManageEmployee.cshtml",
-              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Areas\\Admin\\Views\\Home\\ManageEmployee.cshtml",
-              "RelativeDocumentMoniker": "WebAppProject\\Areas\\Admin\\Views\\Home\\ManageEmployee.cshtml",
-              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Areas\\Admin\\Views\\Home\\ManageEmployee.cshtml",
-              "RelativeToolTip": "WebAppProject\\Areas\\Admin\\Views\\Home\\ManageEmployee.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-23T02:30:36.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "WebAppProject\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Controllers\\HomeController.cs",
               "RelativeToolTip": "WebAppProject\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAYwDcAAAAAAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T02:05:20.159Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "WebAppProject\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "WebAppProject\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T16:52:21.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "EmployeeViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\ViewModel2\\EmployeeViewModel.cs",
-              "RelativeDocumentMoniker": "WebAppProject\\Models\\ViewModel2\\EmployeeViewModel.cs",
-              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\ViewModel2\\EmployeeViewModel.cs",
-              "RelativeToolTip": "WebAppProject\\Models\\ViewModel2\\EmployeeViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T06:34:30.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 7,
               "Title": "UsersViewModel.cs",
               "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\ViewModel2\\UsersViewModel.cs",
               "RelativeDocumentMoniker": "WebAppProject\\Models\\ViewModel2\\UsersViewModel.cs",
@@ -306,7 +256,69 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 8,
+              "Title": "dbo.BannerImage [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WebAppProject/True/SqlTable/dbo.BannerImage.sql",
+              "ToolTip": "dbo.BannerImage [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-25T02:04:45.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20240725021012_AddBannerType.cs",
+              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Migrations\\20240725021012_AddBannerType.cs",
+              "RelativeDocumentMoniker": "WebAppProject\\Migrations\\20240725021012_AddBannerType.cs",
+              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Migrations\\20240725021012_AddBannerType.cs",
+              "RelativeToolTip": "WebAppProject\\Migrations\\20240725021012_AddBannerType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T02:10:12.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "WebAppProject\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "WebAppProject\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAcwBMAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T02:57:26.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\ViewModels\\ViewModels.cs",
+              "RelativeDocumentMoniker": "WebAppProject\\ViewModels\\ViewModels.cs",
+              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\ViewModels\\ViewModels.cs",
+              "RelativeToolTip": "WebAppProject\\ViewModels\\ViewModels.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T14:14:32.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ManageEmployee.cshtml",
+              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Areas\\Admin\\Views\\Home\\ManageEmployee.cshtml",
+              "RelativeDocumentMoniker": "WebAppProject\\Areas\\Admin\\Views\\Home\\ManageEmployee.cshtml",
+              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Areas\\Admin\\Views\\Home\\ManageEmployee.cshtml",
+              "RelativeToolTip": "WebAppProject\\Areas\\Admin\\Views\\Home\\ManageEmployee.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T02:30:36.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "GroceryBannerViewModel.cs",
               "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\ViewModel2\\GroceryBannerViewModel.cs",
               "RelativeDocumentMoniker": "WebAppProject\\Models\\ViewModel2\\GroceryBannerViewModel.cs",
@@ -319,7 +331,184 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "WebAppProject\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\Employee.cs",
+              "RelativeToolTip": "WebAppProject\\Models\\Employee.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwB0AAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T09:25:58.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "WebAppProject\\Models\\Users.cs",
+              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\Users.cs",
+              "RelativeToolTip": "WebAppProject\\Models\\Users.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBkAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T08:56:24.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 16,
+              "Title": "EmployeeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\ViewModel2\\EmployeeViewModel.cs",
+              "RelativeDocumentMoniker": "WebAppProject\\Models\\ViewModel2\\EmployeeViewModel.cs",
+              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\ViewModel2\\EmployeeViewModel.cs",
+              "RelativeToolTip": "WebAppProject\\Models\\ViewModel2\\EmployeeViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T06:34:30.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WebAppProject/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-24T09:05:13.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "dbo.AspNetUserTokens [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WebAppProject/True/SqlTable/dbo.AspNetUserTokens.sql",
+              "ToolTip": "dbo.AspNetUserTokens [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-24T09:23:49.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "dbo.AspNetUserRoles [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WebAppProject/True/SqlTable/dbo.AspNetUserRoles.sql",
+              "ToolTip": "dbo.AspNetUserRoles [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-24T08:56:14.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "dbo.AspNetUserLogins [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WebAppProject/True/SqlTable/dbo.AspNetUserLogins.sql",
+              "ToolTip": "dbo.AspNetUserLogins [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-24T09:23:01.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "dbo.Users [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WebAppProject/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "dbo.Users [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-24T09:17:39.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "dbo.Employee [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WebAppProject/True/SqlTable/dbo.Employee.sql",
+              "ToolTip": "dbo.Employee [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-24T09:05:35.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IdentityDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Data\\IdentityDbContext.cs",
+              "RelativeDocumentMoniker": "WebAppProject\\Data\\IdentityDbContext.cs",
+              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Data\\IdentityDbContext.cs",
+              "RelativeToolTip": "WebAppProject\\Data\\IdentityDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T07:56:43.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebAppProject\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebAppProject\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T08:43:38.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Program.cs",
+              "RelativeDocumentMoniker": "WebAppProject\\Program.cs",
+              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Program.cs",
+              "RelativeToolTip": "WebAppProject\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T04:58:56.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Payment.cshtml",
+              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Payment.cshtml",
+              "RelativeDocumentMoniker": "WebAppProject\\Views\\Home\\Payment.cshtml",
+              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Payment.cshtml",
+              "RelativeToolTip": "WebAppProject\\Views\\Home\\Payment.cshtml",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAGcAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-12T06:26:04.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ManageItem.cshtml",
+              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Areas\\Admin\\Views\\Home\\ManageItem.cshtml",
+              "RelativeDocumentMoniker": "WebAppProject\\Areas\\Admin\\Views\\Home\\ManageItem.cshtml",
+              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Areas\\Admin\\Views\\Home\\ManageItem.cshtml",
+              "RelativeToolTip": "WebAppProject\\Areas\\Admin\\Views\\Home\\ManageItem.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T06:40:52.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "WebAppProject\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "WebAppProject\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T16:52:21.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\Login.cs",
               "RelativeDocumentMoniker": "WebAppProject\\Models\\Login.cs",
@@ -332,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 32,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "WebAppProject\\Views\\Home\\Privacy.cshtml",
@@ -345,20 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Program.cs",
-              "RelativeDocumentMoniker": "WebAppProject\\Program.cs",
-              "ToolTip": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Program.cs",
-              "RelativeToolTip": "WebAppProject\\Program.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAjwBoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T04:58:56.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 33,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Login.cshtml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Login.cshtml",
@@ -369,7 +545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 34,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Controllers\\ProductController.cs",
@@ -380,7 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 30,
               "Title": "ProductDetails.cshtml",
               "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\ProductDetails.cshtml",
               "RelativeDocumentMoniker": "WebAppProject\\Views\\Home\\ProductDetails.cshtml",
@@ -393,7 +569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 35,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Register.cshtml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Kelvin Mai\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Views\\Home\\Register.cshtml",
@@ -404,7 +580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 31,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\Models\\Product.cs",
               "RelativeDocumentMoniker": "WebAppProject\\Models\\Product.cs",

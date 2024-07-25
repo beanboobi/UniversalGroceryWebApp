@@ -6,13 +6,18 @@
 <!-- Banner Section Start -->
 <div class="banner-section">
     <div class="banner-left">
-        <h2>Exclusive offer <span>30% Off</span></h2>
-        <p>STAY HOME & DELIVERED YOUR DAILY NEEDS</p>
-        <p>Vegetables contain many vitamins and minerals that are good for your health.</p>
-        <a href="#" class="shop-now">Shop Now</a>
+        @if (Model.MainBanner != null)
+        {
+            <div class="banner-ad">
+                <img src="@Model.MainBanner.ImagePath" alt="Banner Image" />
+                <a href="@Model.MainBanner.RedirectUrl" class="shop-now">Shop Now</a>
+            </div>
+        }
     </div>
     <div class="banner-right">
-        @foreach (var banner in Model.BannerImages)
+       
+        <!--SideBanner-->
+        @foreach (var banner in Model.SideBanners)
         {
             <div class="banner-ad">
                 <img src="@banner.ImagePath" alt="Banner Image" />
@@ -152,26 +157,23 @@
         background-size: cover;
         background-position: center;
         padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .banner-ad {
         padding: 20px;
-        background-color: rgba(0 0, 0, 0.1);
+        background-color: rgba(0, 0, 0, 0.1);
         border: 1px solid #ddd;
         border-radius: 5px;
         text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
     }
 
-        .banner-ad h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            color: black;
-        }
-
-        .banner-ad p {
-            font-size: 1em;
-            margin-bottom: 10px;
-            color: black;
+        .banner-ad img {
+            max-width: 100%;
+            height: auto;
         }
 
     .homepage {
@@ -290,21 +292,22 @@
 
     .original-price {
         font-size: 1em;
-        color: #999;
+        color: #aaa;
         text-decoration: line-through;
     }
 
     .btn-add {
-        background-color: #007bff;
+        padding: 5px 10px;
+        background-color: #28a745;
         color: #fff;
         border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
+        border-radius: 3px;
         cursor: pointer;
-        font-size: 1em;
+        font-size: 0.9em;
+        margin-top: 10px;
     }
 
         .btn-add:hover {
-            background-color: #0056b3;
+            background-color: #218838;
         }
 </style>

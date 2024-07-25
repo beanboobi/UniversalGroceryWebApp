@@ -6,6 +6,7 @@ namespace WebAppProject.ViewModels
     public class HomePageViewModel
     {
         public IEnumerable<GroceryItemViewModel> GroceryItems { get; set; }
-        public IEnumerable<BannerImage> BannerImages { get; set; }
+        public BannerImage MainBanner { get; set; } // Add this property
+        public IEnumerable<BannerImage> SideBanners { get; set; } // Modify this property
     }
 }

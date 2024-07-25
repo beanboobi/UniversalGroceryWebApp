@@ -772,3 +772,7 @@ C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\n
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net8.0\WebAppProject.pdb
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net8.0\WebAppProject.genruntimeconfig.cache
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net8.0\ref\WebAppProject.dll
+C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll

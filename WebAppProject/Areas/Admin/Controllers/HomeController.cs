@@ -10,9 +10,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using WebAppProject.ViewModels;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebAppProject.Areas.Admin.Controllers
 {
+    //[Authorize(Roles = "Admin")]
     [Area("Admin")]
     public class HomeController : Controller
     {
@@ -428,11 +430,13 @@ namespace WebAppProject.Areas.Admin.Controllers
         {
             return _context.GroceryItem.Any(e => e.Id == id);
         }
+
         public IActionResult ManageWebsite()
         {
             var viewModel = new ManageWebsiteViewModel
             {
-                BannerImages = _context.BannerImage.ToList(),
+                MainBanner = _context.BannerImage.FirstOrDefault(b => b.BannerType == "Main"),
+                SideBanners = _context.BannerImage.Where(b => b.BannerType == "Side").ToList(),
                 BannerImage = new BannerImage()
             };
             return View(viewModel);
@@ -446,15 +450,14 @@ namespace WebAppProject.Areas.Admin.Controllers
                 return NotFound();
             }
 
-
             var viewModel = new ManageWebsiteViewModel
             {
-                BannerImages = _context.BannerImage.ToList(),
+                MainBanner = _context.BannerImage.FirstOrDefault(b => b.BannerType == "Main"),
+                SideBanners = _context.BannerImage.Where(b => b.BannerType == "Side").ToList(),
                 BannerImage = banner
             };
             return View("ManageWebsite", viewModel);
         }
-
 
         [HttpPost]
         public async Task<IActionResult> SaveBannerImage(ManageWebsiteViewModel model, IFormFile bannerPicture)
@@ -479,6 +482,7 @@ namespace WebAppProject.Areas.Admin.Controllers
                 }
                 existingBanner.ImagePath = model.BannerImage.ImagePath ?? existingBanner.ImagePath;
                 existingBanner.RedirectUrl = model.BannerImage.RedirectUrl;
+                existingBanner.BannerType = model.BannerImage.BannerType; // Ensure the BannerType is updated
                 _context.BannerImage.Update(existingBanner);
             }
 

@@ -16,6 +16,8 @@ namespace WebAppProject.Models
         [Display(Name = "Created Date")]
         public DateTime CreatedDate { get; set; }
 
+        public string BannerType { get; set; } // Add this property
+
     }
 }
 
