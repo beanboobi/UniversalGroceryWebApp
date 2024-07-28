@@ -523,9 +523,11 @@ C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\n
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Humanizer.dll
+C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.Build.dll
@@ -548,9 +550,11 @@ C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\n
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
@@ -772,7 +776,3 @@ C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\n
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net8.0\WebAppProject.pdb
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net8.0\WebAppProject.genruntimeconfig.cache
 C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\obj\Debug\net8.0\ref\WebAppProject.dll
-C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
-C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
-C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\eugen\Documents\GitHub\UniversalGroceryWebApp\WebAppProject\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll

@@ -155,7 +155,7 @@ namespace WebAppProject.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("WebAppProject.Data.ApplicationUser", b =>
+            modelBuilder.Entity("WebAppProject.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -256,14 +256,20 @@ namespace WebAppProject.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("ApplicationUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ApplicationUserId1")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("JoinDate")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("JoinDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -282,49 +288,13 @@ namespace WebAppProject.Migrations
                     b.Property<int>("Salary")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("ApplicationUserId");
 
-                    b.ToTable("Employee");
+                    b.HasIndex("ApplicationUserId1");
 
-                    b.HasData(
-                        new
-                        {
-                            Id = 110,
-                            Email = "john.doe@example.com",
-                            JoinDate = "2024-01-01",
-                            Name = "John Doe",
-                            Password = "password123",
-                            Role = "Admin",
-                            Salary = 60000,
-                            UserId = 1
-                        },
-                        new
-                        {
-                            Id = 112,
-                            Email = "jane.smith@example.com",
-                            JoinDate = "2024-01-15",
-                            Name = "Jane Smith",
-                            Password = "password456",
-                            Role = "Employee",
-                            Salary = 50000,
-                            UserId = 2
-                        },
-                        new
-                        {
-                            Id = 113,
-                            Email = "bob.johnson@example.com",
-                            JoinDate = "2024-02-01",
-                            Name = "Bob Johnson",
-                            Password = "password789",
-                            Role = "Employee",
-                            Salary = 55000,
-                            UserId = 3
-                        });
+                    b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("WebAppProject.Models.GroceryItem", b =>
@@ -370,103 +340,6 @@ namespace WebAppProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("GroceryItem");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Category = "Fruits",
-                            CreatedDate = "2024-07-05",
-                            Description = "Fresh apples",
-                            Discount = 10,
-                            ImageUrl = "/images/apple.png",
-                            Name = "Apple",
-                            Price = 0.99m,
-                            Quantity = 50
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Category = "Fruits",
-                            CreatedDate = "2024-07-05",
-                            Description = "Ripe bananas",
-                            Discount = 15,
-                            ImageUrl = "/images/banana.png",
-                            Name = "Banana",
-                            Price = 0.59m,
-                            Quantity = 100
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Category = "Fruits",
-                            CreatedDate = "2024-07-05",
-                            Description = "Juicy oranges",
-                            Discount = 5,
-                            ImageUrl = "/images/Orange.png",
-                            Name = "Orange",
-                            Price = 1.29m,
-                            Quantity = 75
-                        });
-                });
-
-            modelBuilder.Entity("WebAppProject.Models.User", b =>
-                {
-                    b.Property<int>("UserId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("Role")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.HasKey("UserId");
-
-                    b.ToTable("Users");
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = 1,
-                            Email = "john.doe@example.com",
-                            Password = "password123",
-                            Role = "Admin",
-                            Username = "john.doe"
-                        },
-                        new
-                        {
-                            UserId = 2,
-                            Email = "jane.smith@example.com",
-                            Password = "password456",
-                            Role = "Employee",
-                            Username = "jane.smith"
-                        },
-                        new
-                        {
-                            UserId = 3,
-                            Email = "bob.johnson@example.com",
-                            Password = "password789",
-                            Role = "Employee",
-                            Username = "bob.johnson"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -480,7 +353,7 @@ namespace WebAppProject.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("WebAppProject.Data.ApplicationUser", null)
+                    b.HasOne("WebAppProject.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -489,7 +362,7 @@ namespace WebAppProject.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("WebAppProject.Data.ApplicationUser", null)
+                    b.HasOne("WebAppProject.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -504,7 +377,7 @@ namespace WebAppProject.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("WebAppProject.Data.ApplicationUser", null)
+                    b.HasOne("WebAppProject.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -513,7 +386,7 @@ namespace WebAppProject.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("WebAppProject.Data.ApplicationUser", null)
+                    b.HasOne("WebAppProject.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -522,16 +395,20 @@ namespace WebAppProject.Migrations
 
             modelBuilder.Entity("WebAppProject.Models.Employee", b =>
                 {
-                    b.HasOne("WebAppProject.Models.User", "Users")
-                        .WithMany("Employees")
-                        .HasForeignKey("UserId")
+                    b.HasOne("WebAppProject.Models.ApplicationUser", "ApplicationUser")
+                        .WithMany()
+                        .HasForeignKey("ApplicationUserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Users");
+                    b.HasOne("WebAppProject.Models.ApplicationUser", null)
+                        .WithMany("Employees")
+                        .HasForeignKey("ApplicationUserId1");
+
+                    b.Navigation("ApplicationUser");
                 });
 
-            modelBuilder.Entity("WebAppProject.Models.User", b =>
+            modelBuilder.Entity("WebAppProject.Models.ApplicationUser", b =>
                 {
                     b.Navigation("Employees");
                 });

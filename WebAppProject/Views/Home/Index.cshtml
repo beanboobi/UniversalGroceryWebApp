@@ -5,25 +5,24 @@
 
 <!-- Banner Section Start -->
 <div class="banner-section">
-    <div class="banner-left">
-        @if (Model.MainBanner != null)
-        {
-            <div class="banner-ad">
-                <img src="@Model.MainBanner.ImagePath" alt="Banner Image" />
-                <a href="@Model.MainBanner.RedirectUrl" class="shop-now">Shop Now</a>
-            </div>
-        }
-    </div>
-    <div class="banner-right">
-       
-        <!--SideBanner-->
-        @foreach (var banner in Model.SideBanners)
-        {
-            <div class="banner-ad">
-                <img src="@banner.ImagePath" alt="Banner Image" />
-                <a href="@banner.RedirectUrl" class="shop-now">Shop Now</a>
-            </div>
-        }
+    <div id="bannerCarousel" class="carousel">
+        <div class="carousel-track">
+            @foreach (var (mainBanner, sideBanner) in Model.BannerPairs())
+            {
+                <div class="carousel-slide">
+                    <div class="banner-ad">
+                        <img src="@mainBanner.ImagePath" alt="Main Banner Image" />
+                        <a href="@mainBanner.RedirectUrl" class="shop-now">Shop Now</a>
+                    </div>
+                    <div class="banner-ad">
+                        <img src="@sideBanner.ImagePath" alt="Side Banner Image" />
+                        <a href="@sideBanner.RedirectUrl" class="shop-now">Shop Now</a>
+                    </div>
+                </div>
+            }
+        </div>
+        <button class="carousel-control prev" onclick="moveToPrevSlide()">&#10094;</button>
+        <button class="carousel-control next" onclick="moveToNextSlide()">&#10095;</button>
     </div>
 </div>
 <!-- Banner Section End -->
@@ -97,6 +96,35 @@
     function goToProductCategory(category) {
         window.location.href = '/Home/ProductCategory/' + encodeURIComponent(category);
     }
+
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(".carousel-slide");
+    const totalSlides = slides.length;
+
+    function moveToNextSlide() {
+        if (currentIndex < totalSlides - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0;
+        }
+        updateCarousel();
+    }
+
+    function moveToPrevSlide() {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = totalSlides - 1;
+        }
+        updateCarousel();
+    }
+
+    function updateCarousel() {
+        const newTranslateValue = -currentIndex * 100; // Adjust the percentage based on slide width
+        document.querySelector(".carousel-track").style.transform = `translateX(${newTranslateValue}%)`;
+    }
+
+    setInterval(moveToNextSlide, 25000); // Change slide every 25 seconds
 </script>
 
 <style>
@@ -113,29 +141,52 @@
         margin-bottom: 20px;
     }
 
-    .banner-left {
-        width: 60%;
-        padding: 20px;
-        background-image: url('../images/ads.png');
-        background-size: cover;
-        color: black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .carousel {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
     }
 
-        .banner-left h2 {
-            font-size: 2em;
-            margin-bottom: 5px;
+    .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-slide {
+        display: flex;
+        justify-content: space-around;
+        min-width: 100%;
+    }
+
+    .banner-ad {
+        flex: 1;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+        .banner-ad img {
+            max-width: 100%;
+            height: auto;
         }
 
-            .banner-left h2 span {
-                color: red;
-            }
+    .carousel-control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
 
-        .banner-left p {
-            font-size: 0.65em;
-            margin-bottom: 10px;
+        .carousel-control.prev {
+            left: 10px;
+        }
+
+        .carousel-control.next {
+            right: 10px;
         }
 
     .shop-now {
@@ -149,32 +200,6 @@
         border: none;
         border-radius: 3px;
     }
-
-    .banner-right {
-        width: 35%;
-        gap: 20px;
-        background: url('../images/banner-right.jpg');
-        background-size: cover;
-        background-position: center;
-        padding: 20px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .banner-ad {
-        padding: 20px;
-        background-color: rgba(0, 0, 0, 0.1);
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        text-align: center;
-        margin-bottom: 20px;
-        width: 100%;
-    }
-
-        .banner-ad img {
-            max-width: 100%;
-            height: auto;
-        }
 
     .homepage {
         display: flex;

@@ -6,7 +6,7 @@ namespace WebAppProject.ViewModels
     public class UsersViewModel
     {
         [Required]
-        public int UserId { get; set; }
+        public string Id { get; set; }  // Identity uses string IDs by default
 
         [Required]
         [StringLength(100)]
@@ -14,14 +14,14 @@ namespace WebAppProject.ViewModels
 
         [StringLength(100)]
         [DataType(DataType.Password)]
-        public string Password { get; set; }
+        public string Password { get; set; }  // Consider security implications of handling passwords
 
         [Required]
+        [EmailAddress]
         [StringLength(100)]
         public string Email { get; set; }
 
-        [Required]
-        [StringLength(100)]
-        public string Role { get; set; } // To differentiate between Employee, Admin, and Customer
+        public List<string> Role { get; set; } // To handle multiple roles
     }
 }
+

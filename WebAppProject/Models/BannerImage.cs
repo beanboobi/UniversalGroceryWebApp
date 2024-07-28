@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebAppProject.Models
 {
@@ -16,11 +17,11 @@ namespace WebAppProject.Models
         [Display(Name = "Created Date")]
         public DateTime CreatedDate { get; set; }
 
-        public string BannerType { get; set; } // Add this property
+        public string BannerType { get; set; } 
 
     }
-}
 
+}
 
 
 

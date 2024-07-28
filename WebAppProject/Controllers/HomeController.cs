@@ -41,8 +41,10 @@ namespace WebAppProject.Controllers
                 })
                 .ToList();
 
-            var mainBanner = _context.BannerImage
-                .FirstOrDefault(b => b.BannerType == "Main");
+            var mainBanners = _context.BannerImage
+       .Where(b => b.BannerType == "Main")
+       .OrderByDescending(b => b.CreatedDate)
+       .ToList(); // Get a list of main banners
 
             var sideBanners = _context.BannerImage
                 .Where(b => b.BannerType == "Side")
@@ -52,7 +54,7 @@ namespace WebAppProject.Controllers
             var viewModel = new HomePageViewModel
             {
                 GroceryItems = items,
-                MainBanner = mainBanner,
+                MainBanners = mainBanners, // Assign the list of main banners
                 SideBanners = sideBanners
             };
 

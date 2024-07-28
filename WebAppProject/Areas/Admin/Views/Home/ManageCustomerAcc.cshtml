@@ -1,12 +1,12 @@
-﻿@model List<WebAppProject.Models.User>
+﻿@model IEnumerable<WebAppProject.ViewModels.UsersViewModel>
 
 @{
-    ViewData["Title"] = "Manage Customer Account";
+    ViewData["Title"] = "Manage Customer Accounts";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="container-fluid">
-    <h2>Manage Customer Account</h2>
+    <h2>Manage Customer Accounts</h2>
     <div class="row mb-3">
         <div class="col-md-6">
             <div class="input-group">
@@ -37,10 +37,10 @@
                         <td>@customer.Email</td>
                         <td>@customer.Role</td>
                         <td>
-                            <a href="@Url.Action("EditCustomer", "Home", new { id = customer.UserId, area = "Admin" })" class="btn btn-sm btn-warning">
+                            <a asp-area="Admin" asp-controller="Home" asp-action="EditCustomer" asp-route-id="@customer.Id" class="btn btn-sm btn-warning">
                                 Edit
                             </a>
-                            <form asp-action="DeleteCustomer" asp-route-id="@customer.UserId" method="post" style="display:inline;">
+                            <form asp-area="Admin" asp-controller="Home" asp-action="DeleteCustomer" asp-route-id="@customer.Id" method="post" style="display:inline;">
                                 @Html.AntiForgeryToken()
                                 <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this customer?');">
                                     Remove
@@ -62,7 +62,7 @@
             var rows = document.querySelectorAll('#customersTableBody tr');
 
             rows.forEach(function (row) {
-                var customerName = row.querySelector('td:nth-child(1)').textContent.toLowerCase();
+                var customerName = row.cells[0].textContent.toLowerCase();
                 if (customerName.includes(filter)) {
                     row.style.display = '';
                 } else {

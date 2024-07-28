@@ -1,6 +1,6 @@
 ﻿@model WebAppProject.ViewModels.ManageWebsiteViewModel
 @{
-    ViewData["Title"] = "Manage Web Site";
+    ViewData["Title"] = "Manage Website";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 <h2>Manage Website</h2>
@@ -22,7 +22,7 @@
         <div class="form-group">
             <label for="bannerType">Banner Type</label>
             <select class="form-control" asp-for="BannerImage.BannerType" required>
-                <option value="Main" selected>Main Banner</option>
+                <option value="Main">Main Banner</option>
                 <option value="Side">Side Banner</option>
             </select>
         </div>
@@ -32,74 +32,47 @@
         </div>
     </form>
 
-    <!-- Main Banner Section -->
-    <h3>Main Banner</h3>
+    <!-- Carousel Slides Section -->
+    <h3>Carousel Slides</h3>
     <table class="table mt-4">
         <thead>
             <tr>
-                <th>Image</th>
-                <th>Redirect URL</th>
-                <th>Created Date</th>
+                <th>Carousel Slide</th>
+                <th>Main Banner</th>
+                <th>Side Banner</th>
                 <th>Actions</th>
             </tr>
         </thead>
         <tbody>
-            @if (Model?.MainBanner != null)
+            @for (var i = 0; i < Model.BannerPairs.Count; i++)
             {
+                var pair = Model.BannerPairs[i];
                 <tr>
-                    <td><img src="@Model.MainBanner.ImagePath" alt="Banner" width="100" /></td>
-                    <td>@Model.MainBanner.RedirectUrl</td>
-                    <td>@Model.MainBanner.CreatedDate.ToString("g")</td>
+                    <td>Carousel Slide @i</td>
                     <td>
-                        <a asp-action="EditBanner" asp-route-id="@Model.MainBanner.Id" class="btn btn-warning">Edit</a>
-                        <form asp-action="DeleteBannerImage" asp-route-id="@Model.MainBanner.Id" method="post" style="display:inline;">
-                            <button type="submit" class="btn btn-danger">Delete</button>
+                        @if (pair.MainBanner != null)
+                        {
+                            <img src="@pair.MainBanner.ImagePath" alt="Main Banner" width="100" />
+                            <div>@pair.MainBanner.RedirectUrl</div>
+                        }
+                    </td>
+                    <td>
+                        <img src="@pair.SideBanner.ImagePath" alt="Side Banner" width="100" />
+                        <div>@pair.SideBanner.RedirectUrl</div>
+                    </td>
+                    <td>
+                        @if (pair.MainBanner != null)
+                        {
+                            <a asp-action="EditBanner" asp-route-id="@pair.MainBanner.Id" class="btn btn-warning">Edit Main</a>
+                            <form asp-action="DeleteBannerImage" asp-route-id="@pair.MainBanner.Id" method="post" style="display:inline;">
+                                <button type="submit" class="btn btn-danger">Delete Main</button>
+                            </form>
+                        }
+                        <a asp-action="EditBanner" asp-route-id="@pair.SideBanner.Id" class="btn btn-warning">Edit Side</a>
+                        <form asp-action="DeleteBannerImage" asp-route-id="@pair.SideBanner.Id" method="post" style="display:inline;">
+                            <button type="submit" class="btn btn-danger">Delete Side</button>
                         </form>
                     </td>
-                </tr>
-            }
-            else
-            {
-                <tr>
-                    <td colspan="4" class="text-center">No main banner available. Use the form above to add a new banner.</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
-    <!-- Side Banners Section -->
-    <h3>Side Banners</h3>
-    <table class="table mt-4">
-        <thead>
-            <tr>
-                <th>Image</th>
-                <th>Redirect URL</th>
-                <th>Created Date</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (Model?.SideBanners != null && Model.SideBanners.Any())
-            {
-                @foreach (var banner in Model.SideBanners)
-                {
-                    <tr>
-                        <td><img src="@banner.ImagePath" alt="Banner" width="100" /></td>
-                        <td>@banner.RedirectUrl</td>
-                        <td>@banner.CreatedDate.ToString("g")</td>
-                        <td>
-                            <a asp-action="EditBanner" asp-route-id="@banner.Id" class="btn btn-warning">Edit</a>
-                            <form asp-action="DeleteBannerImage" asp-route-id="@banner.Id" method="post" style="display:inline;">
-                                <button type="submit" class="btn btn-danger">Delete</button>
-                            </form>
-                        </td>
-                    </tr>
-                }
-            }
-            else
-            {
-                <tr>
-                    <td colspan="4" class="text-center">No side banners available. Use the form above to add a new banner.</td>
                 </tr>
             }
         </tbody>

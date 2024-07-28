@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Http;
 using WebAppProject.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 namespace WebAppProject.Areas.Admin.Controllers
 {
@@ -20,11 +21,14 @@ namespace WebAppProject.Areas.Admin.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly ILogger<HomeController> _logger;
+        private readonly UserManager<ApplicationUser> _userManager;  // Define UserManager
 
-        public HomeController(ApplicationDbContext context, ILogger<HomeController> logger)
+
+        public HomeController(ApplicationDbContext context, ILogger<HomeController> logger, UserManager<ApplicationUser> userManager)
         {
             _context = context;
             _logger = logger;
+            _userManager = userManager;
         }
 
         public IActionResult Index()
@@ -115,87 +119,131 @@ namespace WebAppProject.Areas.Admin.Controllers
             return View(item);
         }
 
-        public IActionResult ManageEmployee()
+        public async Task<IActionResult> ManageEmployee()
         {
-            var employees = _context.Employee.ToList();
+            var employees = await _context.Employees
+                .Select(e => new EmployeeViewModel
+                {
+                    Id = e.Id,
+                    Name = e.Name,
+                    Email = e.Email,
+                    Role = e.Role,
+                    JoinDate = e.JoinDate,
+                    Salary = e.Salary
+                })
+                .ToListAsync();
+
             return View(employees);
         }
 
-        public IActionResult ManageCustomerAcc()
+        public async Task<IActionResult> ManageCustomerAcc()
         {
-            var customers = _context.Users.Where(u => u.Role == "Customer").ToList(); // Adjust query to filter by role or any other condition as needed
-            return View(customers);
+            var users = await _context.Users.ToListAsync();
+            var userRolesViewModel = new List<UsersViewModel>();
+
+            foreach (var user in users)
+            {
+                var roles = await _userManager.GetRolesAsync(user);
+                if (!roles.Contains("Employee") && !roles.Contains("Admin"))
+                {
+                    var thisViewModel = new UsersViewModel
+                    {
+                        Id = user.Id,
+                        Username = user.UserName,
+                        Email = user.Email,
+                        Role = roles.ToList() // Convert IList<string> to List<string>
+                    };
+                    userRolesViewModel.Add(thisViewModel);
+                }
+            }
+
+            return View(userRolesViewModel);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult DeleteCustomer(int id)
+        public async Task<IActionResult> DeleteCustomer(string id)
         {
-            var customer = _context.Users.Find(id);
+            var customer = await _context.Users.FindAsync(id);
             if (customer == null)
             {
                 return NotFound();
             }
             _context.Users.Remove(customer);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(ManageCustomerAcc));
         }
 
-        
-
-        public IActionResult EditCustomer(int id)
+        public async Task<IActionResult> EditCustomer(string id)
         {
-            var customer = _context.Users.Find(id);
+            var customer = await _context.Users.FindAsync(id);
             if (customer == null)
             {
                 return NotFound();
             }
 
+            var roles = await _userManager.GetRolesAsync(customer);
             var viewModel = new UsersViewModel
             {
-                UserId = id,
-                Username = customer.Username,
+                Id = customer.Id,
+                Username = customer.UserName,
                 Email = customer.Email,
-                Role = customer.Role
-                // Password is not populated here for security reasons
+                Role = roles.ToList()
             };
 
             return View("EditCustomer", viewModel);
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditCustomer(UsersViewModel viewModel)
         {
-            // Remove password from model state to avoid validation issues if not provided
-            ModelState.Remove("Password");
-
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                // Retrieve the existing user from the database
-                var existingUser = await _context.Users.FindAsync(viewModel.UserId);
-                if (existingUser == null)
-                {
-                    return NotFound();
-                }
-
-                // Update properties except password
-                existingUser.Username = viewModel.Username;
-                existingUser.Email = viewModel.Email;
-                existingUser.Role = viewModel.Role;
-
-                // Update password if provided (ensure to hash in production)
-                if (!string.IsNullOrEmpty(viewModel.Password))
-                {
-                    existingUser.Password = viewModel.Password; // This should be hashed in production
-                }
-
-                _context.Update(existingUser);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(ManageCustomerAcc)); // Ensure ManageCustomerAcc action exists
+                return View(viewModel);
             }
 
-            return View("EditCustomer", viewModel);
+            var user = await _userManager.FindByIdAsync(viewModel.Id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            user.UserName = viewModel.Username; // or user.Email if username is the email
+            user.Email = viewModel.Email;
+
+            var updateResult = await _userManager.UpdateAsync(user);
+            if (!updateResult.Succeeded)
+            {
+                foreach (var error in updateResult.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+                return View(viewModel);
+            }
+
+            // Update password only if provided
+            if (!string.IsNullOrEmpty(viewModel.Password))
+            {
+                var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+                var passwordResult = await _userManager.ResetPasswordAsync(user, token, viewModel.Password);
+                if (!passwordResult.Succeeded)
+                {
+                    foreach (var error in passwordResult.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                    return View(viewModel);
+                }
+            }
+
+            // Handle roles if necessary
+            // Example: Remove from old roles and add to new role
+            // This part depends on your role logic
+
+            return RedirectToAction(nameof(ManageCustomerAcc));
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteItem(int id)
@@ -220,76 +268,140 @@ namespace WebAppProject.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddEmployee(EmployeeViewModel viewModel)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                // Create a new User
-                var user = new User
+                return View(viewModel);
+            }
+
+            // Create the user and set the default password if not provided
+            var user = new ApplicationUser
+            {
+                UserName = viewModel.Email,
+                Email = viewModel.Email
+            };
+            var password = string.IsNullOrWhiteSpace(viewModel.Password) ? "DefaultPassword123!" : viewModel.Password;
+            var result = await _userManager.CreateAsync(user, password);
+
+            if (!result.Succeeded)
+            {
+                foreach (var error in result.Errors)
                 {
-                    Username = viewModel.Email,  // Example: Use email as username or any unique identifier
-                    Password = "defaultpassword", // Example: Provide a default password or implement hashing
-                    Email = viewModel.Email,
-                    Role = viewModel.Role  // Assign role based on employee's role
-                };
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+                return View(viewModel);
+            }
 
-                // Add and save User first to get the UserId
-                _context.Users.Add(user);
-                await _context.SaveChangesAsync();
-
-                // Create Employee from ViewModel
-                var employee = new Employee
+            // Add the user to the specified role
+            var roleResult = await _userManager.AddToRoleAsync(user, viewModel.Role);
+            if (!roleResult.Succeeded)
+            {
+                foreach (var error in roleResult.Errors)
                 {
-                    Name = viewModel.Name,
-                    Email = viewModel.Email,
-                    Password = viewModel.Password,
-                    JoinDate = viewModel.JoinDate,
-                    Salary = viewModel.Salary,
-                    Role = viewModel.Role,
-                    UserId = user.UserId  // Assign UserId from created User
-                };
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+                // Delete the user if role assignment fails
+                await _userManager.DeleteAsync(user);
+                return View(viewModel);
+            }
 
-                // Add Employee to database
-                _context.Employee.Add(employee);
-                await _context.SaveChangesAsync();
+            // Create the employee record
+            var employee = new Employee
+            {
+                Name = viewModel.Name,
+                Email = viewModel.Email,
+                Password = password, // Set the password here
+                JoinDate = viewModel.JoinDate,
+                Salary = viewModel.Salary,
+                Role = viewModel.Role,
+                ApplicationUserId = user.Id
+            };
 
+            _context.Employees.Add(employee);
+            var saveResult = await _context.SaveChangesAsync();
+            if (saveResult > 0)
+            {
                 return RedirectToAction(nameof(ManageEmployee));
             }
-            return View(viewModel);
+            else
+            {
+                ModelState.AddModelError("", "Unable to save the employee data.");
+                // Delete the user if saving employee fails
+                await _userManager.DeleteAsync(user);
+                return View(viewModel);
+            }
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult DeleteEmployee(int id)
+        public async Task<IActionResult> DeleteEmployee(int id)
         {
-            var employee = _context.Employee.Find(id);
+            var employee = await _context.Employees.FindAsync(id);
             if (employee == null)
             {
                 return NotFound();
             }
-            _context.Employee.Remove(employee);
-            _context.SaveChanges();
+
+            var user = await _userManager.FindByIdAsync(employee.ApplicationUserId);
+            if (user != null)
+            {
+                var result = await _userManager.DeleteAsync(user);
+                if (!result.Succeeded)
+                {
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                    // Instead of returning a view, redirect back to ManageEmployee with an error message
+                    TempData["ErrorMessage"] = "Failed to delete the user account.";
+                    return RedirectToAction(nameof(ManageEmployee));
+                }
+            }
+
+            _context.Employees.Remove(employee);
+
+            try
+            {
+                await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Employee deleted successfully.";
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!EmployeeExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    TempData["ErrorMessage"] = "An error occurred while deleting the employee.";
+                }
+            }
+
             return RedirectToAction(nameof(ManageEmployee));
+        }
+        private bool EmployeeExists(int id)
+        {
+            return _context.Employees.Any(e => e.Id == id);
         }
 
         // Edit Employee actions
-        public IActionResult EditEmployee(int id)
+        public async Task<IActionResult> EditEmployee(int id)
         {
-            var employee = _context.Employee.Find(id);
+            var employee = await _context.Employees.FindAsync(id);
             if (employee == null)
             {
                 return NotFound();
             }
-
+            var user = await _userManager.FindByIdAsync(employee.ApplicationUserId);
+            var roles = await _userManager.GetRolesAsync(user);
             var viewModel = new EmployeeViewModel
             {
                 Id = employee.Id,
                 Name = employee.Name,
                 Email = employee.Email,
-                Password = employee.Password,
+                Role = roles.FirstOrDefault(), // Assuming one role per user
                 JoinDate = employee.JoinDate,
-                Salary = employee.Salary,
-                Role = employee.Role
+                Salary = employee.Salary
             };
-
             return View("EmployeeEditForm", viewModel);
         }
 
@@ -297,63 +409,84 @@ namespace WebAppProject.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditEmployee(EmployeeViewModel viewModel)
         {
-            // Remove password validation temporarily
-            ModelState.Remove("Password");
-
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                var existingEmployee = await _context.Employee.FindAsync(viewModel.Id);
-                if (existingEmployee == null)
-                {
-                    return NotFound();
-                }
-
-                // Update the properties
-                existingEmployee.Name = viewModel.Name;
-                existingEmployee.Email = viewModel.Email;
-                existingEmployee.JoinDate = viewModel.JoinDate;
-                existingEmployee.Salary = viewModel.Salary;
-                existingEmployee.Role = viewModel.Role;
-
-                // Update the password only if a new password is provided
-                if (!string.IsNullOrEmpty(viewModel.Password))
-                {
-                    existingEmployee.Password = viewModel.Password; // Remember to hash the password in production
-                }
-
-                _context.Update(existingEmployee);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(ManageEmployee));
+                // Return the same view with the current viewModel to show validation errors
+                return View("EmployeeEditForm", viewModel);
             }
-            return View("EmployeeEditForm", viewModel);
-        }
 
-        private bool EmployeeExists(int id)
-        {
-            return _context.Employee.Any(e => e.Id == id);
-        }
-
-        [HttpGet]
-        public IActionResult EditItem(int id)
-        {
-            var item = _context.GroceryItem.Find(id);
-            if (item == null)
+            var employee = await _context.Employees.FindAsync(viewModel.Id);
+            if (employee == null)
             {
                 return NotFound();
             }
-            return View("ItemEditForm", item);
+
+            var user = await _userManager.FindByIdAsync(employee.ApplicationUserId);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            user.UserName = viewModel.Email; // Usually, username is the same as email
+            user.Email = viewModel.Email;
+
+            var updateResult = await _userManager.UpdateAsync(user);
+            if (!updateResult.Succeeded)
+            {
+                foreach (var error in updateResult.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+                return View("EmployeeEditForm", viewModel);
+            }
+
+            // Update password if provided
+            if (!string.IsNullOrEmpty(viewModel.Password))
+            {
+                var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+                var passwordResult = await _userManager.ResetPasswordAsync(user, token, viewModel.Password);
+                if (!passwordResult.Succeeded)
+                {
+                    foreach (var error in passwordResult.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                    return View("EmployeeEditForm", viewModel);
+                }
+
+                // Update the password in the Employee model
+                employee.Password = viewModel.Password;
+            }
+
+            // Update employee details
+            employee.Name = viewModel.Name;
+            employee.Email = viewModel.Email;
+            employee.JoinDate = viewModel.JoinDate;
+            employee.Salary = viewModel.Salary;
+            employee.Role = viewModel.Role;
+
+            try
+            {
+                _context.Update(employee);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException ex)
+            {
+                ModelState.AddModelError("", "Unable to save the employee data. " + ex.Message);
+                return View("EmployeeEditForm", viewModel);
+            }
+
+            // Redirect to the employee list view
+            return RedirectToAction(nameof(ManageEmployee));
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-       
-
         public async Task<IActionResult> EditItem(GroceryItem item, IFormFile productPicture)
         {
             // Remove validation for the CreatedDate and ImageUrl fields
             ModelState.Remove(nameof(item.CreatedDate));
             ModelState.Remove(nameof(item.ImageUrl));
-           
 
             // Retrieve the original item from the database to preserve the original ImageUrl and CreatedDate
             var originalItem = await _context.GroceryItem.AsNoTracking().FirstOrDefaultAsync(i => i.Id == item.Id);
@@ -426,6 +559,7 @@ namespace WebAppProject.Areas.Admin.Controllers
             // If we got this far, something failed, redisplay form
             return View("ItemEditForm", item);
         }
+
         private bool GroceryItemExists(int id)
         {
             return _context.GroceryItem.Any(e => e.Id == id);
@@ -433,12 +567,22 @@ namespace WebAppProject.Areas.Admin.Controllers
 
         public IActionResult ManageWebsite()
         {
+            var mainBanners = _context.BannerImage.Where(b => b.BannerType == "Main").ToList();
+            var sideBanners = _context.BannerImage.Where(b => b.BannerType == "Side").ToList();
+
+            var bannerPairs = new List<(BannerImage MainBanner, BannerImage SideBanner)>();
+            for (int i = 0; i < sideBanners.Count; i++)
+            {
+                var mainBanner = mainBanners.ElementAtOrDefault(i % mainBanners.Count);
+                var sideBanner = sideBanners[i];
+                bannerPairs.Add((mainBanner, sideBanner));
+            }
+
             var viewModel = new ManageWebsiteViewModel
             {
-                MainBanner = _context.BannerImage.FirstOrDefault(b => b.BannerType == "Main"),
-                SideBanners = _context.BannerImage.Where(b => b.BannerType == "Side").ToList(),
-                BannerImage = new BannerImage()
+                BannerPairs = bannerPairs
             };
+
             return View(viewModel);
         }
 
@@ -450,12 +594,23 @@ namespace WebAppProject.Areas.Admin.Controllers
                 return NotFound();
             }
 
+            var mainBanners = _context.BannerImage.Where(b => b.BannerType == "Main").ToList();
+            var sideBanners = _context.BannerImage.Where(b => b.BannerType == "Side").ToList();
+
+            var bannerPairs = new List<(BannerImage MainBanner, BannerImage SideBanner)>();
+            for (int i = 0; i < sideBanners.Count; i++)
+            {
+                var mainBanner = mainBanners.ElementAtOrDefault(i % mainBanners.Count);
+                var sideBanner = sideBanners[i];
+                bannerPairs.Add((mainBanner, sideBanner));
+            }
+
             var viewModel = new ManageWebsiteViewModel
             {
-                MainBanner = _context.BannerImage.FirstOrDefault(b => b.BannerType == "Main"),
-                SideBanners = _context.BannerImage.Where(b => b.BannerType == "Side").ToList(),
+                BannerPairs = bannerPairs,
                 BannerImage = banner
             };
+
             return View("ManageWebsite", viewModel);
         }
 
@@ -518,9 +673,7 @@ namespace WebAppProject.Areas.Admin.Controllers
             }
             return uniqueFileName;
         }
-
-
-
     }
 }
+
 
