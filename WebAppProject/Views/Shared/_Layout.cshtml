@@ -1,5 +1,4 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,7 +43,7 @@
                         </li>
                     </ul>
                     <form class="d-flex flex-grow-1 mx-2" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search Product, Brands and more..." aria-label="Tìm kiếm">
+                        <input class="form-control me-2" type="search" placeholder="Search Product, Brands and more...">
                         <button class="btn btn-outline-success" type="submit">
                             <i class="bi bi-search"></i>
                         </button>
@@ -84,14 +83,38 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - WebAppProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer>
+        <div class="footer-content">
+            &copy; 2024 - UniversalGrocery -
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> -
+            <a asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
-</html>
+<style>
+    footer {
+        background-color: #f8f9fa; 
+        padding: 20px 0; 
+        text-align: center; 
+    }
+
+    .footer-content {
+        display: inline-block; 
+    }
+
+    footer a {
+        color: #007bff; 
+        text-decoration: none; 
+    }
+
+        footer a:hover {
+            text-decoration: underline; 
+        }
+</style>
+
+
