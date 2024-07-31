@@ -15,6 +15,20 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
 
+
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+ ";
+});
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Login/Login";
+    options.LogoutPath = "/Login/Logout";
+    options.AccessDeniedPath = "/Login/AccessDenied";
+});
+
+
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.LoginPath = "/Login/Login";

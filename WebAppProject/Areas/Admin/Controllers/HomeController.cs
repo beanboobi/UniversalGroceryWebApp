@@ -151,7 +151,7 @@ namespace WebAppProject.Areas.Admin.Controllers
                         Id = user.Id,
                         Username = user.UserName,
                         Email = user.Email,
-                        Role = roles.ToList() // Convert IList<string> to List<string>
+                        Roles = roles.ToList() // Convert IList<string> to List<string>
                     };
                     userRolesViewModel.Add(thisViewModel);
                 }
@@ -188,7 +188,8 @@ namespace WebAppProject.Areas.Admin.Controllers
                 Id = customer.Id,
                 Username = customer.UserName,
                 Email = customer.Email,
-                Role = roles.ToList()
+                Roles = roles.ToList()
+                
             };
 
             return View("EditCustomer", viewModel);
@@ -198,6 +199,12 @@ namespace WebAppProject.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditCustomer(UsersViewModel viewModel)
         {
+            // Remove password from ModelState if it's null or empty
+            if (string.IsNullOrEmpty(viewModel.Password))
+            {
+                ModelState.Remove("Password");
+            }
+
             if (!ModelState.IsValid)
             {
                 return View(viewModel);
@@ -209,7 +216,7 @@ namespace WebAppProject.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            user.UserName = viewModel.Username; // or user.Email if username is the email
+            user.UserName = viewModel.Username;
             user.Email = viewModel.Email;
 
             var updateResult = await _userManager.UpdateAsync(user);
@@ -222,7 +229,7 @@ namespace WebAppProject.Areas.Admin.Controllers
                 return View(viewModel);
             }
 
-            // Update password only if provided
+            // Update password if it is provided 
             if (!string.IsNullOrEmpty(viewModel.Password))
             {
                 var token = await _userManager.GeneratePasswordResetTokenAsync(user);
@@ -237,9 +244,19 @@ namespace WebAppProject.Areas.Admin.Controllers
                 }
             }
 
-            // Handle roles if necessary
-            // Example: Remove from old roles and add to new role
-            // This part depends on your role logic
+            // Ensure user has "User" role
+            if (!await _userManager.IsInRoleAsync(user, "User"))
+            {
+                await _userManager.AddToRoleAsync(user, "User");
+            }
+
+            // Update roles if necessary
+            if (viewModel.Roles != null && viewModel.Roles.Any())
+            {
+                var currentRoles = await _userManager.GetRolesAsync(user);
+                await _userManager.RemoveFromRolesAsync(user, currentRoles);
+                await _userManager.AddToRolesAsync(user, viewModel.Roles);
+            }
 
             return RedirectToAction(nameof(ManageCustomerAcc));
         }
@@ -359,22 +376,7 @@ namespace WebAppProject.Areas.Admin.Controllers
 
             _context.Employees.Remove(employee);
 
-            try
-            {
-                await _context.SaveChangesAsync();
-                TempData["SuccessMessage"] = "Employee deleted successfully.";
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!EmployeeExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    TempData["ErrorMessage"] = "An error occurred while deleting the employee.";
-                }
-            }
+         
 
             return RedirectToAction(nameof(ManageEmployee));
         }
@@ -409,6 +411,12 @@ namespace WebAppProject.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditEmployee(EmployeeViewModel viewModel)
         {
+            // Remove password from ModelState if it's null or empty
+            if (string.IsNullOrEmpty(viewModel.Password))
+            {
+                ModelState.Remove("Password");
+            }
+
             if (!ModelState.IsValid)
             {
                 // Return the same view with the current viewModel to show validation errors
@@ -429,7 +437,6 @@ namespace WebAppProject.Areas.Admin.Controllers
 
             user.UserName = viewModel.Email; // Usually, username is the same as email
             user.Email = viewModel.Email;
-
             var updateResult = await _userManager.UpdateAsync(user);
             if (!updateResult.Succeeded)
             {
@@ -453,7 +460,6 @@ namespace WebAppProject.Areas.Admin.Controllers
                     }
                     return View("EmployeeEditForm", viewModel);
                 }
-
                 // Update the password in the Employee model
                 employee.Password = viewModel.Password;
             }
@@ -571,11 +577,23 @@ namespace WebAppProject.Areas.Admin.Controllers
             var sideBanners = _context.BannerImage.Where(b => b.BannerType == "Side").ToList();
 
             var bannerPairs = new List<(BannerImage MainBanner, BannerImage SideBanner)>();
-            for (int i = 0; i < sideBanners.Count; i++)
+
+            if (mainBanners.Count == 0)
             {
-                var mainBanner = mainBanners.ElementAtOrDefault(i % mainBanners.Count);
-                var sideBanner = sideBanners[i];
-                bannerPairs.Add((mainBanner, sideBanner));
+                // Handle the case where there are no main banners
+                foreach (var sideBanner in sideBanners)
+                {
+                    bannerPairs.Add((null, sideBanner));
+                }
+            }
+            else
+            {
+                for (int i = 0; i < sideBanners.Count; i++)
+                {
+                    var mainBanner = mainBanners.ElementAtOrDefault(i % mainBanners.Count);
+                    var sideBanner = sideBanners[i];
+                    bannerPairs.Add((mainBanner, sideBanner));
+                }
             }
 
             var viewModel = new ManageWebsiteViewModel
@@ -598,11 +616,23 @@ namespace WebAppProject.Areas.Admin.Controllers
             var sideBanners = _context.BannerImage.Where(b => b.BannerType == "Side").ToList();
 
             var bannerPairs = new List<(BannerImage MainBanner, BannerImage SideBanner)>();
-            for (int i = 0; i < sideBanners.Count; i++)
+
+            if (mainBanners.Count == 0)
             {
-                var mainBanner = mainBanners.ElementAtOrDefault(i % mainBanners.Count);
-                var sideBanner = sideBanners[i];
-                bannerPairs.Add((mainBanner, sideBanner));
+                // Handle the case where there are no main banners
+                foreach (var sideBanner in sideBanners)
+                {
+                    bannerPairs.Add((null, sideBanner));
+                }
+            }
+            else
+            {
+                for (int i = 0; i < sideBanners.Count; i++)
+                {
+                    var mainBanner = mainBanners.ElementAtOrDefault(i % mainBanners.Count);
+                    var sideBanner = sideBanners[i];
+                    bannerPairs.Add((mainBanner, sideBanner));
+                }
             }
 
             var viewModel = new ManageWebsiteViewModel

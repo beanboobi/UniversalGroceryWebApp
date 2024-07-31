@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yy9s5jtEHRyk6LEUIe641VqpkWTA59nngmKKwFZ+jNQ=",
+  "Hash": "+jjtXXh82Acqy/8o9HOif3hFJU++fJdSON25XWgKeS0=",
   "Source": "WebAppProject",
   "BasePath": "_content/WebAppProject",
   "Mode": "Default",
@@ -433,6 +433,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\edit.png"
+    },
+    {
+      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Image Not loaded.gif",
+      "SourceId": "WebAppProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "BasePath": "_content/WebAppProject",
+      "RelativePath": "images/Image Not loaded.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Image Not loaded.gif"
     },
     {
       "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\logo.png",
@@ -2088,6 +2107,25 @@
       "OriginalItemSpec": "wwwroot\\uploads\\3d8abbb9-e05c-43bb-9540-4a6617c2eee5_Supermarket banner.jpg"
     },
     {
+      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\43fed254-e99d-4245-892d-5d9737fb3371_Home Page.png",
+      "SourceId": "WebAppProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "BasePath": "_content/WebAppProject",
+      "RelativePath": "uploads/43fed254-e99d-4245-892d-5d9737fb3371_Home Page.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\43fed254-e99d-4245-892d-5d9737fb3371_Home Page.png"
+    },
+    {
       "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\57ff3df4-32b3-4b2a-a520-68bde63678d7_vector-big-sale-banner.jpg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
@@ -2143,6 +2181,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\696e06e4-386e-456f-a312-339490e9b7ae_Orange.png"
+    },
+    {
+      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\7289e7f6-2ae4-4010-8dec-8c751f793708_dog-the-pet-collective.gif",
+      "SourceId": "WebAppProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "BasePath": "_content/WebAppProject",
+      "RelativePath": "uploads/7289e7f6-2ae4-4010-8dec-8c751f793708_dog-the-pet-collective.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\7289e7f6-2ae4-4010-8dec-8c751f793708_dog-the-pet-collective.gif"
     },
     {
       "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\730bb337-7193-420d-9f8e-5d3097885b8e_big chungus lim.jpg",
@@ -2221,6 +2278,25 @@
       "OriginalItemSpec": "wwwroot\\uploads\\992465f6-39f7-4932-b36e-1f5a8ba6de8f_vector-big-sale-banner.jpg"
     },
     {
+      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\998fd795-3555-4f31-9bff-3a147e702322_Supermarket banner.jpg",
+      "SourceId": "WebAppProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "BasePath": "_content/WebAppProject",
+      "RelativePath": "uploads/998fd795-3555-4f31-9bff-3a147e702322_Supermarket banner.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\998fd795-3555-4f31-9bff-3a147e702322_Supermarket banner.jpg"
+    },
+    {
       "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\a9abd180-79bc-487d-840e-d141a384259b_download.jpeg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
@@ -2238,6 +2314,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\a9abd180-79bc-487d-840e-d141a384259b_download.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\ae3ccf5c-d630-408f-bfa9-a8cd9153e34a_black windows wallpaper.jpg",
+      "SourceId": "WebAppProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "BasePath": "_content/WebAppProject",
+      "RelativePath": "uploads/ae3ccf5c-d630-408f-bfa9-a8cd9153e34a_black windows wallpaper.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ae3ccf5c-d630-408f-bfa9-a8cd9153e34a_black windows wallpaper.jpg"
     },
     {
       "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\c31da797-9597-46ab-8f2e-cccc41544649_target.gif",

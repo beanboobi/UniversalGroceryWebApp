@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace WebAppProject.ViewModels
 
@@ -12,6 +13,7 @@ namespace WebAppProject.ViewModels
         [StringLength(100)]
         public string Username { get; set; }
 
+        [AllowNull]
         [StringLength(100)]
         [DataType(DataType.Password)]
         public string Password { get; set; }  // Consider security implications of handling passwords
@@ -21,7 +23,9 @@ namespace WebAppProject.ViewModels
         [StringLength(100)]
         public string Email { get; set; }
 
-        public List<string> Role { get; set; } // To handle multiple roles
+        public List<string> Roles { get; set; } = new List<string>();
+
+        public string PrimaryRole => Roles.FirstOrDefault() ?? "User";
     }
 }
 

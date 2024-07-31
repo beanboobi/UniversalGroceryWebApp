@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\images\\Banana.jpeg"
     },
     {
+      "Id": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Image Not loaded.gif",
+      "PackagePath": "staticwebassets\\images\\Image Not loaded.gif"
+    },
+    {
       "Id": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\NewLogo.png",
       "PackagePath": "staticwebassets\\images\\NewLogo.png"
     },
@@ -433,6 +437,10 @@
       "PackagePath": "staticwebassets\\uploads\\3d8abbb9-e05c-43bb-9540-4a6617c2eee5_Supermarket banner.jpg"
     },
     {
+      "Id": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\43fed254-e99d-4245-892d-5d9737fb3371_Home Page.png",
+      "PackagePath": "staticwebassets\\uploads\\43fed254-e99d-4245-892d-5d9737fb3371_Home Page.png"
+    },
+    {
       "Id": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\57ff3df4-32b3-4b2a-a520-68bde63678d7_vector-big-sale-banner.jpg",
       "PackagePath": "staticwebassets\\uploads\\57ff3df4-32b3-4b2a-a520-68bde63678d7_vector-big-sale-banner.jpg"
     },
@@ -443,6 +451,10 @@
     {
       "Id": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\696e06e4-386e-456f-a312-339490e9b7ae_Orange.png",
       "PackagePath": "staticwebassets\\uploads\\696e06e4-386e-456f-a312-339490e9b7ae_Orange.png"
+    },
+    {
+      "Id": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\7289e7f6-2ae4-4010-8dec-8c751f793708_dog-the-pet-collective.gif",
+      "PackagePath": "staticwebassets\\uploads\\7289e7f6-2ae4-4010-8dec-8c751f793708_dog-the-pet-collective.gif"
     },
     {
       "Id": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\730bb337-7193-420d-9f8e-5d3097885b8e_big chungus lim.jpg",
@@ -461,8 +473,16 @@
       "PackagePath": "staticwebassets\\uploads\\992465f6-39f7-4932-b36e-1f5a8ba6de8f_vector-big-sale-banner.jpg"
     },
     {
+      "Id": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\998fd795-3555-4f31-9bff-3a147e702322_Supermarket banner.jpg",
+      "PackagePath": "staticwebassets\\uploads\\998fd795-3555-4f31-9bff-3a147e702322_Supermarket banner.jpg"
+    },
+    {
       "Id": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\a9abd180-79bc-487d-840e-d141a384259b_download.jpeg",
       "PackagePath": "staticwebassets\\uploads\\a9abd180-79bc-487d-840e-d141a384259b_download.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\ae3ccf5c-d630-408f-bfa9-a8cd9153e34a_black windows wallpaper.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ae3ccf5c-d630-408f-bfa9-a8cd9153e34a_black windows wallpaper.jpg"
     },
     {
       "Id": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\c31da797-9597-46ab-8f2e-cccc41544649_target.gif",

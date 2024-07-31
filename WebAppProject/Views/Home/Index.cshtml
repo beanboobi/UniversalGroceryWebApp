@@ -11,8 +11,11 @@
             {
                 <div class="carousel-slide">
                     <div class="banner-ad">
-                        <img src="@mainBanner.ImagePath" alt="Main Banner Image" />
-                        <a href="@mainBanner.RedirectUrl" class="shop-now">Shop Now</a>
+                        @if (mainBanner != null)
+                        {
+                            <img src="@mainBanner.ImagePath" alt="Main Banner Image" />
+                            <a href="@mainBanner.RedirectUrl" class="shop-now">Shop Now</a>
+                        }
                     </div>
                     <div class="banner-ad">
                         <img src="@sideBanner.ImagePath" alt="Side Banner Image" />
