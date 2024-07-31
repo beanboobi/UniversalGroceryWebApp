@@ -1,56 +1,80 @@
-﻿@{
-    ViewData["Title"] = "Manage Web Site";
+﻿@model WebAppProject.ViewModels.ManageWebsiteViewModel
+@{
+    ViewData["Title"] = "Manage Website";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
-
 <h2>Manage Website</h2>
 <div class="container-fluid">
-    <form method="post" enctype="multipart/form-data">
+    <form method="post" enctype="multipart/form-data" asp-action="SaveBannerImage" asp-controller="Home" asp-area="Admin">
+        <input type="hidden" asp-for="BannerImage.Id" />
         <div class="form-group">
-            <label for="bannerPicture">Banner Picture 1</label>
-            <input type="file" class="form-control-file" id="bannerPicture" name="Website Banner Picture" />
+            <label for="bannerPicture">Banner Picture</label>
+            <input type="file" class="form-control-file" id="bannerPicture" name="bannerPicture" />
+            @if (Model?.BannerImage != null && !string.IsNullOrEmpty(Model.BannerImage.ImagePath))
+            {
+                <img src="@Model.BannerImage.ImagePath" alt="Current Banner" width="100" />
+            }
         </div>
         <div class="form-group">
-            <label for="bannerPicture">Banner Picture 2</label>
-            <input type="file" class="form-control-file" id="bannerPicture" name="Website Banner Picture" />
+            <label for="redirectUrl">Redirect URL</label>
+            <input type="text" class="form-control" id="redirectUrl" asp-for="BannerImage.RedirectUrl" required />
         </div>
         <div class="form-group">
-            <label for="bannerPicture">Banner Picture 3</label>
-            <input type="file" class="form-control-file" id="bannerPicture" name="Website Banner Picture" />
+            <label for="bannerType">Banner Type</label>
+            <select class="form-control" asp-for="BannerImage.BannerType" required>
+                <option value="Main">Main Banner</option>
+                <option value="Side">Side Banner</option>
+            </select>
         </div>
         <div class="form-group text-center">
-            <button type="button" class="btn btn-danger">Delete</button>
-            <button type="button" class="btn btn-secondary">Cancel</button>
             <button type="submit" class="btn btn-success">Save</button>
+            <a asp-action="ManageWebsite" asp-controller="Home" asp-area="Admin" class="btn btn-secondary">Cancel</a>
         </div>
     </form>
+
+    <!-- Carousel Slides Section -->
+    <h3>Carousel Slides</h3>
+    <table class="table mt-4">
+        <thead>
+            <tr>
+                <th>Carousel Slide</th>
+                <th>Main Banner</th>
+                <th>Side Banner</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (var i = 0; i < Model.BannerPairs.Count; i++)
+            {
+                var pair = Model.BannerPairs[i];
+                <tr>
+                    <td>Carousel Slide @i</td>
+                    <td>
+                        @if (pair.MainBanner != null)
+                        {
+                            <img src="@pair.MainBanner.ImagePath" alt="Main Banner" width="100" />
+                            <div>@pair.MainBanner.RedirectUrl</div>
+                        }
+                    </td>
+                    <td>
+                        <img src="@pair.SideBanner.ImagePath" alt="Side Banner" width="100" />
+                        <div>@pair.SideBanner.RedirectUrl</div>
+                    </td>
+                    <td>
+                        @if (pair.MainBanner != null)
+                        {
+                            <a asp-action="EditBanner" asp-route-id="@pair.MainBanner.Id" class="btn btn-warning">Edit Main</a>
+                            <form asp-action="DeleteBannerImage" asp-route-id="@pair.MainBanner.Id" method="post" style="display:inline;">
+                                <button type="submit" class="btn btn-danger">Delete Main</button>
+                            </form>
+                        }
+                        <a asp-action="EditBanner" asp-route-id="@pair.SideBanner.Id" class="btn btn-warning">Edit Side</a>
+                        <form asp-action="DeleteBannerImage" asp-route-id="@pair.SideBanner.Id" method="post" style="display:inline;">
+                            <button type="submit" class="btn btn-danger">Delete Side</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
-
-<style>
-    .form-group {
-        margin-bottom: 20px;
-    }
-
-        .form-group label {
-            font-weight: bold;
-        }
-
-        .form-group input,
-        .form-group select {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        .form-group img {
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        .form-group button {
-            margin: 5px;
-            width: 100px;
-        }
-</style>

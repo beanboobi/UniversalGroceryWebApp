@@ -1,5 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using WebAppProject.Data;
 
 namespace WebAppProject.Models
 {
@@ -17,25 +19,25 @@ namespace WebAppProject.Models
         public string Email { get; set; }
 
         [Required]
-        public string Password { get; set; }
+        public string Password { get; set; } // Consider removing this or handling it differently
 
         [Required]
-        public string JoinDate { get; set; }
+        public DateTime JoinDate { get; set; } // Changed from DateTime?
 
         [Required]
         public int Salary { get; set; }
 
         [Required]
         [StringLength(100)]
-        public string Role { get; set; } // To differentiate the admin or employee role
+        public string Role { get; set; }
 
-        public int UserId { get; set; } // Foreign key
+        [Required]
+        public string ApplicationUserId { get; set; }  // Foreign key
 
-        // Navigation property
-        public User Users { get; set; }
+        [ForeignKey("ApplicationUserId")]
+        public virtual ApplicationUser ApplicationUser { get; set; }  // Navigation property
     }
 }
-
 
 
 

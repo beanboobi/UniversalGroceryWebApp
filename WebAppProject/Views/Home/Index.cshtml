@@ -1,27 +1,31 @@
-﻿@{
+﻿@model WebAppProject.ViewModels.HomePageViewModel
+@{
     ViewData["Title"] = "Home Page";
 }
-@model IEnumerable<WebAppProject.ViewModels.GroceryItemViewModel>
 
 <!-- Banner Section Start -->
 <div class="banner-section">
-    <div class="banner-left">
-        <h2>Exclusive offer <span>30% Off</span></h2>
-        <p>STAY HOME & DELIVERED YOUR DAILY NEEDS</p>
-        <p>Vegetables contain many vitamins and minerals that are good for your health.</p>
-        <a href="#" class="shop-now">Shop Now</a>
-    </div>
-    <div class="banner-right">
-        <div class="banner-ad">
-            <h2>45% OFF Nut Collection</h2>
-            <p>We deliver organic vegetables & fruits</p>
-            <a href="#" class="shop-now">Shop Now</a>
+    <div id="bannerCarousel" class="carousel">
+        <div class="carousel-track">
+            @foreach (var (mainBanner, sideBanner) in Model.BannerPairs())
+            {
+                <div class="carousel-slide">
+                    <div class="banner-ad">
+                        @if (mainBanner != null)
+                        {
+                            <img src="@mainBanner.ImagePath" alt="Main Banner Image" />
+                            <a href="@mainBanner.RedirectUrl" class="shop-now">Shop Now</a>
+                        }
+                    </div>
+                    <div class="banner-ad">
+                        <img src="@sideBanner.ImagePath" alt="Side Banner Image" />
+                        <a href="@sideBanner.RedirectUrl" class="shop-now">Shop Now</a>
+                    </div>
+                </div>
+            }
         </div>
-        <div class="banner-ad">
-            <h2>Healthy Food Organic Market</h2>
-            <p>Start your daily shopping with some Organic food</p>
-            <a href="#" class="shop-now">Shop Now</a>
-        </div>
+        <button class="carousel-control prev" onclick="moveToPrevSlide()">&#10094;</button>
+        <button class="carousel-control next" onclick="moveToNextSlide()">&#10095;</button>
     </div>
 </div>
 <!-- Banner Section End -->
@@ -58,7 +62,7 @@
                 <a href="#" class="see-all">See All</a>
             </div>
             <div class="products-grid">
-                @foreach (var item in Model)
+                @foreach (var item in Model.GroceryItems)
                 {
                     <div class="product-card" data-id="@item.Id">
                         <img src="@item.ImageUrl" alt="@item.Name" onclick="goToProductDetails(this)">
@@ -81,10 +85,8 @@
                         </div>
                     </div>
                 }
-                
             </div>
         </section>
-
     </main>
 </div>
 
@@ -97,7 +99,40 @@
     function goToProductCategory(category) {
         window.location.href = '/Home/ProductCategory/' + encodeURIComponent(category);
     }
+
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(".carousel-slide");
+    const totalSlides = slides.length;
+
+    function moveToNextSlide() {
+        if (currentIndex < totalSlides - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0;
+        }
+        updateCarousel();
+    }
+
+    function moveToPrevSlide() {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = totalSlides - 1;
+        }
+        updateCarousel();
+    }
+
+    function updateCarousel() {
+        const newTranslateValue = -currentIndex * 100; // Adjust the percentage based on slide width
+        document.querySelector(".carousel-track").style.transform = `translateX(${newTranslateValue}%)`;
+    }
+
+    setInterval(moveToNextSlide, 25000); // Change slide every 25 seconds
 </script>
+
+<style>
+    /* Your existing styles */
+</style>
 
 <style>
     .banner-section {
@@ -109,74 +144,65 @@
         margin-bottom: 20px;
     }
 
-    .banner-left {
-        width: 60%;
-        padding: 20px;
-        background-image: url('../images/ads.png');
-        background-size: cover;
-        color: black;
+    .carousel {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    .carousel-track {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        transition: transform 0.5s ease-in-out;
     }
 
-        .banner-left h2 {
-            font-size: 2em;
-            margin-bottom: 5px;
-        }
-
-            .banner-left h2 span {
-                color: red;
-            }
-
-        .banner-left p {
-            font-size: 0.65em;
-            margin-bottom: 10px;
-        }
-
-    .shop-now {
-        padding: 5px 10px; 
-        
-        color: green; 
-        text-decoration: none;
-        font-size: 1em;
-        font-weight: bold; 
-        margin-top: 10px;
-        display: inline-block;
-        border: none; 
-        border-radius: 3px; 
-    }
-
-
-
-    .banner-right {
-        width: 35%;
-        gap: 20px;
-        background: url('../images/banner-right.jpg');
-        background-size: cover;
-        background-position: center;
-        padding: 20px;
+    .carousel-slide {
+        display: flex;
+        justify-content: space-around;
+        min-width: 100%;
     }
 
     .banner-ad {
-        padding: 20px;
-        background-color: rgba(0 0, 0, 0.1);
-        border: 1px solid #ddd;
-        border-radius: 5px;
+        flex: 1;
+        padding: 10px;
+        box-sizing: border-box;
         text-align: center;
     }
 
-        .banner-ad h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            color:Black;
+        .banner-ad img {
+            max-width: 100%;
+            height: auto;
         }
 
-        .banner-ad p {
-            font-size: 1em;
-            margin-bottom: 10px;
-            color: black;
+    .carousel-control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+        .carousel-control.prev {
+            left: 10px;
         }
+
+        .carousel-control.next {
+            right: 10px;
+        }
+
+    .shop-now {
+        padding: 5px 10px;
+        color: green;
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: 10px;
+        display: inline-block;
+        border: none;
+        border-radius: 3px;
+    }
 
     .homepage {
         display: flex;
@@ -212,12 +238,12 @@
         width: 80%;
         padding: 20px;
     }
-    
+
     .sidebar-banner img {
         width: 100%;
-        height: 750px; 
-        object-fit: cover; 
-        object-position: center; 
+        height: 750px;
+        object-fit: cover;
+        object-position: center;
         border-radius: 20px;
     }
 
@@ -254,23 +280,19 @@
         text-align: center;
         padding: 10px;
         margin-bottom: 20px;
-        flex:none;
-        
-
-        
+        flex: none;
     }
 
         .product-card img {
             max-width: 100%;
             height: auto;
-            
         }
 
     .product-info {
         padding: 10px;
-        flex: none; 
-        display: flex; 
-        flex-direction: column; 
+        flex: none;
+        display: flex;
+        flex-direction: column;
         flex-grow: 1;
     }
 
@@ -278,7 +300,6 @@
             font-size: 1em;
             margin: 10px 0;
             cursor: pointer;
-            
         }
 
             .product-info h3:hover {
@@ -299,35 +320,22 @@
 
     .original-price {
         font-size: 1em;
-        color: #777;
+        color: #aaa;
         text-decoration: line-through;
     }
 
     .btn-add {
-        margin-top: auto;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 20px;
-        font-size: 1em;
-        color: #fff;
+        padding: 5px 10px;
         background-color: #28a745;
+        color: #fff;
         border: none;
-        border-radius: 5px;
+        border-radius: 3px;
         cursor: pointer;
-        text-align: center;
-        transition: background-color 0.3s;
-        width: 100%;
+        font-size: 0.9em;
+        margin-top: 10px;
     }
 
         .btn-add:hover {
             background-color: #218838;
-        }
-
-        .btn-add::after {
-            content: '+';
-            display: inline-block;
-            margin-left: 10px;
-            font-size: 1.2em;
         }
 </style>

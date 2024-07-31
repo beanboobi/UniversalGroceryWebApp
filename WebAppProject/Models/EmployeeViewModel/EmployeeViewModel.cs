@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+using WebAppProject.Models;
 
 namespace WebAppProject.ViewModels
 {
@@ -15,12 +17,8 @@ namespace WebAppProject.ViewModels
         [EmailAddress]
         public string Email { get; set; }
 
-        [StringLength(100)]
-        [DataType(DataType.Password)]
-        public string Password { get; set; }
-
         [Required]
-        public string JoinDate { get; set; }
+        public DateTime JoinDate { get; set; }
 
         [Required]
         public int Salary { get; set; }
@@ -29,6 +27,12 @@ namespace WebAppProject.ViewModels
         [StringLength(100)]
         public string Role { get; set; }
 
-        // Additional properties as needed
+        [StringLength(100)]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
+
+
+
     }
+
 }

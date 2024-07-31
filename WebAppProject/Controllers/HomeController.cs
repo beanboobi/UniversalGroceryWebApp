@@ -45,8 +45,26 @@ namespace WebAppProject.Controllers
                 })
                .ToList();
 
-            return View(items);
+            var mainBanners = _context.BannerImage
+     .Where(b => b.BannerType == "Main")
+     .OrderByDescending(b => b.CreatedDate)
+     .ToList(); // Get a list of main banners
+
+            var sideBanners = _context.BannerImage
+                .Where(b => b.BannerType == "Side")
+                .OrderByDescending(b => b.CreatedDate)
+                .ToList();
+
+            var viewModel = new HomePageViewModel
+            {
+                GroceryItems = items,
+                MainBanners = mainBanners, // Assign the list of main banners
+                SideBanners = sideBanners
+            };
+
+            return View(viewModel);
         }
+
         [HttpGet]
         public IActionResult ProductCategory(string category)
         {

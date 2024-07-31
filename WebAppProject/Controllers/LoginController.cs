@@ -4,6 +4,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using WebAppProject.Data;
 using WebAppProject.ViewModels;
+using WebAppProject.Models;
 
 
 namespace WebAppProject.Controllers
