@@ -1,11 +1,14 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WebAppProject.Data;
+using WebAppProject.Helpers;
 using WebAppProject.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<OrderHelper>();
 
 // Add services to the container.
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

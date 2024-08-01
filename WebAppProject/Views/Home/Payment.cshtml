@@ -87,9 +87,14 @@
     </style>
 </head>
 <body>
+    @{
+        ViewData["Title"] = "Payment";
+    }
+
     <div class="payment-form">
         <h2>Let's Make Payment</h2>
-        <form>
+        <form asp-controller="Cart" asp-action="SaveOrder" method="post">
+            @Html.AntiForgeryToken() <!-- Add the anti-forgery token -->
             <div class="form-group">
                 <label for="owner">Name of Owner</label>
                 <input type="text" class="form-control" id="owner" placeholder="Kelvin Mai">
@@ -138,5 +143,6 @@
             </div>
         </form>
     </div>
+
 </body>
 

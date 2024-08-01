@@ -486,6 +486,19 @@ namespace WebAppProject.Areas.Admin.Controllers
             return RedirectToAction(nameof(ManageEmployee));
         }
 
+        [HttpGet]
+        public async Task<IActionResult> EditItem(int id)
+        {
+            var item = await _context.GroceryItem.FindAsync(id);
+            if (item == null)
+            {
+                return NotFound();
+            }
+
+            return View("ItemEditForm", item);
+        }
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditItem(GroceryItem item, IFormFile productPicture)

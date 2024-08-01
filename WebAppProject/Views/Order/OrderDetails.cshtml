@@ -1,4 +1,9 @@
-﻿
+﻿@model WebAppProject.ViewModels.OrderDetailViewModel
+
+@{
+    ViewData["Title"] = "Order Details";
+}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,16 +64,18 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h2>Order Details for Order ID: 123456</h2>
-        <div class="order-item">
-            <img src="path/to/product-image.jpg" alt="Product Name" class="order-image">
-            <div class="order-details">
-                <h5 class="order-heading">Product Name (Product Code)</h5>
-                <p class="price-quantity">Price: $120.00 - Quantity: 2</p>
+        <h2>Order Details for Order ID: @Model.OrderId</h2>
+        @foreach (var item in Model.OrderItems)
+        {
+            <div class="order-item">
+                <img src="@item.ImageUrl" alt="@item.ItemName" class="main-image">
+                <div class="order-details">
+                    <h5 class="order-heading">@item.ItemName</h5>
+                    <p class="price-quantity">Price: @item.Price.ToString("C") - Quantity: @item.Quantity</p>
+                </div>
             </div>
-        </div>
-        <!-- Repeat for other products in the order -->
-        <a href="OrderHistory" class="btn btn-link back-link">Back to Order History</a>
+        }
+        <a asp-action="OrderHistory" class="btn btn-link back-link">Back to Order History</a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -21,6 +21,9 @@ namespace WebAppProject.Data
         public DbSet<Employee> Employees { get; set; }
         public DbSet<BannerImage> BannerImage { get; set; }
 
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -77,5 +77,32 @@ namespace WebAppProject.ViewModels
     {
         public int ItemCount { get; set; }
     }
+
+    public class OrderViewModel
+    {
+        public int OrderId { get; set; }
+        public DateTime OrderDate { get; set; }
+        public int TotalItems { get; set; }
+        public decimal TotalPrice { get; set; }
+    }
+
+
+    public class OrderDetailViewModel
+    {
+        public int OrderId { get; set; }
+        public DateTime OrderDate { get; set; }
+        public List<OrderItemViewModel> OrderItems { get; set; }
+
+
+    }
+
+    public class OrderItemViewModel
+    {
+        public int ItemId { get; set; }
+        public string ItemName { get; set; }
+        public decimal Price { get; set; }
+        public int Quantity { get; set; }
+        public string ImageUrl { get; set; }
+    }
 }
 

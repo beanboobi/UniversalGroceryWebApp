@@ -13,10 +13,12 @@ using System.Security.Claims;
 public class CartController : Controller
 {
     private readonly ApplicationDbContext _context;
+    private readonly OrderHelper _orderHelper;
 
-    public CartController(ApplicationDbContext context)
+    public CartController(ApplicationDbContext context, OrderHelper orderHelper)
     {
         _context = context;
+        _orderHelper = orderHelper;
     }
 
     private string GetCartSessionKey()
@@ -76,7 +78,26 @@ public class CartController : Controller
         return RedirectToAction("Cart"); // Redirect to the cart view
     }
 
-    
+
+    [HttpPost]
+    [Authorize]
+    public async Task<IActionResult> SaveOrder()
+    {
+        var cart = SessionHelper.GetObjectFromJson<List<CartItem>>(HttpContext.Session, GetCartSessionKey()) ?? new List<CartItem>();
+        var userId = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+
+        if (string.IsNullOrEmpty(userId))
+        {
+            return Unauthorized();
+        }
+
+        await _orderHelper.SaveOrderAsync(userId, cart);
+
+        // Clear the cart after saving the order
+        HttpContext.Session.Remove(GetCartSessionKey());
+
+        return RedirectToAction("Cart"); // You should have an order confirmation view
+    }
 
 
     private GroceryItemViewModel MapToViewModel(GroceryItem item)

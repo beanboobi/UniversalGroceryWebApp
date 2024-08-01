@@ -1,4 +1,9 @@
-﻿
+﻿@model List<WebAppProject.ViewModels.OrderViewModel>
+
+@{
+    ViewData["Title"] = "My Order History";
+}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,16 +59,17 @@
     <div class="container mt-5">
         <h2>My Order History</h2>
         <div class="list-group">
-            <!-- Simulated dynamic rendering -->
-            <a href="OrderDetails" class="list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Order ID: 123456 - 24th June, 2023</h5>
-                    <small>Total items: 3</small>
-                </div>
-                <p class="mb-1">Total Price: $200</p>
-                <small>Date: 24th June, 2023</small>
-            </a>
-            <!-- Additional orders would be similarly listed -->
+            @foreach (var order in Model)
+            {
+                <a asp-action="OrderDetails" asp-route-id="@order.OrderId" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Order ID: @order.OrderId - @order.OrderDate.ToShortDateString()</h5>
+                        <small>Total items: @order.TotalItems</small>
+                    </div>
+                    <p class="mb-1">Total Price: @order.TotalPrice.ToString("C")</p>
+                    <small>Date: @order.OrderDate.ToShortDateString()</small>
+                </a>
+            }
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
