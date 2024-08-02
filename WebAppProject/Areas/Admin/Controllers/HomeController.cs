@@ -583,35 +583,15 @@ namespace WebAppProject.Areas.Admin.Controllers
         {
             return _context.GroceryItem.Any(e => e.Id == id);
         }
+        
 
         public IActionResult ManageWebsite()
         {
             var mainBanners = _context.BannerImage.Where(b => b.BannerType == "Main").ToList();
-            var sideBanners = _context.BannerImage.Where(b => b.BannerType == "Side").ToList();
-
-            var bannerPairs = new List<(BannerImage MainBanner, BannerImage SideBanner)>();
-
-            if (mainBanners.Count == 0)
-            {
-                // Handle the case where there are no main banners
-                foreach (var sideBanner in sideBanners)
-                {
-                    bannerPairs.Add((null, sideBanner));
-                }
-            }
-            else
-            {
-                for (int i = 0; i < sideBanners.Count; i++)
-                {
-                    var mainBanner = mainBanners.ElementAtOrDefault(i % mainBanners.Count);
-                    var sideBanner = sideBanners[i];
-                    bannerPairs.Add((mainBanner, sideBanner));
-                }
-            }
 
             var viewModel = new ManageWebsiteViewModel
             {
-                BannerPairs = bannerPairs
+                MainBanners = mainBanners
             };
 
             return View(viewModel);
@@ -626,31 +606,10 @@ namespace WebAppProject.Areas.Admin.Controllers
             }
 
             var mainBanners = _context.BannerImage.Where(b => b.BannerType == "Main").ToList();
-            var sideBanners = _context.BannerImage.Where(b => b.BannerType == "Side").ToList();
-
-            var bannerPairs = new List<(BannerImage MainBanner, BannerImage SideBanner)>();
-
-            if (mainBanners.Count == 0)
-            {
-                // Handle the case where there are no main banners
-                foreach (var sideBanner in sideBanners)
-                {
-                    bannerPairs.Add((null, sideBanner));
-                }
-            }
-            else
-            {
-                for (int i = 0; i < sideBanners.Count; i++)
-                {
-                    var mainBanner = mainBanners.ElementAtOrDefault(i % mainBanners.Count);
-                    var sideBanner = sideBanners[i];
-                    bannerPairs.Add((mainBanner, sideBanner));
-                }
-            }
 
             var viewModel = new ManageWebsiteViewModel
             {
-                BannerPairs = bannerPairs,
+                MainBanners = mainBanners,
                 BannerImage = banner
             };
 

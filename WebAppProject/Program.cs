@@ -3,14 +3,15 @@ using Microsoft.EntityFrameworkCore;
 using WebAppProject.Data;
 using WebAppProject.Helpers;
 using WebAppProject.Models;
+using System;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Service configurations...
 builder.Services.AddControllersWithViews();
-
 builder.Services.AddScoped<OrderHelper>();
-
-// Add services to the container.
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -19,18 +20,11 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddDefaultTokenProviders();
 
 
+
 builder.Services.Configure<IdentityOptions>(options =>
 {
     options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+ ";
 });
-
-builder.Services.ConfigureApplicationCookie(options =>
-{
-    options.LoginPath = "/Login/Login";
-    options.LogoutPath = "/Login/Logout";
-    options.AccessDeniedPath = "/Login/AccessDenied";
-});
-
 
 builder.Services.ConfigureApplicationCookie(options =>
 {
@@ -51,47 +45,38 @@ builder.Services.AddSession(options =>
 
 var app = builder.Build();
 
-// Create roles method
-async Task CreateRoles(IServiceProvider serviceProvider, ILogger logger)
+using (var scope = app.Services.CreateScope())
 {
-    var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-    string[] roleNames = { "Admin", "User", "Employee" };
-    IdentityResult roleResult;
+    var services = scope.ServiceProvider;
+    var logger = services.GetRequiredService<ILogger<Program>>();
 
-    foreach (var roleName in roleNames)
+    try
     {
-        var roleExist = await roleManager.RoleExistsAsync(roleName);
-        if (!roleExist)
-        {
-            roleResult = await roleManager.CreateAsync(new IdentityRole(roleName));
-            if (roleResult.Succeeded)
-            {
-                logger.LogInformation($"Role '{roleName}' created successfully.");
-            }
-            else
-            {
-                logger.LogError($"Error creating role '{roleName}': {string.Join(", ", roleResult.Errors.Select(e => e.Description))}");
-            }
-        }
+        await IdentityInitializer.InitializeAsync(services, logger);
+        await IdentityInitializer.CreateEmployee(services, logger);
+    }
+    catch (Exception ex)
+    {
+        logger.LogError(ex, "An error occurred during identity initialization.");
     }
 }
 
-// Call the create roles method during application startup
+// Ensure the identity data is initialized
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     var logger = services.GetRequiredService<ILogger<Program>>();
     try
     {
-        await CreateRoles(services, logger);
+        await IdentityInitializer.InitializeAsync(services, logger);
     }
     catch (Exception ex)
     {
-        logger.LogError(ex, "An error occurred creating roles.");
+        logger.LogError(ex, "An error occurred during identity initialization.");
     }
 }
 
-// Configure the HTTP request pipeline.
+// HTTP request pipeline configuration
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");

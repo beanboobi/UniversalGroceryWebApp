@@ -23,7 +23,6 @@
             <label for="bannerType">Banner Type</label>
             <select class="form-control" asp-for="BannerImage.BannerType" required>
                 <option value="Main">Main Banner</option>
-                <option value="Side">Side Banner</option>
             </select>
         </div>
         <div class="form-group text-center">
@@ -39,38 +38,23 @@
             <tr>
                 <th>Carousel Slide</th>
                 <th>Main Banner</th>
-                <th>Side Banner</th>
                 <th>Actions</th>
             </tr>
         </thead>
         <tbody>
-            @for (var i = 0; i < Model.BannerPairs.Count; i++)
+            @for (var i = 0; i < Model.MainBanners.Count; i++)
             {
-                var pair = Model.BannerPairs[i];
+                var banner = Model.MainBanners[i];
                 <tr>
                     <td>Carousel Slide @i</td>
                     <td>
-                        @if (pair.MainBanner != null)
-                        {
-                            <img src="@pair.MainBanner.ImagePath" alt="Main Banner" width="100" />
-                            <div>@pair.MainBanner.RedirectUrl</div>
-                        }
+                        <img src="@banner.ImagePath" alt="Main Banner" width="100" />
+                        <div>@banner.RedirectUrl</div>
                     </td>
                     <td>
-                        <img src="@pair.SideBanner.ImagePath" alt="Side Banner" width="100" />
-                        <div>@pair.SideBanner.RedirectUrl</div>
-                    </td>
-                    <td>
-                        @if (pair.MainBanner != null)
-                        {
-                            <a asp-action="EditBanner" asp-route-id="@pair.MainBanner.Id" class="btn btn-warning">Edit Main</a>
-                            <form asp-action="DeleteBannerImage" asp-route-id="@pair.MainBanner.Id" method="post" style="display:inline;">
-                                <button type="submit" class="btn btn-danger">Delete Main</button>
-                            </form>
-                        }
-                        <a asp-action="EditBanner" asp-route-id="@pair.SideBanner.Id" class="btn btn-warning">Edit Side</a>
-                        <form asp-action="DeleteBannerImage" asp-route-id="@pair.SideBanner.Id" method="post" style="display:inline;">
-                            <button type="submit" class="btn btn-danger">Delete Side</button>
+                        <a asp-action="EditBanner" asp-route-id="@banner.Id" class="btn btn-warning">Edit</a>
+                        <form asp-action="DeleteBannerImage" asp-route-id="@banner.Id" method="post" style="display:inline;">
+                            <button type="submit" class="btn btn-danger">Delete</button>
                         </form>
                     </td>
                 </tr>

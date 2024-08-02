@@ -34,7 +34,7 @@ namespace WebAppProject.Models
         [Required]
         public string ApplicationUserId { get; set; }  // Foreign key
 
-        [ForeignKey("ApplicationUserId")]
+        //[ForeignKey("ApplicationUserId")]
         public virtual ApplicationUser ApplicationUser { get; set; }  // Navigation property
     }
 }

@@ -26,10 +26,32 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="form-group">
-                    <label for="category">Category</label>
-                    <input type="text" class="form-control" id="category" asp-for="Category" />
-                    <span asp-validation-for="Category" class="text-danger"></span>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="productDescription">Product Description</label>
+                            <input type="text" class="form-control" id="productDescription" asp-for="Description" />
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select class="form-control" id="category" asp-for="Category">
+                                <option value="">-- Select Category --</option>
+                                <option value="Vegetables & Fruit">Vegetables & Fruit</option>
+                                <option value="Beverages">Beverages</option>
+                                <option value="Meats & Seafood">Meats & Seafood</option>
+                                <option value="Milk & Dairies">Milk & Dairies</option>
+                                <option value="Frozen Foods">Frozen Foods</option>
+                                <option value="Biscuits & Snacks">Biscuits & Snacks</option>
+                                <option value="HouseHold">HouseHold</option>
+                                <option value="Drinks">Drinks</option>
+                                <option value="Pet Foods">Pet Foods</option>
+                            </select>
+                            <span asp-validation-for="Category" class="text-danger"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

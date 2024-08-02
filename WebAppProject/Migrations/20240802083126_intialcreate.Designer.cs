@@ -12,8 +12,8 @@ using WebAppProject.Data;
 namespace WebAppProject.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240731143454_eugenemerge")]
-    partial class eugenemerge
+    [Migration("20240802083126_intialcreate")]
+    partial class intialcreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -249,6 +249,24 @@ namespace WebAppProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("BannerImage");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            BannerType = "MainBanners",
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 31, 26, 377, DateTimeKind.Local).AddTicks(122),
+                            ImagePath = "/images/BannerImage(Cropped).jpg",
+                            RedirectUrl = "https://example.com"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            BannerType = "MainBanners",
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 31, 26, 377, DateTimeKind.Local).AddTicks(124),
+                            ImagePath = "/images/vector-big-sale-banner.jpg",
+                            RedirectUrl = "https://example.com"
+                        });
                 });
 
             modelBuilder.Entity("WebAppProject.Models.Employee", b =>
@@ -261,9 +279,6 @@ namespace WebAppProject.Migrations
 
                     b.Property<string>("ApplicationUserId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("ApplicationUserId1")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Email")
@@ -294,8 +309,6 @@ namespace WebAppProject.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("ApplicationUserId");
-
-                    b.HasIndex("ApplicationUserId1");
 
                     b.ToTable("Employees");
                 });
@@ -343,6 +356,187 @@ namespace WebAppProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("GroceryItem");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Category = "Fruits",
+                            CreatedDate = "2024-08-02",
+                            Description = "Fresh Red Apple",
+                            Discount = 0,
+                            ImageUrl = "/images/apple.png",
+                            Name = "Apple",
+                            Price = 0.5m,
+                            Quantity = 100
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Category = "Fruits",
+                            CreatedDate = "2024-08-02",
+                            Description = "Organic Banana",
+                            Discount = 0,
+                            ImageUrl = "/images/Banana.jpeg",
+                            Name = "Banana",
+                            Price = 0.3m,
+                            Quantity = 150
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Category = "Vegetables",
+                            CreatedDate = "2024-08-02",
+                            Description = "Fresh Carrot",
+                            Discount = 0,
+                            ImageUrl = "/images/Carrot.png",
+                            Name = "Carrot",
+                            Price = 0.2m,
+                            Quantity = 200
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Category = "Vegetables",
+                            CreatedDate = "2024-08-02",
+                            Description = "Organic Tomato",
+                            Discount = 0,
+                            ImageUrl = "/images/Tomato.jpeg",
+                            Name = "Tomato",
+                            Price = 0.4m,
+                            Quantity = 180
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Category = "Dairy",
+                            CreatedDate = "2024-08-02",
+                            Description = "Full Cream Milk",
+                            Discount = 0,
+                            ImageUrl = "/images/Full Cream Milk.jpeg",
+                            Name = "Milk",
+                            Price = 1.5m,
+                            Quantity = 100
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Category = "Dairy",
+                            CreatedDate = "2024-08-02",
+                            Description = "Cheddar Cheese",
+                            Discount = 0,
+                            ImageUrl = "/images/Cheddar Cheese.jpeg",
+                            Name = "Cheese",
+                            Price = 2.0m,
+                            Quantity = 50
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Category = "Bakery",
+                            CreatedDate = "2024-08-02",
+                            Description = "Whole Wheat Bread",
+                            Discount = 0,
+                            ImageUrl = "/images/Whole Wheat Bread.jpeg",
+                            Name = "Bread",
+                            Price = 1.0m,
+                            Quantity = 120
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Category = "Meat",
+                            CreatedDate = "2024-08-02",
+                            Description = "Boneless Chicken Breast",
+                            Discount = 0,
+                            ImageUrl = "/images/Boneless Chicken Breast.jpeg",
+                            Name = "Chicken Breast",
+                            Price = 3.5m,
+                            Quantity = 90
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Category = "Seafood",
+                            CreatedDate = "2024-08-02",
+                            Description = "Fresh Salmon Fillet",
+                            Discount = 0,
+                            ImageUrl = "/images/Fresh Salmon Fillet.jpeg",
+                            Name = "Salmon",
+                            Price = 10.0m,
+                            Quantity = 70
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Category = "Grains",
+                            CreatedDate = "2024-08-02",
+                            Description = "Basmati Rice",
+                            Discount = 0,
+                            ImageUrl = "/images/Basmati Rice.jpeg",
+                            Name = "Rice",
+                            Price = 1.2m,
+                            Quantity = 300
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Category = "Grains",
+                            CreatedDate = "2024-08-02",
+                            Description = "Italian Pasta",
+                            Discount = 0,
+                            ImageUrl = "/images/Italian Pasta.jpeg",
+                            Name = "Pasta",
+                            Price = 1.1m,
+                            Quantity = 250
+                        });
+                });
+
+            modelBuilder.Entity("WebAppProject.Models.Order", b =>
+                {
+                    b.Property<int>("OrderId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderId"));
+
+                    b.Property<string>("CustomerId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("OrderId");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("WebAppProject.Models.OrderItem", b =>
+                {
+                    b.Property<int>("OrderItemId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderItemId"));
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("OrderItemId");
+
+                    b.HasIndex("OrderId");
+
+                    b.ToTable("OrderItems");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -399,21 +593,33 @@ namespace WebAppProject.Migrations
             modelBuilder.Entity("WebAppProject.Models.Employee", b =>
                 {
                     b.HasOne("WebAppProject.Models.ApplicationUser", "ApplicationUser")
-                        .WithMany()
+                        .WithMany("Employees")
                         .HasForeignKey("ApplicationUserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("WebAppProject.Models.ApplicationUser", null)
-                        .WithMany("Employees")
-                        .HasForeignKey("ApplicationUserId1");
-
                     b.Navigation("ApplicationUser");
+                });
+
+            modelBuilder.Entity("WebAppProject.Models.OrderItem", b =>
+                {
+                    b.HasOne("WebAppProject.Models.Order", "Order")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
                 });
 
             modelBuilder.Entity("WebAppProject.Models.ApplicationUser", b =>
                 {
                     b.Navigation("Employees");
+                });
+
+            modelBuilder.Entity("WebAppProject.Models.Order", b =>
+                {
+                    b.Navigation("OrderItems");
                 });
 #pragma warning restore 612, 618
         }
