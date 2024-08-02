@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebAppProject.Data;
 
@@ -11,9 +12,11 @@ using WebAppProject.Data;
 namespace WebAppProject.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240801095016_test")]
+    partial class test
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -245,7 +248,7 @@ namespace WebAppProject.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("BannerImage", (string)null);
+                    b.ToTable("BannerImage");
                 });
 
             modelBuilder.Entity("WebAppProject.Models.Employee", b =>
@@ -294,7 +297,7 @@ namespace WebAppProject.Migrations
 
                     b.HasIndex("ApplicationUserId1");
 
-                    b.ToTable("Employees", (string)null);
+                    b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("WebAppProject.Models.GroceryItem", b =>
@@ -339,7 +342,7 @@ namespace WebAppProject.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("GroceryItem", (string)null);
+                    b.ToTable("GroceryItem");
                 });
 
             modelBuilder.Entity("WebAppProject.Models.Order", b =>
@@ -359,7 +362,7 @@ namespace WebAppProject.Migrations
 
                     b.HasKey("OrderId");
 
-                    b.ToTable("Orders", (string)null);
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("WebAppProject.Models.OrderItem", b =>
@@ -386,7 +389,7 @@ namespace WebAppProject.Migrations
 
                     b.HasIndex("OrderId");
 
-                    b.ToTable("OrderItems", (string)null);
+                    b.ToTable("OrderItems");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

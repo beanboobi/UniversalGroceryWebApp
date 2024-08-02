@@ -72,7 +72,7 @@ public class CartController : Controller
         if (cartItem != null)
         {
             cart.Remove(cartItem);
-            HttpContext.Session.SetObjectAsJson("cart", cart);
+            SessionHelper.SetObjectAsJson(HttpContext.Session, GetCartSessionKey(), cart);
         }
 
         return RedirectToAction("Cart"); // Redirect to the cart view

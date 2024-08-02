@@ -1,4 +1,5 @@
-﻿
+﻿@model WebAppProject.ViewModels.UserProfileViewModel
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,28 +41,29 @@
         <h2>User Profile</h2>
         <img src="~/images/profilepicture.png" alt="User Avatar" class="profile-img">
 
-        <form>
+        <form asp-controller="Home" asp-action="UserProfile" method="post">
             <div class="form-group">
                 <label for="username">Username</label>
-                <input type="text" class="form-control" id="username" placeholder="Enter username" value="JohnDoe">
+                <input type="text" class="form-control" id="username" value="@Model.Username" readonly>
+                <input type="hidden" name="Username" value="@Model.Username">
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" value="johndoe@example.com">
+                <input type="email" class="form-control" id="email" name="Email" value="@Model.Email">
+                <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label for="address">Address</label>
-                <input type="text" class="form-control" id="address" placeholder="Enter address" value="123 Main St, Anytown, USA">
+                <label for="address">Phone Number</label>
+                <input type="text" class="form-control" id="PhoneNumber" name="PhoneNumber" value="@Model.PhoneNumber">
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
             </div>
-            
-        </form>
-        <div class="btn-container">
             <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+        <div class="btn-container mt-2">
             <form method="post" asp-controller="Home" asp-action="ChangePassword">
                 <button type="submit" class="btn btn-secondary">Change Password</button>
             </form>
         </div>
-    </div>
 
  
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

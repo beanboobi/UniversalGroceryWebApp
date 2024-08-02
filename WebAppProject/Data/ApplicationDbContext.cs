@@ -7,7 +7,7 @@ namespace WebAppProject.Data
 {
     public class ApplicationDBContext : IdentityUser
     {
-        // Add additional properties if needed
+        public string Address { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
