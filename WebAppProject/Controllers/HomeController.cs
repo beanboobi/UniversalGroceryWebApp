@@ -12,7 +12,6 @@ using System.Linq;
 using WebAppProject.Helpers;
 using System.Security.Claims;
 using Newtonsoft.Json;
-using Microsoft.AspNetCore.Identity;
 
 namespace WebAppProject.Controllers
 {
@@ -22,16 +21,11 @@ namespace WebAppProject.Controllers
 
         private readonly ILogger<HomeController> _logger;
         private readonly ApplicationDbContext _context;
-        private readonly UserManager<ApplicationUser> _userManager;
-        private readonly SignInManager<ApplicationUser> _signInManager;
 
-
-        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context, UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
         {
             _logger = logger;
             _context = context;
-            _userManager = userManager;
-            _signInManager = signInManager;
         }
 
         public IActionResult Index()
@@ -52,20 +46,14 @@ namespace WebAppProject.Controllers
                .ToList();
 
             var mainBanners = _context.BannerImage
-     .Where(b => b.BannerType == "Main")
-     .OrderByDescending(b => b.CreatedDate)
-     .ToList(); // Get a list of main banners
-
-            var sideBanners = _context.BannerImage
-                .Where(b => b.BannerType == "Side")
-                .OrderByDescending(b => b.CreatedDate)
-                .ToList();
+        .Where(b => b.BannerType == "Main")
+        .OrderByDescending(b => b.CreatedDate)
+        .ToList(); // Get a list of main banners
 
             var viewModel = new HomePageViewModel
             {
                 GroceryItems = items,
-                MainBanners = mainBanners, // Assign the list of main banners
-                SideBanners = sideBanners
+                MainBanners = mainBanners // Assign the list of main banners
             };
 
             return View(viewModel);
@@ -162,87 +150,15 @@ namespace WebAppProject.Controllers
         {
             return View();
         }
-        [HttpGet]
-        public async Task<IActionResult> UserProfile()
-        {
-            var user = await _userManager.GetUserAsync(User);
-            if (user == null)
-            {
-                return RedirectToAction("Login", "Account");
-            }
 
-            var model = new UserProfileViewModel
-            {
-                Username = user.UserName,
-                Email = user.Email,
-                PhoneNumber = user.PhoneNumber // Assuming Address is a property of ApplicationUser
-            };
-
-            return View(model);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> UserProfile(UserProfileViewModel model)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
-
-            var user = await _userManager.GetUserAsync(User);
-            if (user == null)
-            {
-                return RedirectToAction("Login", "Account");
-            }
-
-            user.Email = model.Email;
-            user.PhoneNumber = model.PhoneNumber;
-
-            var result = await _userManager.UpdateAsync(user);
-            if (result.Succeeded)
-            {
-                ViewData["Message"] = "Profile updated successfully";
-            }
-            else
-            {
-                ModelState.AddModelError(string.Empty, "Failed to update profile");
-            }
-
-            return View(model);
-        }
-        [HttpGet]
-        public IActionResult ChangePassword()
+        public IActionResult UserProfile()
         {
             return View();
         }
-        [HttpPost]
-        public async Task<IActionResult> ChangePassword(ChangePasswordViewModel model)
+
+        public IActionResult ChangePassword()
         {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
-
-            var user = await _userManager.GetUserAsync(User);
-            if (user == null)
-            {
-                return RedirectToAction("Login", "Account");
-            }
-
-            var result = await _userManager.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
-            if (result.Succeeded)
-            {
-                await _signInManager.RefreshSignInAsync(user);
-                ViewData["Message"] = "Password changed successfully";
-                return View();
-            }
-
-            foreach (var error in result.Errors)
-            {
-                ModelState.AddModelError(string.Empty, error.Description);
-            }
-
-            return View(model);
+            return View();
         }
 
 

@@ -7,19 +7,12 @@
 <div class="banner-section">
     <div id="bannerCarousel" class="carousel">
         <div class="carousel-track">
-            @foreach (var (mainBanner, sideBanner) in Model.BannerPairs())
+            @foreach (var mainBanner in Model.MainBanners)
             {
                 <div class="carousel-slide">
                     <div class="banner-ad">
-                        @if (mainBanner != null)
-                        {
-                            <img src="@mainBanner.ImagePath" alt="Main Banner Image" />
-                            <a href="@mainBanner.RedirectUrl" class="shop-now">Shop Now</a>
-                        }
-                    </div>
-                    <div class="banner-ad">
-                        <img src="@sideBanner.ImagePath" alt="Side Banner Image" />
-                        <a href="@sideBanner.RedirectUrl" class="shop-now">Shop Now</a>
+                        <img src="@mainBanner.ImagePath" alt="Main Banner Image" class="carousel-image" />
+                        <a href="@mainBanner.RedirectUrl"></a>
                     </div>
                 </div>
             }
@@ -131,13 +124,9 @@
 </script>
 
 <style>
-    /* Your existing styles */
-</style>
-
-<style>
     .banner-section {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         background-color: #f9f9f9;
         text-decoration: none;
         padding: 20px;
@@ -147,7 +136,9 @@
     .carousel {
         overflow: hidden;
         position: relative;
-        width: 100%;
+        width: 100%; /* Make carousel fill the width of the banner section */
+        height: 250px; /* Set a fixed height for the carousel */
+        background-color:forestgreen;
     }
 
     .carousel-track {
@@ -157,20 +148,22 @@
 
     .carousel-slide {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         min-width: 100%;
     }
 
     .banner-ad {
         flex: 1;
-        padding: 10px;
+        padding: 0; /* Remove padding for full-width coverage */
         box-sizing: border-box;
         text-align: center;
+        height: 85%; /* Ensure banner-ad div fills the height of the carousel */
     }
 
-        .banner-ad img {
-            max-width: 100%;
-            height: auto;
+        .banner-ad img.carousel-image {
+            width: 100%; /* Ensure image covers the entire width */
+            height: 250px; /* Ensure image covers the entire height */
+            object-fit: cover; /* Cover the entire area without distorting the image */
         }
 
     .carousel-control {
@@ -192,17 +185,7 @@
             right: 10px;
         }
 
-    .shop-now {
-        padding: 5px 10px;
-        color: green;
-        text-decoration: none;
-        font-size: 1em;
-        font-weight: bold;
-        margin-top: 10px;
-        display: inline-block;
-        border: none;
-        border-radius: 3px;
-    }
+    
 
     .homepage {
         display: flex;
@@ -241,7 +224,7 @@
 
     .sidebar-banner img {
         width: 100%;
-        height: 750px;
+        height: auto;
         object-fit: cover;
         object-position: center;
         border-radius: 20px;
@@ -333,6 +316,8 @@
         cursor: pointer;
         font-size: 0.9em;
         margin-top: 10px;
+       
+        bottom: 2px;
     }
 
         .btn-add:hover {

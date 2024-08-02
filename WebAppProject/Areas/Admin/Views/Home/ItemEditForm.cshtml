@@ -35,7 +35,18 @@
         </div>
         <div class="form-group">
             <label asp-for="Category" class="control-label"></label>
-            <input asp-for="Category" class="form-control" />
+            <select asp-for="Category" class="form-control">
+                <option value="">-- Select Category --</option>
+                <option value="VegetablesAndFruit">Vegetables & Fruit</option>
+                <option value="Beverages">Beverages</option>
+                <option value="MeatsAndSeafood">Meats & Seafood</option>
+                <option value="MilkAndDairies">Milk & Dairies</option>
+                <option value="FrozenFoods">Frozen Foods</option>
+                <option value="Snacks">Biscuits & Snacks</option>
+                <option value="HouseHold">HouseHold</option>
+                <option value="Drinks">Drinks</option>
+                <option value="PetFoods">Pet Foods</option>
+            </select>
             <span asp-validation-for="Category" class="text-danger"></span>
         </div>
         <div class="form-group">

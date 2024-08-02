@@ -27,8 +27,19 @@
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="category">Category</label>
-                    <input type="text" class="form-control" id="category" asp-for="Category" />
+                    <label asp-for="Category" class="control-label"></label>
+                    <select asp-for="Category" class="form-control">
+                        <option value="">-- Select Category --</option>
+                        <option value="VegetablesAndFruit">Vegetables & Fruit</option>
+                        <option value="Beverages">Beverages</option>
+                        <option value="MeatsAndSeafood">Meats & Seafood</option>
+                        <option value="MilkAndDairies">Milk & Dairies</option>
+                        <option value="FrozenFoods">Frozen Foods</option>
+                        <option value="Snacks">Biscuits & Snacks</option>
+                        <option value="HouseHold">HouseHold</option>
+                        <option value="Drinks">Drinks</option>
+                        <option value="PetFoods">Pet Foods</option>
+                    </select>
                     <span asp-validation-for="Category" class="text-danger"></span>
                 </div>
             </div>
@@ -57,13 +68,7 @@
                     <span asp-validation-for="Quantity" class="text-danger"></span>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="createdDate">Created Date</label>
-                    <input type="text" class="form-control" id="createdDate" asp-for="CreatedDate" />
-                    <span asp-validation-for="CreatedDate" class="text-danger"></span>
-                </div>
-            </div>
+            
         </div>
         <div class="row">
             <div class="col-md-12">
