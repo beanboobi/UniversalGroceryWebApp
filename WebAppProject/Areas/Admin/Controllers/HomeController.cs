@@ -15,7 +15,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace WebAppProject.Areas.Admin.Controllers
 {
-    //[Authorize(Roles = "Admin")]
+    
     [Area("Admin")]
     public class HomeController : Controller
     {
@@ -31,6 +31,7 @@ namespace WebAppProject.Areas.Admin.Controllers
             _userManager = userManager;
         }
 
+        [Authorize(Roles = "Employee,Admin")]
         public IActionResult Index()
         {
             return View();
@@ -42,6 +43,7 @@ namespace WebAppProject.Areas.Admin.Controllers
             return View(items);
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult AddProduct()
         {
             return View();
@@ -160,6 +162,7 @@ namespace WebAppProject.Areas.Admin.Controllers
             return View(userRolesViewModel);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteCustomer(string id)
@@ -174,6 +177,8 @@ namespace WebAppProject.Areas.Admin.Controllers
             return RedirectToAction(nameof(ManageCustomerAcc));
         }
 
+
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> EditCustomer(string id)
         {
             var customer = await _context.Users.FindAsync(id);
@@ -261,6 +266,7 @@ namespace WebAppProject.Areas.Admin.Controllers
             return RedirectToAction(nameof(ManageCustomerAcc));
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteItem(int id)
@@ -276,6 +282,7 @@ namespace WebAppProject.Areas.Admin.Controllers
             return RedirectToAction(nameof(ManageItem));
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult AddEmployee()
         {
             return View();
@@ -347,7 +354,7 @@ namespace WebAppProject.Areas.Admin.Controllers
                 return View(viewModel);
             }
         }
-
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteEmployee(int id)
@@ -386,6 +393,7 @@ namespace WebAppProject.Areas.Admin.Controllers
         }
 
         // Edit Employee actions
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> EditEmployee(int id)
         {
             var employee = await _context.Employees.FindAsync(id);
@@ -486,6 +494,7 @@ namespace WebAppProject.Areas.Admin.Controllers
             return RedirectToAction(nameof(ManageEmployee));
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> EditItem(int id)
         {
@@ -583,11 +592,12 @@ namespace WebAppProject.Areas.Admin.Controllers
         {
             return _context.GroceryItem.Any(e => e.Id == id);
         }
-        
 
+
+        // Admin ManageWebsite Actions
         public IActionResult ManageWebsite()
         {
-            var mainBanners = _context.BannerImage.Where(b => b.BannerType == "Main").ToList();
+            var mainBanners = _context.BannerImage.Where(b => b.BannerType == "MainBanner").ToList();
 
             var viewModel = new ManageWebsiteViewModel
             {
@@ -597,6 +607,7 @@ namespace WebAppProject.Areas.Admin.Controllers
             return View(viewModel);
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult EditBanner(int id)
         {
             var banner = _context.BannerImage.Find(id);
@@ -605,7 +616,7 @@ namespace WebAppProject.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var mainBanners = _context.BannerImage.Where(b => b.BannerType == "Main").ToList();
+            var mainBanners = _context.BannerImage.Where(b => b.BannerType == "MainBanner").ToList();
 
             var viewModel = new ManageWebsiteViewModel
             {
@@ -616,6 +627,7 @@ namespace WebAppProject.Areas.Admin.Controllers
             return View("ManageWebsite", viewModel);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> SaveBannerImage(ManageWebsiteViewModel model, IFormFile bannerPicture)
         {
@@ -647,6 +659,7 @@ namespace WebAppProject.Areas.Admin.Controllers
             return RedirectToAction(nameof(ManageWebsite));
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> DeleteBannerImage(int id)
         {

@@ -22,7 +22,7 @@
         <div class="form-group">
             <label for="bannerType">Banner Type</label>
             <select class="form-control" asp-for="BannerImage.BannerType" required>
-                <option value="Main">Main Banner</option>
+                <option value="MainBanner">Main Banner</option> <!-- Ensure this matches the seeded data -->
             </select>
         </div>
         <div class="form-group text-center">
@@ -48,17 +48,16 @@
                 <tr>
                     <td>Carousel Slide @i</td>
                     <td>
-                        <img src="@banner.ImagePath" alt="Main Banner" width="100" />
+                        <!-- Make the image clickable by wrapping it inside an anchor tag -->
+                        <a href="@banner.RedirectUrl" target="_blank">
+                            <img src="@banner.ImagePath" alt="Main Banner" width="100" />
+                        </a>
                         <div>@banner.RedirectUrl</div>
                     </td>
-                    <td class="action-buttons">
-                        <a asp-action="EditBanner" asp-route-id="@banner.Id">
-                            <img src="~/images/edit.png" alt="Edit" style="width:20px;" />
-                        </a>
-                        <form asp-action="DeleteBannerImage" asp-route-id="@banner.Id" method="post">
-                            <button type="submit" class="btn btn-link p-0">
-                                <img src="~/images/remove.png" alt="Remove" style="width:20px;" />
-                            </button>
+                    <td>
+                        <a asp-action="EditBanner" asp-route-id="@banner.Id" class="btn btn-warning">Edit</a>
+                        <form asp-action="DeleteBannerImage" asp-route-id="@banner.Id" method="post" style="display:inline;">
+                            <button type="submit" class="btn btn-danger">Delete</button>
                         </form>
                     </td>
                 </tr>
@@ -66,19 +65,3 @@
         </tbody>
     </table>
 </div>
-
-<style>
-    .action-buttons {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-    }
-
-        .action-buttons form {
-            display: inline-block;
-        }
-
-        .action-buttons img {
-            cursor: pointer;
-        }
-</style>
