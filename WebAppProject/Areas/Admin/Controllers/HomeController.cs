@@ -583,11 +583,12 @@ namespace WebAppProject.Areas.Admin.Controllers
         {
             return _context.GroceryItem.Any(e => e.Id == id);
         }
-        
 
+
+        // Admin ManageWebsite Actions
         public IActionResult ManageWebsite()
         {
-            var mainBanners = _context.BannerImage.Where(b => b.BannerType == "Main").ToList();
+            var mainBanners = _context.BannerImage.Where(b => b.BannerType == "MainBanner").ToList();
 
             var viewModel = new ManageWebsiteViewModel
             {
@@ -605,7 +606,7 @@ namespace WebAppProject.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var mainBanners = _context.BannerImage.Where(b => b.BannerType == "Main").ToList();
+            var mainBanners = _context.BannerImage.Where(b => b.BannerType == "MainBanner").ToList();
 
             var viewModel = new ManageWebsiteViewModel
             {
