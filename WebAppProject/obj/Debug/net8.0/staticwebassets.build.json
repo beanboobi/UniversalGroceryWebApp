@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dOtwrlehy5ZMmgQVd0F6ps3TKbEQ60achXbXXy9oaig=",
+  "Hash": "nV949qbCDZ4rHwBUHZtOGxikiYiB6YzKs5M487B0l+g=",
   "Source": "WebAppProject",
   "BasePath": "_content/WebAppProject",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WebAppProject\\wwwroot",
       "Source": "WebAppProject",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebAppProject.styles.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebAppProject.styles.css",
       "SourceId": "WebAppProject",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "WebAppProject.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebAppProject.styles.css"
+      "OriginalItemSpec": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebAppProject.styles.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebAppProject.bundle.scp.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebAppProject.bundle.scp.css",
       "SourceId": "WebAppProject",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "WebAppProject.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebAppProject.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebAppProject.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\css\\site.css",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\favicon.ico",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\admin.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\admin.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/admin.png",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\images\\admin.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\admin1.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\admin1.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/admin1.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\images\\admin1.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\adminprofile.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\adminprofile.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/adminprofile.png",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\images\\adminprofile.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\ads.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\ads.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/ads.png",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ads.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\americanexpress.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\americanexpress.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/americanexpress.png",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\images\\americanexpress.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\apple.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\apple.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/apple.png",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\apple.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Banana.jpeg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Banana.jpeg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/Banana.jpeg",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Banana.jpeg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\banner.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\banner.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/banner.png",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\images\\banner.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\banner3.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\banner3.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/banner3.png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\images\\banner3.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\banner-right.jpg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\banner-right.jpg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/banner-right.jpg",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\images\\banner-right.jpg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Basmati Rice.jpeg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Basmati Rice.jpeg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/Basmati Rice.jpeg",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Basmati Rice.jpeg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\beef.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\beef.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/beef.png",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\images\\beef.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Boneless Chicken Breast.jpeg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Boneless Chicken Breast.jpeg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/Boneless Chicken Breast.jpeg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Boneless Chicken Breast.jpeg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\brocoli.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\brocoli.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/brocoli.png",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\images\\brocoli.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Carrot.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Carrot.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/Carrot.png",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Carrot.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Cheddar Cheese.jpeg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Cheddar Cheese.jpeg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/Cheddar Cheese.jpeg",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Cheddar Cheese.jpeg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\chips.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\chips.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/chips.png",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\images\\chips.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\chocochip.png.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\chocochip.png.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/chocochip.png.png",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\images\\chocochip.png.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\coffee.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\coffee.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/coffee.png",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\images\\coffee.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\coffee1get1.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\coffee1get1.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/coffee1get1.png",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\images\\coffee1get1.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\dogfood.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\dogfood.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/dogfood.png",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dogfood.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\edit.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\edit.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/edit.png",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\images\\edit.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Fresh Salmon Fillet.jpeg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Fresh Salmon Fillet.jpeg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/Fresh Salmon Fillet.jpeg",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Fresh Salmon Fillet.jpeg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Full Cream Milk.jpeg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Full Cream Milk.jpeg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/Full Cream Milk.jpeg",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Full Cream Milk.jpeg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Italian Pasta.jpeg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Italian Pasta.jpeg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/Italian Pasta.jpeg",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Italian Pasta.jpeg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\logo.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\logo.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/logo.png",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\mastercard.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\mastercard.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/mastercard.png",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\images\\mastercard.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\milk.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\milk.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/milk.png",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\images\\milk.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\milk1l.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\milk1l.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/milk1l.png",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\images\\milk1l.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\neufarm.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\neufarm.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/neufarm.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\images\\neufarm.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\NewLogo.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\NewLogo.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/NewLogo.png",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\images\\NewLogo.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Orange.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Orange.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/Orange.png",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Orange.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\peanut.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\peanut.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/peanut.png",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\images\\peanut.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\pic1.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\pic1.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/pic1.png",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\images\\pic1.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\pic2.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\pic2.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/pic2.png",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\images\\pic2.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\pic3.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\pic3.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/pic3.png",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\images\\pic3.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\pic4.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\pic4.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/pic4.png",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\images\\pic4.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\profilepicture.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\profilepicture.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/profilepicture.png",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profilepicture.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\remove.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\remove.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/remove.png",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\images\\remove.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\search.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\search.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/search.png",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\images\\search.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\snackarmor.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\snackarmor.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/snackarmor.png",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\images\\snackarmor.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Tomato.jpeg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Tomato.jpeg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/Tomato.jpeg",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Tomato.jpeg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\visacard.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\visacard.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/visacard.png",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\images\\visacard.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Websitebanner01.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Websitebanner01.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/Websitebanner01.png",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Websitebanner01.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Websitebanner02.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Websitebanner02.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/Websitebanner02.png",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Websitebanner02.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Whole Wheat Bread.jpeg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Whole Wheat Bread.jpeg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "images/Whole Wheat Bread.jpeg",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Whole Wheat Bread.jpeg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\js\\site.js",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1442,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1461,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1480,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1518,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1537,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1556,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1575,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1594,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1651,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1670,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1689,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1708,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1727,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1746,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1765,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1784,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1803,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1822,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1841,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1860,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1879,10 +1879,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1898,10 +1898,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1917,10 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1936,10 +1936,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1974,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1993,10 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2012,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2031,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2050,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2069,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\19b46a33-7798-4612-a1b6-7dae7352c171__b8404a27-95f1-4086-872e-230419fb373d.jpg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\19b46a33-7798-4612-a1b6-7dae7352c171__b8404a27-95f1-4086-872e-230419fb373d.jpg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "uploads/19b46a33-7798-4612-a1b6-7dae7352c171__b8404a27-95f1-4086-872e-230419fb373d.jpg",
       "AssetKind": "All",
@@ -2088,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\19b46a33-7798-4612-a1b6-7dae7352c171__b8404a27-95f1-4086-872e-230419fb373d.jpg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\268e1b8f-d3f7-4f90-a6ff-36e9157324d5_WhatsApp Image 2024-07-22 at 3.09.12 PM.jpeg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\268e1b8f-d3f7-4f90-a6ff-36e9157324d5_WhatsApp Image 2024-07-22 at 3.09.12 PM.jpeg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "uploads/268e1b8f-d3f7-4f90-a6ff-36e9157324d5_WhatsApp Image 2024-07-22 at 3.09.12 PM.jpeg",
       "AssetKind": "All",
@@ -2107,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\268e1b8f-d3f7-4f90-a6ff-36e9157324d5_WhatsApp Image 2024-07-22 at 3.09.12 PM.jpeg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\4cb07171-7c1d-4144-a6dd-2ff5406768d0__b8404a27-95f1-4086-872e-230419fb373d.jpg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\4cb07171-7c1d-4144-a6dd-2ff5406768d0__b8404a27-95f1-4086-872e-230419fb373d.jpg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "uploads/4cb07171-7c1d-4144-a6dd-2ff5406768d0__b8404a27-95f1-4086-872e-230419fb373d.jpg",
       "AssetKind": "All",
@@ -2126,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\4cb07171-7c1d-4144-a6dd-2ff5406768d0__b8404a27-95f1-4086-872e-230419fb373d.jpg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\71051f07-2e62-4129-96d6-711a61054c3d_coffee.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\71051f07-2e62-4129-96d6-711a61054c3d_coffee.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "uploads/71051f07-2e62-4129-96d6-711a61054c3d_coffee.png",
       "AssetKind": "All",
@@ -2145,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\71051f07-2e62-4129-96d6-711a61054c3d_coffee.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\9cc37469-bbf7-4aeb-a857-f7239590a35b__b8404a27-95f1-4086-872e-230419fb373d.jpg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\9cc37469-bbf7-4aeb-a857-f7239590a35b__b8404a27-95f1-4086-872e-230419fb373d.jpg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "uploads/9cc37469-bbf7-4aeb-a857-f7239590a35b__b8404a27-95f1-4086-872e-230419fb373d.jpg",
       "AssetKind": "All",
@@ -2164,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\9cc37469-bbf7-4aeb-a857-f7239590a35b__b8404a27-95f1-4086-872e-230419fb373d.jpg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\ab196c83-e20d-49dd-9e52-b7e5a5c7f908_Section.png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\ab196c83-e20d-49dd-9e52-b7e5a5c7f908_Section.png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "uploads/ab196c83-e20d-49dd-9e52-b7e5a5c7f908_Section.png",
       "AssetKind": "All",
@@ -2183,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\ab196c83-e20d-49dd-9e52-b7e5a5c7f908_Section.png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\ad43415a-bafa-47e0-84af-0beb97035d5b__b8404a27-95f1-4086-872e-230419fb373d.jpg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\ad43415a-bafa-47e0-84af-0beb97035d5b__b8404a27-95f1-4086-872e-230419fb373d.jpg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "uploads/ad43415a-bafa-47e0-84af-0beb97035d5b__b8404a27-95f1-4086-872e-230419fb373d.jpg",
       "AssetKind": "All",
@@ -2202,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\ad43415a-bafa-47e0-84af-0beb97035d5b__b8404a27-95f1-4086-872e-230419fb373d.jpg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\b6af5544-4a1c-4a7d-9764-838de9184699__7ee4236a-40f7-4afe-9e51-2ff18932f585.jpg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\b6af5544-4a1c-4a7d-9764-838de9184699__7ee4236a-40f7-4afe-9e51-2ff18932f585.jpg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "uploads/b6af5544-4a1c-4a7d-9764-838de9184699__7ee4236a-40f7-4afe-9e51-2ff18932f585.jpg",
       "AssetKind": "All",
@@ -2221,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\b6af5544-4a1c-4a7d-9764-838de9184699__7ee4236a-40f7-4afe-9e51-2ff18932f585.jpg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\c29fe0ae-ff75-479f-9648-9fed08c2a68c__edc828c2-7946-4928-9535-bbae2ba34256.jpg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\c29fe0ae-ff75-479f-9648-9fed08c2a68c__edc828c2-7946-4928-9535-bbae2ba34256.jpg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "uploads/c29fe0ae-ff75-479f-9648-9fed08c2a68c__edc828c2-7946-4928-9535-bbae2ba34256.jpg",
       "AssetKind": "All",
@@ -2240,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\c29fe0ae-ff75-479f-9648-9fed08c2a68c__edc828c2-7946-4928-9535-bbae2ba34256.jpg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\d2af02f6-0ce1-4ae9-8e1b-87a1c5ec4efb__7ee4236a-40f7-4afe-9e51-2ff18932f585.jpg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\d2af02f6-0ce1-4ae9-8e1b-87a1c5ec4efb__7ee4236a-40f7-4afe-9e51-2ff18932f585.jpg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "uploads/d2af02f6-0ce1-4ae9-8e1b-87a1c5ec4efb__7ee4236a-40f7-4afe-9e51-2ff18932f585.jpg",
       "AssetKind": "All",
@@ -2259,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\d2af02f6-0ce1-4ae9-8e1b-87a1c5ec4efb__7ee4236a-40f7-4afe-9e51-2ff18932f585.jpg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\e0915610-9226-4e0d-af3d-5cda7613ab84_Section (1).png",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\e0915610-9226-4e0d-af3d-5cda7613ab84_Section (1).png",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "uploads/e0915610-9226-4e0d-af3d-5cda7613ab84_Section (1).png",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\e0915610-9226-4e0d-af3d-5cda7613ab84_Section (1).png"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\ea1d7fe9-25db-4940-b76a-844e8b1059ee__edc828c2-7946-4928-9535-bbae2ba34256.jpg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\ea1d7fe9-25db-4940-b76a-844e8b1059ee__edc828c2-7946-4928-9535-bbae2ba34256.jpg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "uploads/ea1d7fe9-25db-4940-b76a-844e8b1059ee__edc828c2-7946-4928-9535-bbae2ba34256.jpg",
       "AssetKind": "All",
@@ -2297,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\ea1d7fe9-25db-4940-b76a-844e8b1059ee__edc828c2-7946-4928-9535-bbae2ba34256.jpg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\eefb12c2-2bf0-4390-802d-cdfc6089b4e3_WhatsApp Image 2024-07-22 at 3.09.12 PM.jpeg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\eefb12c2-2bf0-4390-802d-cdfc6089b4e3_WhatsApp Image 2024-07-22 at 3.09.12 PM.jpeg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "uploads/eefb12c2-2bf0-4390-802d-cdfc6089b4e3_WhatsApp Image 2024-07-22 at 3.09.12 PM.jpeg",
       "AssetKind": "All",
@@ -2316,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\eefb12c2-2bf0-4390-802d-cdfc6089b4e3_WhatsApp Image 2024-07-22 at 3.09.12 PM.jpeg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\f16cad72-1731-40df-83fb-563c3e2c3611__46009668-546b-4cf5-887d-c1369a296df9.jpg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\f16cad72-1731-40df-83fb-563c3e2c3611__46009668-546b-4cf5-887d-c1369a296df9.jpg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "uploads/f16cad72-1731-40df-83fb-563c3e2c3611__46009668-546b-4cf5-887d-c1369a296df9.jpg",
       "AssetKind": "All",
@@ -2335,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\f16cad72-1731-40df-83fb-563c3e2c3611__46009668-546b-4cf5-887d-c1369a296df9.jpg"
     },
     {
-      "Identity": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\f3e14734-6cfd-4749-81df-8ad7616db2d3_ICA student pass.jpg.jpg",
+      "Identity": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\uploads\\f3e14734-6cfd-4749-81df-8ad7616db2d3_ICA student pass.jpg.jpg",
       "SourceId": "WebAppProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kaibo\\OneDrive\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\",
       "BasePath": "_content/WebAppProject",
       "RelativePath": "uploads/f3e14734-6cfd-4749-81df-8ad7616db2d3_ICA student pass.jpg.jpg",
       "AssetKind": "All",
