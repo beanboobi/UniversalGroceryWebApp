@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace WebAppProject.Migrations
 {
     /// <inheritdoc />
-    public partial class intialcreate : Migration
+    public partial class IntialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -58,10 +58,10 @@ namespace WebAppProject.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    RedirectUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImagePath = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
+                    RedirectUrl = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    BannerType = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    BannerType = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -260,8 +260,8 @@ namespace WebAppProject.Migrations
                 columns: new[] { "Id", "BannerType", "CreatedDate", "ImagePath", "RedirectUrl" },
                 values: new object[,]
                 {
-                    { 1, "MainBanners", new DateTime(2024, 8, 2, 16, 31, 26, 377, DateTimeKind.Local).AddTicks(122), "/images/BannerImage(Cropped).jpg", "https://example.com" },
-                    { 2, "MainBanners", new DateTime(2024, 8, 2, 16, 31, 26, 377, DateTimeKind.Local).AddTicks(124), "/images/vector-big-sale-banner.jpg", "https://example.com" }
+                    { 1, "MainBanner", new DateTime(2024, 8, 3, 16, 36, 13, 514, DateTimeKind.Local).AddTicks(9816), "/images/Websitebanner01.png", "https://localhost:7065/Home/ProductCategory?category=Household" },
+                    { 2, "MainBanner", new DateTime(2024, 8, 3, 16, 36, 13, 514, DateTimeKind.Local).AddTicks(9821), "/images/Websitebanner02.png", "https://localhost:7065/Home/ProductCategory?category=VegetablesAndFruit" }
                 });
 
             migrationBuilder.InsertData(
@@ -269,17 +269,17 @@ namespace WebAppProject.Migrations
                 columns: new[] { "Id", "Category", "CreatedDate", "Description", "Discount", "ImageUrl", "Name", "Price", "Quantity" },
                 values: new object[,]
                 {
-                    { 1, "Fruits", "2024-08-02", "Fresh Red Apple", 0, "/images/apple.png", "Apple", 0.5m, 100 },
-                    { 2, "Fruits", "2024-08-02", "Organic Banana", 0, "/images/Banana.jpeg", "Banana", 0.3m, 150 },
-                    { 3, "Vegetables", "2024-08-02", "Fresh Carrot", 0, "/images/Carrot.png", "Carrot", 0.2m, 200 },
-                    { 4, "Vegetables", "2024-08-02", "Organic Tomato", 0, "/images/Tomato.jpeg", "Tomato", 0.4m, 180 },
-                    { 5, "Dairy", "2024-08-02", "Full Cream Milk", 0, "/images/Full Cream Milk.jpeg", "Milk", 1.5m, 100 },
-                    { 6, "Dairy", "2024-08-02", "Cheddar Cheese", 0, "/images/Cheddar Cheese.jpeg", "Cheese", 2.0m, 50 },
-                    { 7, "Bakery", "2024-08-02", "Whole Wheat Bread", 0, "/images/Whole Wheat Bread.jpeg", "Bread", 1.0m, 120 },
-                    { 8, "Meat", "2024-08-02", "Boneless Chicken Breast", 0, "/images/Boneless Chicken Breast.jpeg", "Chicken Breast", 3.5m, 90 },
-                    { 9, "Seafood", "2024-08-02", "Fresh Salmon Fillet", 0, "/images/Fresh Salmon Fillet.jpeg", "Salmon", 10.0m, 70 },
-                    { 10, "Grains", "2024-08-02", "Basmati Rice", 0, "/images/Basmati Rice.jpeg", "Rice", 1.2m, 300 },
-                    { 11, "Grains", "2024-08-02", "Italian Pasta", 0, "/images/Italian Pasta.jpeg", "Pasta", 1.1m, 250 }
+                    { 1, "Fruits", "2024-08-03", "Fresh Red Apple", 0, "/images/apple.png", "Apple", 0.5m, 100 },
+                    { 2, "Fruits", "2024-08-03", "Organic Banana", 0, "/images/Banana.jpeg", "Banana", 0.3m, 150 },
+                    { 3, "Vegetables", "2024-08-03", "Fresh Carrot", 0, "/images/Carrot.png", "Carrot", 0.2m, 200 },
+                    { 4, "Vegetables", "2024-08-03", "Organic Tomato", 0, "/images/Tomato.jpeg", "Tomato", 0.4m, 180 },
+                    { 5, "Dairy", "2024-08-03", "Full Cream Milk", 0, "/images/Full Cream Milk.jpeg", "Milk", 1.5m, 100 },
+                    { 6, "Dairy", "2024-08-03", "Cheddar Cheese", 0, "/images/Cheddar Cheese.jpeg", "Cheese", 2.0m, 50 },
+                    { 7, "Bakery", "2024-08-03", "Whole Wheat Bread", 0, "/images/Whole Wheat Bread.jpeg", "Bread", 1.0m, 120 },
+                    { 8, "Meat", "2024-08-03", "Boneless Chicken Breast", 0, "/images/Boneless Chicken Breast.jpeg", "Chicken Breast", 3.5m, 90 },
+                    { 9, "Seafood", "2024-08-03", "Fresh Salmon Fillet", 0, "/images/Fresh Salmon Fillet.jpeg", "Salmon", 10.0m, 70 },
+                    { 10, "Grains", "2024-08-03", "Basmati Rice", 0, "/images/Basmati Rice.jpeg", "Rice", 1.2m, 300 },
+                    { 11, "Grains", "2024-08-03", "Italian Pasta", 0, "/images/Italian Pasta.jpeg", "Pasta", 1.1m, 250 }
                 });
 
             migrationBuilder.CreateIndex(

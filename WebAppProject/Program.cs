@@ -19,11 +19,9 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
 
-
-
 builder.Services.Configure<IdentityOptions>(options =>
 {
-    options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+ ";
+    options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
 });
 
 builder.Services.ConfigureApplicationCookie(options =>
@@ -53,7 +51,6 @@ using (var scope = app.Services.CreateScope())
     try
     {
         await IdentityInitializer.InitializeAsync(services, logger);
-        await IdentityInitializer.CreateEmployee(services, logger);
     }
     catch (Exception ex)
     {
@@ -62,21 +59,6 @@ using (var scope = app.Services.CreateScope())
 }
 
 // Ensure the identity data is initialized
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-    var logger = services.GetRequiredService<ILogger<Program>>();
-    try
-    {
-        await IdentityInitializer.InitializeAsync(services, logger);
-    }
-    catch (Exception ex)
-    {
-        logger.LogError(ex, "An error occurred during identity initialization.");
-    }
-}
-
-// HTTP request pipeline configuration
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");

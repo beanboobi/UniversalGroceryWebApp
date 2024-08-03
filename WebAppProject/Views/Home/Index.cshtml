@@ -11,8 +11,10 @@
             {
                 <div class="carousel-slide">
                     <div class="banner-ad">
-                        <img src="@mainBanner.ImagePath" alt="Main Banner Image" class="carousel-image" />
-                        <a href="@mainBanner.RedirectUrl"></a>
+                        <!-- Make the image clickable by wrapping it inside an anchor tag -->
+                        <a href="@mainBanner.RedirectUrl">
+                            <img src="@mainBanner.ImagePath" alt="Main Banner Image" class="carousel-image" />
+                        </a>
                     </div>
                 </div>
             }

@@ -57,6 +57,14 @@
       "PackagePath": "staticwebassets\\images\\Tomato.jpeg"
     },
     {
+      "Id": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Websitebanner01.png",
+      "PackagePath": "staticwebassets\\images\\Websitebanner01.png"
+    },
+    {
+      "Id": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Websitebanner02.png",
+      "PackagePath": "staticwebassets\\images\\Websitebanner02.png"
+    },
+    {
       "Id": "C:\\Users\\eugen\\Documents\\GitHub\\UniversalGroceryWebApp\\WebAppProject\\wwwroot\\images\\Whole Wheat Bread.jpeg",
       "PackagePath": "staticwebassets\\images\\Whole Wheat Bread.jpeg"
     },

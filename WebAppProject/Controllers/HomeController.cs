@@ -46,7 +46,7 @@ namespace WebAppProject.Controllers
                .ToList();
 
             var mainBanners = _context.BannerImage
-        .Where(b => b.BannerType == "Main")
+        .Where(b => b.BannerType == "MainBanner")
         .OrderByDescending(b => b.CreatedDate)
         .ToList(); // Get a list of main banners
 

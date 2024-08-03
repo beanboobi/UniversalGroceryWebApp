@@ -1,111 +1,100 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using WebAppProject.Models;
-using WebAppProject.Data;
 
-public class IdentityInitializer
+namespace WebAppProject.Data
 {
-    public static async Task InitializeAsync(IServiceProvider serviceProvider, ILogger logger)
+    public static class IdentityInitializer
     {
-        var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
-        var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+        private static readonly List<string> Roles = new List<string> { "User", "Employee", "Admin" };
 
-
-        // First, create roles if they don't exist
-        string[] roleNames = { "Admin", "Employee", "Customer" };
-        foreach (var roleName in roleNames)
+        private static readonly List<(string Username, string Email, string Password, string Role)> Users = new List<(string, string, string, string)>
         {
-            if (!await roleManager.RoleExistsAsync(roleName))
+            ("customer1", "customer1@example.com", "Password123!", "User"),
+            ("customer2", "customer2@example.com", "Password123!", "User"),
+            ("employee1", "employee1@example.com", "Password123!", "Employee"),
+            ("employee2", "employee2@example.com", "Password123!", "Employee"),
+            ("admin1", "admin1@example.com", "Password123!", "Admin"),
+            ("admin2", "admin2@example.com", "Password123!", "Admin")
+        };
+
+        public static async Task InitializeAsync(IServiceProvider services, ILogger logger)
+        {
+            var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+            var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+            var context = services.GetRequiredService<ApplicationDbContext>();
+
+            await EnsureRolesAsync(roleManager, logger);
+            await EnsureUsersAsync(userManager, context, logger);
+        }
+
+        private static async Task EnsureRolesAsync(RoleManager<IdentityRole> roleManager, ILogger logger)
+        {
+            foreach (var role in Roles)
             {
-                var roleResult = await roleManager.CreateAsync(new IdentityRole(roleName));
-                if (!roleResult.Succeeded)
+                if (!await roleManager.RoleExistsAsync(role))
                 {
-                    logger.LogError($"Error creating role '{roleName}': {string.Join(", ", roleResult.Errors.Select(e => e.Description))}");
+                    var result = await roleManager.CreateAsync(new IdentityRole(role));
+                    if (result.Succeeded)
+                    {
+                        logger.LogInformation($"Role '{role}' created successfully.");
+                    }
+                    else
+                    {
+                        logger.LogError($"Error creating role '{role}': {result.Errors.First().Description}");
+                    }
                 }
             }
         }
 
-        // Then, create users for each role
-        await CreateUser(userManager, "admin1@example.com", "Test123!", "Admin", logger);
-        await CreateUser(userManager, "admin2@example.com", "Test123!", "Admin", logger);
-        await CreateUser(userManager, "employee1@example.com", "Test123!", "Employee", logger);
-        await CreateUser(userManager, "employee2@example.com", "Test123!", "Employee", logger);
-        await CreateUser(userManager, "customer1@example.com", "Test123!", "Customer", logger);
-        await CreateUser(userManager, "customer2@example.com", "Test123!", "User", logger);
-        await CreateUser(userManager, "customer2@example.com", "Test123!", "User", logger);
-
-    }
-
-    private static async Task CreateUser(UserManager<ApplicationUser> userManager, string email, string password, string role,ILogger logger)
-    {
-        if (userManager.FindByEmailAsync(email).Result == null)
+        private static async Task EnsureUsersAsync(UserManager<ApplicationUser> userManager, ApplicationDbContext context, ILogger logger)
         {
-            ApplicationUser user = new ApplicationUser
+            foreach (var (username, email, password, role) in Users)
             {
-                UserName = email,
-                Email = email
-            };
+                var user = await userManager.FindByNameAsync(username);
+                if (user == null)
+                {
+                    user = new ApplicationUser { UserName = username, Email = email };
+                    var result = await userManager.CreateAsync(user, password);
+                    if (result.Succeeded)
+                    {
+                        result = await userManager.AddToRoleAsync(user, role);
+                        if (result.Succeeded)
+                        {
+                            logger.LogInformation($"User '{username}' created and assigned to role '{role}'.");
 
-            var result = await userManager.CreateAsync(user, password);
-            if (result.Succeeded)
-            {
-                await userManager.AddToRoleAsync(user, role);
-                logger.LogInformation($"User '{email}' created successfully and added to role '{role}'.");
+                            if (role == "Employee" || role == "Admin")
+                            {
+                                var employee = new Employee
+                                {
+                                    Name = username,
+                                    Email = email,
+                                    Password = password,
+                                    JoinDate = DateTime.Now,
+                                    Salary = 50000, // Adjust as necessary
+                                    Role = role,
+                                    ApplicationUserId = user.Id
+                                };
+                                context.Employees.Add(employee);
+                                await context.SaveChangesAsync();
+                            }
+                        }
+                        else
+                        {
+                            logger.LogError($"Error assigning role '{role}' to user '{username}': {result.Errors.First().Description}");
+                        }
+                    }
+                    else
+                    {
+                        logger.LogError($"Error creating user '{username}': {result.Errors.First().Description}");
+                    }
+                }
             }
-            else
-            {
-                logger.LogInformation($"User '{password}'");
-                logger.LogError($"Error creating user '{email}': {string.Join(", ", result.Errors.Select(e => e.Description))}");
-            }
-
-            
         }
     }
-
-    public static async Task CreateEmployee(IServiceProvider serviceProvider, ILogger logger)
-    {
-        // Assume you already have a method to obtain the DbContext
-        var context = serviceProvider.GetRequiredService<ApplicationDbContext>();
-        var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
-        var adminRoleId = await context.Roles
-        .Where(r => r.Name == "Admin")
-        .Select(r => r.Id)
-        .FirstOrDefaultAsync();
-
-        var adminUserId = await context.UserRoles
-            .Where(ur => ur.RoleId == adminRoleId)
-            .Select(ur => ur.UserId)
-            .FirstOrDefaultAsync();
-
-        var newEmployee = new Employee
-        {
-            Name = "user1",
-            Email = "user1@example.com",
-            Password = "password",
-            JoinDate = DateTime.Now,
-            Salary = 50000,
-            Role = "Employee",
-            ApplicationUserId = adminUserId
-        };
-
-        // Add the new employee to the context
-        await context.Employees.AddAsync(newEmployee);
-
-        try
-        {
-            // Save changes to the database
-            await context.SaveChangesAsync();
-        }
-        catch (Exception ex)
-        {
-            logger.LogError($"Error when adding employee: {ex.Message}");
-            // Handle or rethrow the exception as needed
-        }
-    }
-
 }
