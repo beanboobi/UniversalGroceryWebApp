@@ -56,7 +56,7 @@ namespace WebAppProject.Data
         {
             foreach (var (username, email, password, role) in Users)
             {
-                var user = await userManager.FindByNameAsync(username);
+                var user = await userManager.FindByNameAsync(username) ?? await userManager.FindByEmailAsync(email);
                 if (user == null)
                 {
                     user = new ApplicationUser { UserName = username, Email = email };
@@ -93,6 +93,10 @@ namespace WebAppProject.Data
                     {
                         logger.LogError($"Error creating user '{username}': {result.Errors.First().Description}");
                     }
+                }
+                else
+                {
+                    logger.LogInformation($"User '{username}' already exists. Skipping creation.");
                 }
             }
         }
