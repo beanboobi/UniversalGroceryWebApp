@@ -1,21 +1,10 @@
 ﻿@model WebAppProject.ViewModels.ManageWebsiteViewModel
-@using WebAppProject.Models
-@using Microsoft.AspNetCore.Identity;
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@inject UserManager<ApplicationUser> UserManager
-@inject SignInManager<ApplicationUser> SignInManager
-
-
-
 @{
     ViewData["Title"] = "Manage Website";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
-
 <h2>Manage Website</h2>
-
-@if (await UserManager.IsInRoleAsync(await UserManager.GetUserAsync(User), "Admin"))
-{
+<div class="container-fluid">
     <form method="post" enctype="multipart/form-data" asp-action="SaveBannerImage" asp-controller="Home" asp-area="Admin">
         <input type="hidden" asp-for="BannerImage.Id" />
         <div class="form-group">
@@ -41,41 +30,38 @@
             <a asp-action="ManageWebsite" asp-controller="Home" asp-area="Admin" class="btn btn-secondary">Cancel</a>
         </div>
     </form>
-}
 
-<!-- Carousel Slides Section -->
-<h3>Carousel Slides</h3>
-<table class="table mt-4">
-    <thead>
-        <tr>
-            <th>Carousel Slide</th>
-            <th>Main Banner</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @for (var i = 0; i < Model.MainBanners.Count; i++)
-        {
-            var banner = Model.MainBanners[i];
+    <!-- Carousel Slides Section -->
+    <h3>Carousel Slides</h3>
+    <table class="table mt-4">
+        <thead>
             <tr>
-                <td>Carousel Slide @i</td>
-                <td>
-                    <!-- Make the image clickable by wrapping it inside an anchor tag -->
-                    <a href="@banner.RedirectUrl" target="_blank">
-                        <img src="@banner.ImagePath" alt="Main Banner" width="100" />
-                    </a>
-                    <div>@banner.RedirectUrl</div>
-                </td>
-                <td>
-                    @if (await UserManager.IsInRoleAsync(await UserManager.GetUserAsync(User), "Admin"))
-                    {
+                <th>Carousel Slide</th>
+                <th>Main Banner</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (var i = 0; i < Model.MainBanners.Count; i++)
+            {
+                var banner = Model.MainBanners[i];
+                <tr>
+                    <td>Carousel Slide @i</td>
+                    <td>
+                        <!-- Make the image clickable by wrapping it inside an anchor tag -->
+                        <a href="@banner.RedirectUrl" target="_blank">
+                            <img src="@banner.ImagePath" alt="Main Banner" width="100" />
+                        </a>
+                        <div>@banner.RedirectUrl</div>
+                    </td>
+                    <td>
                         <a asp-action="EditBanner" asp-route-id="@banner.Id" class="btn btn-warning">Edit</a>
                         <form asp-action="DeleteBannerImage" asp-route-id="@banner.Id" method="post" style="display:inline;">
                             <button type="submit" class="btn btn-danger">Delete</button>
                         </form>
-                    }
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

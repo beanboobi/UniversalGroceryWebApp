@@ -12,7 +12,7 @@ using WebAppProject.Data;
 namespace WebAppProject.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240804113421_InitialCreate")]
+    [Migration("20240803093630_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -258,7 +258,7 @@ namespace WebAppProject.Migrations
                         {
                             Id = 1,
                             BannerType = "MainBanner",
-                            CreatedDate = new DateTime(2024, 8, 4, 19, 34, 19, 915, DateTimeKind.Local).AddTicks(4827),
+                            CreatedDate = new DateTime(2024, 8, 3, 17, 36, 29, 314, DateTimeKind.Local).AddTicks(9550),
                             ImagePath = "/images/Websitebanner01.png",
                             RedirectUrl = "https://localhost:7065/Home/ProductCategory?category=Household"
                         },
@@ -266,7 +266,7 @@ namespace WebAppProject.Migrations
                         {
                             Id = 2,
                             BannerType = "MainBanner",
-                            CreatedDate = new DateTime(2024, 8, 4, 19, 34, 19, 915, DateTimeKind.Local).AddTicks(4830),
+                            CreatedDate = new DateTime(2024, 8, 3, 17, 36, 29, 314, DateTimeKind.Local).AddTicks(9554),
                             ImagePath = "/images/Websitebanner02.png",
                             RedirectUrl = "https://localhost:7065/Home/ProductCategory?category=VegetablesAndFruit"
                         });
@@ -365,7 +365,7 @@ namespace WebAppProject.Migrations
                         {
                             Id = 1,
                             Category = "Fruits",
-                            CreatedDate = "2024-08-04",
+                            CreatedDate = "2024-08-03",
                             Description = "Fresh Red Apple",
                             Discount = 0,
                             ImageUrl = "/images/apple.png",
@@ -377,7 +377,7 @@ namespace WebAppProject.Migrations
                         {
                             Id = 2,
                             Category = "Fruits",
-                            CreatedDate = "2024-08-04",
+                            CreatedDate = "2024-08-03",
                             Description = "Organic Banana",
                             Discount = 0,
                             ImageUrl = "/images/Banana.jpeg",
@@ -389,7 +389,7 @@ namespace WebAppProject.Migrations
                         {
                             Id = 3,
                             Category = "Vegetables",
-                            CreatedDate = "2024-08-04",
+                            CreatedDate = "2024-08-03",
                             Description = "Fresh Carrot",
                             Discount = 0,
                             ImageUrl = "/images/Carrot.png",
@@ -401,7 +401,7 @@ namespace WebAppProject.Migrations
                         {
                             Id = 4,
                             Category = "Vegetables",
-                            CreatedDate = "2024-08-04",
+                            CreatedDate = "2024-08-03",
                             Description = "Organic Tomato",
                             Discount = 0,
                             ImageUrl = "/images/Tomato.jpeg",
@@ -413,7 +413,7 @@ namespace WebAppProject.Migrations
                         {
                             Id = 5,
                             Category = "Dairy",
-                            CreatedDate = "2024-08-04",
+                            CreatedDate = "2024-08-03",
                             Description = "Full Cream Milk",
                             Discount = 0,
                             ImageUrl = "/images/Full Cream Milk.jpeg",
@@ -425,7 +425,7 @@ namespace WebAppProject.Migrations
                         {
                             Id = 6,
                             Category = "Dairy",
-                            CreatedDate = "2024-08-04",
+                            CreatedDate = "2024-08-03",
                             Description = "Cheddar Cheese",
                             Discount = 0,
                             ImageUrl = "/images/Cheddar Cheese.jpeg",
@@ -437,7 +437,7 @@ namespace WebAppProject.Migrations
                         {
                             Id = 7,
                             Category = "Bakery",
-                            CreatedDate = "2024-08-04",
+                            CreatedDate = "2024-08-03",
                             Description = "Whole Wheat Bread",
                             Discount = 0,
                             ImageUrl = "/images/Whole Wheat Bread.jpeg",
@@ -449,7 +449,7 @@ namespace WebAppProject.Migrations
                         {
                             Id = 8,
                             Category = "Meat",
-                            CreatedDate = "2024-08-04",
+                            CreatedDate = "2024-08-03",
                             Description = "Boneless Chicken Breast",
                             Discount = 0,
                             ImageUrl = "/images/Boneless Chicken Breast.jpeg",
@@ -461,7 +461,7 @@ namespace WebAppProject.Migrations
                         {
                             Id = 9,
                             Category = "Seafood",
-                            CreatedDate = "2024-08-04",
+                            CreatedDate = "2024-08-03",
                             Description = "Fresh Salmon Fillet",
                             Discount = 0,
                             ImageUrl = "/images/Fresh Salmon Fillet.jpeg",
@@ -473,7 +473,7 @@ namespace WebAppProject.Migrations
                         {
                             Id = 10,
                             Category = "Grains",
-                            CreatedDate = "2024-08-04",
+                            CreatedDate = "2024-08-03",
                             Description = "Basmati Rice",
                             Discount = 0,
                             ImageUrl = "/images/Basmati Rice.jpeg",
@@ -485,7 +485,7 @@ namespace WebAppProject.Migrations
                         {
                             Id = 11,
                             Category = "Grains",
-                            CreatedDate = "2024-08-04",
+                            CreatedDate = "2024-08-03",
                             Description = "Italian Pasta",
                             Discount = 0,
                             ImageUrl = "/images/Italian Pasta.jpeg",

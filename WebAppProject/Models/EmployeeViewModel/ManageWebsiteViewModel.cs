@@ -1,12 +1,4 @@
-﻿/*
-* Done By: Eugene 
-* INFT 3050 Web Programming
-* Comments: This is the ViewModel for the admin side that connects the Admin ManageWebstie Page witht the BannerImage model
-* to allow actions like adding, deleting or editing of bannerimages stored inside the bannerimage database.
-*/
-
-
-using WebAppProject.Models;
+﻿using WebAppProject.Models;
 using System.Collections.Generic;
 
 namespace WebAppProject.ViewModels
