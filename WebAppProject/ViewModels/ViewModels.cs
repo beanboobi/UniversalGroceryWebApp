@@ -1,6 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using WebAppProject.Helpers;
 
+/* Done By: Kai Boon 
+* INFT 3050 Web Programming
+* This is the viewmodel for the customer side, it manages the buisness logic and data for customer homepage, Login and Register
+* Pages, Shopping Cart page, User Profile Page and the Order Detail and Histrory pages.
+* 
+*/
+
 namespace WebAppProject.ViewModels
 {
     public class GroceryItemViewModel

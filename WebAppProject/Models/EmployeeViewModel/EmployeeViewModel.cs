@@ -2,6 +2,15 @@
 using System.ComponentModel.DataAnnotations;
 using WebAppProject.Models;
 
+/* 
+ * Done By: Eugene
+ * INFT 3050 Web Programming
+ * Comments: This is the EmployeeViewModel, it connects the ManageEmployee view page to the Employee model & database and the Aspnetusers 
+ * database. Every employee added will also be added to the aspnetusers table, the viewmodel supports the admin actions of adding,
+ * editing and deleting of employee records
+ * 
+ */
+
 namespace WebAppProject.ViewModels
 {
     public class EmployeeViewModel
