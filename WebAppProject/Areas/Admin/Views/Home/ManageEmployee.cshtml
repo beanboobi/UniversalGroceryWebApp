@@ -1,4 +1,12 @@
-﻿@model IEnumerable<WebAppProject.ViewModels.EmployeeViewModel>
+﻿    @model IEnumerable<WebAppProject.ViewModels.EmployeeViewModel>
+    @using WebAppProject.Models
+    @using Microsoft.AspNetCore.Identity;
+    @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+    @inject UserManager<ApplicationUser> UserManager
+    @inject SignInManager<ApplicationUser> SignInManager
+
+
 
 @{
     ViewData["Title"] = "Manage Employees";
@@ -19,7 +27,10 @@
             </div>
         </div>
         <div class="col-md-6 text-right">
-            <a asp-area="Admin" asp-controller="Home" asp-action="AddEmployee" class="btn btn-primary">Add Employee</a>
+            @if (await UserManager.IsInRoleAsync(await UserManager.GetUserAsync(User), "Admin"))
+            {
+                <a asp-area="Admin" asp-controller="Home" asp-action="AddEmployee" class="btn btn-primary">Add Employee</a>
+            }
         </div>
     </div>
     <div class="table-responsive">
@@ -46,16 +57,19 @@
                         <td>@employee.JoinDate.ToString("dd MMM yyyy")</td>
                         <td>@string.Format("{0:C}", employee.Salary)</td>
                         <td class="action-buttons">
-                            <a asp-area="Admin" asp-controller="Home" asp-action="EditEmployee" asp-route-id="@employee.Id">
-                                <img src="~/images/edit.png" alt="Edit" style="width:20px;" />
-                            </a>
-                            <form asp-area="Admin" asp-controller="Home" asp-action="DeleteEmployee" method="post" style="display:inline;" onsubmit="return confirmDelete(event)">
-                                @Html.AntiForgeryToken()
-                                <input type="hidden" name="id" value="@employee.Id" />
-                                <button type="submit" class="btn btn-link p-0">
-                                    <img src="~/images/remove.png" alt="Remove" style="width:20px;" />
-                                </button>
-                            </form>
+                            @if (await UserManager.IsInRoleAsync(await UserManager.GetUserAsync(User), "Admin"))
+                            {
+                                <a asp-area="Admin" asp-controller="Home" asp-action="EditEmployee" asp-route-id="@employee.Id">
+                                    <img src="~/images/edit.png" alt="Edit" style="width:20px;" />
+                                </a>
+                                <form asp-area="Admin" asp-controller="Home" asp-action="DeleteEmployee" method="post" style="display:inline;" onsubmit="return confirmDelete(event)">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="id" value="@employee.Id" />
+                                    <button type="submit" class="btn btn-link p-0">
+                                        <img src="~/images/remove.png" alt="Remove" style="width:20px;" />
+                                    </button>
+                                </form>
+                            }
                         </td>
                     </tr>
                 }

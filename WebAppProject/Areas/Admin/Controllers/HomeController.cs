@@ -13,6 +13,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 
+/* Done By: Eugene
+ * INFT 3050 Web Programming
+ * Comments: This HomeController contains all of the actions for the admin area pages like Manage, Add, Delete and Edit of Customer,
+ * Employee, GroceryItem and Website Banner Image. Authorization has been added so that only the employee can access the admin  
+ * area pages but only the admin can do the add, edit or delete actions.
+ */
+
 namespace WebAppProject.Areas.Admin.Controllers
 {
     

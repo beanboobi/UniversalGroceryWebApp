@@ -1,4 +1,12 @@
-﻿using System.Collections.Generic;
+﻿/*
+ * Done By; Eugene 
+ * INFT 3050 Web Programming
+ * Comments: This is the Viewmodel to display the GorceryItems and the BannerImage in the index page (customer hoempage)
+ * Two Models are being combined into this viewmdoel as we can't use two models directly in the index page.
+ */
+
+
+using System.Collections.Generic;
 using WebAppProject.Models;
 
 namespace WebAppProject.ViewModels
