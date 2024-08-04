@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@using WebAppProject
+@using WebAppProject.Models
+@using WebAppProject.ViewModels
+@using Microsoft.AspNetCore.Identity
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -11,6 +18,8 @@
         .admin-profile {
             display: flex;
             align-items: center;
+            justify-content: flex-end;
+            margin-left: 200px; /* Adjust this value as needed to move it further to the right */
         }
 
         .greeting {
@@ -23,6 +32,10 @@
             height: 40px;
             border-radius: 50%;
         }
+
+        .navbar {
+            padding-right: 30px;
+        }
     </style>
 </head>
 <body>
@@ -30,7 +43,7 @@
         <div class="container">
             <div class="navbar-right">
                 <div class="admin-profile">
-                    <span class="greeting">Hello, Admin1<br /><small>Have a nice day</small></span>
+                    <span class="greeting">Hello, @User.Identity.Name<br /><small>Have a nice day</small></span>
                     <img src="~/images/admin1.png" alt="Admin" class="admin-image" />
                 </div>
             </div>
@@ -39,16 +52,14 @@
     <div class="container body-content">
         <div class="row">
             <div class="col-md-3">
-                
                 @Html.Partial("_Sidebar")
             </div>
             <div class="col-md-9">
-             
                 @RenderBody()
             </div>
         </div>
     </div>
-    
+
     @RenderSection("scripts", required: false)
 </body>
 </html>

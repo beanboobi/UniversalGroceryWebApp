@@ -1,5 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
+using WebAppProject.Models;
+
+/*
+ * Done By: Eugene 
+ * INFT 3050 Web Programming
+ * Comments: This is the UsersViewModel which connects the ManageCustomerAcc page to the ASPNetUsers Table, it allows actions 
+ * like adding, editing and deleting of Customer records in the ASPNetUsers Table.
+ */
+
 
 namespace WebAppProject.ViewModels
 

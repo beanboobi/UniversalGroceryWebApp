@@ -14,6 +14,15 @@ using System.Security.Claims;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Identity;
 
+/*
+ * Done By: Kaiboon and Eugene(BannerImage Part)
+ * INFT 3050 Web Programming
+ * This is the controller for the index view (Customer Home page), it connects the index view page to the viewmodel, it has 
+ * important customer actions/functions such as displaying of the BannerImage, GroceryItems, User info in the Profile page,
+ * Allows changing of user password and redirection logic to the other customer pages.
+ */
+
+
 namespace WebAppProject.Controllers
 {
 

@@ -260,8 +260,8 @@ namespace WebAppProject.Migrations
                 columns: new[] { "Id", "BannerType", "CreatedDate", "ImagePath", "RedirectUrl" },
                 values: new object[,]
                 {
-                    { 1, "MainBanner", new DateTime(2024, 8, 3, 17, 36, 29, 314, DateTimeKind.Local).AddTicks(9550), "/images/Websitebanner01.png", "https://localhost:7065/Home/ProductCategory?category=Household" },
-                    { 2, "MainBanner", new DateTime(2024, 8, 3, 17, 36, 29, 314, DateTimeKind.Local).AddTicks(9554), "/images/Websitebanner02.png", "https://localhost:7065/Home/ProductCategory?category=VegetablesAndFruit" }
+                    { 1, "MainBanner", new DateTime(2024, 8, 4, 19, 34, 19, 915, DateTimeKind.Local).AddTicks(4827), "/images/Websitebanner01.png", "https://localhost:7065/Home/ProductCategory?category=Household" },
+                    { 2, "MainBanner", new DateTime(2024, 8, 4, 19, 34, 19, 915, DateTimeKind.Local).AddTicks(4830), "/images/Websitebanner02.png", "https://localhost:7065/Home/ProductCategory?category=VegetablesAndFruit" }
                 });
 
             migrationBuilder.InsertData(
@@ -269,17 +269,17 @@ namespace WebAppProject.Migrations
                 columns: new[] { "Id", "Category", "CreatedDate", "Description", "Discount", "ImageUrl", "Name", "Price", "Quantity" },
                 values: new object[,]
                 {
-                    { 1, "Fruits", "2024-08-03", "Fresh Red Apple", 0, "/images/apple.png", "Apple", 0.5m, 100 },
-                    { 2, "Fruits", "2024-08-03", "Organic Banana", 0, "/images/Banana.jpeg", "Banana", 0.3m, 150 },
-                    { 3, "Vegetables", "2024-08-03", "Fresh Carrot", 0, "/images/Carrot.png", "Carrot", 0.2m, 200 },
-                    { 4, "Vegetables", "2024-08-03", "Organic Tomato", 0, "/images/Tomato.jpeg", "Tomato", 0.4m, 180 },
-                    { 5, "Dairy", "2024-08-03", "Full Cream Milk", 0, "/images/Full Cream Milk.jpeg", "Milk", 1.5m, 100 },
-                    { 6, "Dairy", "2024-08-03", "Cheddar Cheese", 0, "/images/Cheddar Cheese.jpeg", "Cheese", 2.0m, 50 },
-                    { 7, "Bakery", "2024-08-03", "Whole Wheat Bread", 0, "/images/Whole Wheat Bread.jpeg", "Bread", 1.0m, 120 },
-                    { 8, "Meat", "2024-08-03", "Boneless Chicken Breast", 0, "/images/Boneless Chicken Breast.jpeg", "Chicken Breast", 3.5m, 90 },
-                    { 9, "Seafood", "2024-08-03", "Fresh Salmon Fillet", 0, "/images/Fresh Salmon Fillet.jpeg", "Salmon", 10.0m, 70 },
-                    { 10, "Grains", "2024-08-03", "Basmati Rice", 0, "/images/Basmati Rice.jpeg", "Rice", 1.2m, 300 },
-                    { 11, "Grains", "2024-08-03", "Italian Pasta", 0, "/images/Italian Pasta.jpeg", "Pasta", 1.1m, 250 }
+                    { 1, "Fruits", "2024-08-04", "Fresh Red Apple", 0, "/images/apple.png", "Apple", 0.5m, 100 },
+                    { 2, "Fruits", "2024-08-04", "Organic Banana", 0, "/images/Banana.jpeg", "Banana", 0.3m, 150 },
+                    { 3, "Vegetables", "2024-08-04", "Fresh Carrot", 0, "/images/Carrot.png", "Carrot", 0.2m, 200 },
+                    { 4, "Vegetables", "2024-08-04", "Organic Tomato", 0, "/images/Tomato.jpeg", "Tomato", 0.4m, 180 },
+                    { 5, "Dairy", "2024-08-04", "Full Cream Milk", 0, "/images/Full Cream Milk.jpeg", "Milk", 1.5m, 100 },
+                    { 6, "Dairy", "2024-08-04", "Cheddar Cheese", 0, "/images/Cheddar Cheese.jpeg", "Cheese", 2.0m, 50 },
+                    { 7, "Bakery", "2024-08-04", "Whole Wheat Bread", 0, "/images/Whole Wheat Bread.jpeg", "Bread", 1.0m, 120 },
+                    { 8, "Meat", "2024-08-04", "Boneless Chicken Breast", 0, "/images/Boneless Chicken Breast.jpeg", "Chicken Breast", 3.5m, 90 },
+                    { 9, "Seafood", "2024-08-04", "Fresh Salmon Fillet", 0, "/images/Fresh Salmon Fillet.jpeg", "Salmon", 10.0m, 70 },
+                    { 10, "Grains", "2024-08-04", "Basmati Rice", 0, "/images/Basmati Rice.jpeg", "Rice", 1.2m, 300 },
+                    { 11, "Grains", "2024-08-04", "Italian Pasta", 0, "/images/Italian Pasta.jpeg", "Pasta", 1.1m, 250 }
                 });
 
             migrationBuilder.CreateIndex(
